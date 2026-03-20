@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pro Code Cell</title>
+    <link rel="stylesheet" href="cell.css">
+</head>
+<body>
+
+<div class="nb-shell">
+    <div class="cell" id="mainCell">
+
+        <!-- Header -->
+        <div class="cell-header">
+            <div class="cell-left">
+                <div class="lang-badge">
+                    <div class="lang-dot"></div>
+                    Python
+                </div>
+                <span class="cell-meta" id="cellNum">In [1]:</span>
+            </div>
+            <div class="cell-actions">
+                <button class="action-btn" onclick="clearOutput()">✕ Clear</button>
+                <button class="action-btn" onclick="copyCode()">⎘ Copy</button>
+                <button class="run-btn" id="runBtn" onclick="runCell()">
+                    <div class="run-icon" id="runIcon"></div>
+                    Run
+                </button>
+            </div>
+        </div>
+
+        <!-- Code Editor -->
+        <div class="gutter">
+            <div class="line-nums" id="lineNums">1</div>
+            <div class="code-area-wrap">
+                <textarea
+                    class="code-input"
+                    id="codeInput"
+                    spellcheck="false"
+                    oninput="onCodeInput(this)"
+                    onkeydown="handleKeydown(event)"
+                    placeholder="# Write Python here…">a = 10
+b = 3
+
+print(a + b)
+print(a * b)</textarea>
+            </div>
+        </div>
+
+        <!-- Output -->
+        <div class="output-section" id="outputSection">
+            <div class="output-header">
+                <span class="output-label">Output</span>
+                <div style="display:flex; align-items:center; gap:10px;">
+                    <span class="output-status" id="outputStatus"></span>
+                    <button class="clear-btn" onclick="clearOutput()">✕</button>
+                </div>
+            </div>
+            <div class="output-body" id="outputBody"></div>
+            <div class="exec-time" id="execTime"></div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    let execCount = 1;
+
+    function syncLines(ta) {
+        const lines = ta.value.split('\n').length;
+        const nums = Array.from({ length: lines }, (_, i) => i + 1).join('\n');
+        document.getElementById('lineNums').textContent = nums;
+    }
+
+    function autoResize(ta) {
+        ta.style.height = 'auto';
+        ta.style.height = ta.scrollHeight + 'px';
+    }
+
+    function onCodeInput(ta) {
+        autoResize(ta);
+        syncLines(ta);
+    }
+
+    function handleKeydown(e) {
+        if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+            e.preventDefault();
+            runCell();
+        }
+        if (e.key === 'Tab') {
+            e.preventDefault();
+            const ta = e.target;
+            const s = ta.selectionStart, end = ta.selectionEnd;
+            ta.value = ta.value.substring(0, s) + '    ' + ta.value.substring(end);
+            ta.selectionStart = ta.selectionEnd = s + 4;
+            syncLines(ta);
+        }
+    }
+
+    function copyCode() {
+        const code = document.getElementById('codeInput').value;
+        navigator.clipboard.writeText(code).catch(() => {});
+    }
+
+    function clearOutput() {
+        document.getElementById('outputSection').classList.remove('show');
+    }
+
+    function runCell() {
+        const code = document.getElementById('codeInput').value;
+        const btn  = document.getElementById('runBtn');
+        const icon = document.getElementById('runIcon');
+
+        btn.classList.add('running');
+        icon.className = 'run-icon spin';
+        btn.disabled = true;
+
+        setTimeout(() => {
+            const t0 = performance.now();
+            const printLines = [];
+            const fakePrint  = (...args) => { printLines.push(args.map(String).join(' ')); };
+
+            let result;
+            let isError = false;
+            let errMsg  = '';
+
+            try {
+                const wrapped = code.replace(/\bprint\s*\(/g, '__print__(');
+                const fn = new Function('__print__', wrapped);
+                result = fn(fakePrint);
+            } catch (e) {
+                isError = true;
+                errMsg  = e.toString();
+            }
+
+            const elapsed = (performance.now() - t0).toFixed(1);
+
+            const sec    = document.getElementById('outputSection');
+            const body   = document.getElementById('outputBody');
+            const status = document.getElementById('outputStatus');
+            const timeEl = document.getElementById('execTime');
+
+            if (isError) {
+                body.textContent   = errMsg;
+                body.className     = 'output-body error';
+                status.textContent = '✗ Error';
+                status.className   = 'output-status err';
+            } else {
+                let out = printLines.join('\n');
+                if (!out && result !== undefined) out = String(result);
+                if (!out) out = '(no output)';
+                body.textContent   = out;
+                body.className     = 'output-body';
+                status.textContent = '✓ OK';
+                status.className   = 'output-status ok';
+            }
+
+            timeEl.textContent = `Executed in ${elapsed}ms  ·  In [${execCount}]`;
+            document.getElementById('cellNum').textContent = `In [${execCount}]:`;
+            execCount++;
+
+            sec.classList.add('show');
+            btn.classList.remove('running');
+            icon.className = 'run-icon';
+            btn.disabled   = false;
+        }, 120);
+    }
+
+    window.addEventListener('load', () => {
+        const ta = document.getElementById('codeInput');
+        autoResize(ta);
+        syncLines(ta);
+    });
+</script>
+
+</body>
+</html>

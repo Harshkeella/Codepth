@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Tutorial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="py_download.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-5 col-md-6">
+                    <img src="/img/codepth_logo_2.png" class="img-fluid" height="70" width="170" alt="Codepth Logo">
+                </div>
+                <div class="col-7 col-md-6">
+                    <div class="input-group">
+                        <input class="form-control" type="text" placeholder="Search....">
+                        <button class="btn btn-success" type="button">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- TOP NAVBAR -->
+    <nav class="navbar navbar-expand-lg top-navbar">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="/home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/Python.html">Python</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/mysql.html">MySQL</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/dsa.html">DSA</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/ml.html">Machine Learning</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/dl.html">Deep Learning</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE BODY -->
+    <div class="page-wrapper">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <span class="sidebar-title">Python Tutorial</span>
+            <ul>
+                <li class="active"><a href="/py_components/Py_downloads.html">Python Download</a></li>
+                <li><a href="/py_components/py_intro.html">Python Intro <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_keywords.html">Python Keywords <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_variables.html">Python Variables <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_operators.html">Python Operators <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_datatypes.html">Python Data types <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_if_else.html">Python If-else...<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_while.html">Python While Loops <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_for.html">Python For Loops<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_string.html">Python Strings<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_list.html">Python List <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_tuple.html">Python Tuples <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_sets.html">Python Sets <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_dict.html">Python Dictionaries <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_function.html">Python Functions <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_recursion.html">Python Recursion <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_lamda.html">Python Lamda Function <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_OOP.html">Python OOP<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_file_handling.html">Python File Handling<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_exception_handling.html">Python Exception Handling<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_REGEXP.html">Python REGEXP<span class="arrow">▼</span></a></li>
+            </ul>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <h1>Python me If-Else kya hota hai?</h1>
+            <hr>
+
+            <p style="font-size: 19px;">Real life me hum hamesha <b>conditions ke hisaab se decisions lete hain</b> —
+                "Agar baarish ho rahi hai toh chhaata lo, warna mat lo." Python me bhi exactly yahi hota hai.
+                <b>if-else</b> ka use karke hum program ko batate hain ki
+                <b>kaunsi condition True hone par kya karna hai</b>.
+            </p>
+
+            <p style="font-size: 19px;">Python me <b>4 tarike</b> hain conditions likhne ke :-</p>
+            <ul style="font-size: 18px; margin-left: 40px; line-height: 2.2;">
+                <li>1. <b>if</b> — sirf ek condition check karna</li>
+                <li>2. <b>if-else</b> — ek condition, do raste</li>
+                <li>3. <b>if-elif-else</b> — multiple conditions</li>
+                <li>4. <b>Nested if</b> — if ke andar if</li>
+            </ul>
+
+            <p style="font-size: 19px; margin-top: 10px;">
+                <b>Note :-</b> Python me indentation (spaces) bahut zaroori hai. if ke andar ka code
+                <b>4 spaces ya 1 Tab</b> se andar likhna padta hai — warna error aayega.
+            </p>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 1. if STATEMENT               -->
+            <!-- ============================= -->
+            <h1>1. if Statement</h1>
+            <p style="font-size: 19px;">Sabse simple condition. Agar <b>condition True</b> hai toh andar wala code
+                chalega, <b>False hai toh kuch nahi hoga</b>.
+            </p>
+
+            <div style="overflow-x:auto; margin: 20px 0;">
+                <table class="table table-bordered" style="font-size:17px;">
+                    <thead class="table-dark">
+                        <tr><th>Syntax</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>
+                            <pre style="margin:0; background:transparent; border:none;">if condition:
+    # yeh code tabhi chalega jab condition True ho</pre>
+                        </td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Cell 1 -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> Simple if — age check karna</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_if1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('if1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('if1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_if1" onclick="runCell('if1')">
+                            <div class="run-icon" id="runIcon_if1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_if1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_if1" spellcheck="false"
+                            oninput="onCodeInput(this,'if1')" onkeydown="handleKeydown(event,'if1')">age = 20
+
+if age >= 18:
+    print("Aap vote de sakte hain!")
+
+print("Program khatam")</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_if1">
+                    <div class="output-header">
+                        <span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_if1"></span>
+                            <button class="clear-btn" onclick="clearOutput('if1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_if1"></div>
+                    <div class="exec-time" id="execTime_if1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> if — number positive hai ya nahi</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_if2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('if2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('if2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_if2" onclick="runCell('if2')">
+                            <div class="run-icon" id="runIcon_if2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_if2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_if2" spellcheck="false"
+                            oninput="onCodeInput(this,'if2')" onkeydown="handleKeydown(event,'if2')">num = 15
+
+if num > 0:
+    print(num, "ek positive number hai")
+
+if num % 2 == 0:
+    print(num, "even hai")
+
+if num % 2 != 0:
+    print(num, "odd hai")</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_if2">
+                    <div class="output-header">
+                        <span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_if2"></span>
+                            <button class="clear-btn" onclick="clearOutput('if2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_if2"></div>
+                    <div class="exec-time" id="execTime_if2"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 2. if-else STATEMENT          -->
+            <!-- ============================= -->
+            <h1>2. if-else Statement</h1>
+            <p style="font-size: 19px;">Jab condition <b>True ho toh if wala block</b> chalega, aur jab
+                condition <b>False ho toh else wala block</b> chalega. Dono me se <b>hamesha ek hi chalega</b>.
+            </p>
+
+            <div style="overflow-x:auto; margin: 20px 0;">
+                <table class="table table-bordered" style="font-size:17px;">
+                    <thead class="table-dark">
+                        <tr><th>Syntax</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>
+                            <pre style="margin:0; background:transparent; border:none;">if condition:
+    # True hone par yeh chalega
+else:
+    # False hone par yeh chalega</pre>
+                        </td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Cell 1 -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> Pass / Fail check karna</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_ifelse1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('ifelse1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('ifelse1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_ifelse1" onclick="runCell('ifelse1')">
+                            <div class="run-icon" id="runIcon_ifelse1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_ifelse1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_ifelse1" spellcheck="false"
+                            oninput="onCodeInput(this,'ifelse1')" onkeydown="handleKeydown(event,'ifelse1')">marks = 45
+
+if marks >= 50:
+    print("Congratulations! Aap PASS ho gaye.")
+else:
+    print("Sorry! Aap FAIL ho gaye. Agle baar try karo.")</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_ifelse1">
+                    <div class="output-header">
+                        <span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_ifelse1"></span>
+                            <button class="clear-btn" onclick="clearOutput('ifelse1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_ifelse1"></div>
+                    <div class="exec-time" id="execTime_ifelse1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> Even ya Odd number check karna</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_ifelse2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('ifelse2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('ifelse2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_ifelse2" onclick="runCell('ifelse2')">
+                            <div class="run-icon" id="runIcon_ifelse2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_ifelse2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_ifelse2" spellcheck="false"
+                            oninput="onCodeInput(this,'ifelse2')" onkeydown="handleKeydown(event,'ifelse2')">n = 7
+
+if n % 2 == 0:
+    print(n, "ek Even number hai")
+else:
+    print(n, "ek Odd number hai")</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_ifelse2">
+                    <div class="output-header">
+                        <span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_ifelse2"></span>
+                            <button class="clear-btn" onclick="clearOutput('ifelse2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_ifelse2"></div>
+                    <div class="exec-time" id="execTime_ifelse2"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 3 -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 3:</b> Do numbers me se bada kaun sa hai</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_ifelse3">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('ifelse3')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('ifelse3')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_ifelse3" onclick="runCell('ifelse3')">
+                            <div class="run-icon" id="runIcon_ifelse3"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_ifelse3">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_ifelse3" spellcheck="false"
+                            oninput="onCodeInput(this,'ifelse3')" onkeydown="handleKeydown(event,'ifelse3')">a = 42
+b = 78
+
+if a > b:
+    print(a, "bada hai")
+else:
+    print(b, "bada hai")</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_ifelse3">
+                    <div class="output-header">
+                        <span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_ifelse3"></span>
+                            <button class="clear-btn" onclick="clearOutput('ifelse3')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_ifelse3"></div>
+                    <div class="exec-time" id="execTime_ifelse3"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 3. if-elif-else               -->
+            <!-- ============================= -->
+            <h1>3. if-elif-else Statement</h1>
+            <p style="font-size: 19px;">Jab <b>2 se zyada conditions</b> check karni hon toh <b>elif</b> use karte hain.
+                Python <b>upar se neeche ek ek condition check karta hai</b> aur jo pehle True ho us block ko chalata hai,
+                baki sab skip ho jaate hain.
+            </p>
+
+            <div style="overflow-x:auto; margin: 20px 0;">
+                <table class="table table-bordered" style="font-size:17px;">
+                    <thead class="table-dark">
+                        <tr><th>Syntax</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>
+                            <pre style="margin:0; background:transparent; border:none;">if condition1:
+    # condition1 True hone par
+elif condition2:
+    # condition2 True hone par
+elif condition3:
+    # condition3 True hone par
+else:
+    # koi bhi condition True na ho toh</pre>
+                        </td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Cell 1 -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> Grade system — marks ke hisaab se grade dena</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_elif1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('elif1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('elif1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_elif1" onclick="runCell('elif1')">
+                            <div class="run-icon" id="runIcon_elif1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_elif1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_elif1" spellcheck="false"
+                            oninput="onCodeInput(this,'elif1')" onkeydown="handleKeydown(event,'elif1')">marks = 82
+
+if marks >= 90:
+    print("Grade: A+")
+elif marks >= 80:
+    print("Grade: A")
+elif marks >= 70:
+    print("Grade: B")
+elif marks >= 60:
+    print("Grade: C")
+elif marks >= 50:
+    print("Grade: D")
+else:
+    print("Grade: F — Fail")</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_elif1">
+                    <div class="output-header">
+                        <span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_elif1"></span>
+                            <button class="clear-btn" onclick="clearOutput('elif1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_elif1"></div>
+                    <div class="exec-time" id="execTime_elif1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> Number positive, negative ya zero hai?</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_elif2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('elif2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('elif2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_elif2" onclick="runCell('elif2')">
+                            <div class="run-icon" id="runIcon_elif2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_elif2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_elif2" spellcheck="false"
+                            oninput="onCodeInput(this,'elif2')" onkeydown="handleKeydown(event,'elif2')">num = 0
+
+if num > 0:
+    print(num, "Positive number hai")
+elif num < 0:
+    print(num, "Negative number hai")
+else:
+    print("Number Zero hai")</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_elif2">
+                    <div class="output-header">
+                        <span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_elif2"></span>
+                            <button class="clear-btn" onclick="clearOutput('elif2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_elif2"></div>
+                    <div class="exec-time" id="execTime_elif2"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 3 -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 3:</b> Weekday ya Weekend check karna</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_elif3">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('elif3')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('elif3')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_elif3" onclick="runCell('elif3')">
+                            <div class="run-icon" id="runIcon_elif3"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_elif3">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_elif3" spellcheck="false"
+                            oninput="onCodeInput(this,'elif3')" onkeydown="handleKeydown(event,'elif3')">day = "Saturday"
+
+if day == "Saturday" or day == "Sunday":
+    print(day, "— Weekend hai! Aaram karo.")
+elif day == "Monday":
+    print(day, "— Naya hafta shuru. Let's go!")
+elif day == "Friday":
+    print(day, "— Kal weekend hai, almost there!")
+else:
+    print(day, "— Weekday hai. Kaam karo!")</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_elif3">
+                    <div class="output-header">
+                        <span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_elif3"></span>
+                            <button class="clear-btn" onclick="clearOutput('elif3')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_elif3"></div>
+                    <div class="exec-time" id="execTime_elif3"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 4. NESTED if                  -->
+            <!-- ============================= -->
+            <h1>4. Nested if Statement</h1>
+            <p style="font-size: 19px;">Jab <b>ek if ke andar doosra if</b> likha ho usse <b>Nested if</b> kehte hain.
+                Iska use tab hota hai jab ek condition ke saath <b>aur ek condition bhi check</b> karni ho.
+            </p>
+
+            <!-- Cell 1 -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> Login check — username aur password dono sahi hone chahiye</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_nest1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('nest1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('nest1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_nest1" onclick="runCell('nest1')">
+                            <div class="run-icon" id="runIcon_nest1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_nest1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_nest1" spellcheck="false"
+                            oninput="onCodeInput(this,'nest1')" onkeydown="handleKeydown(event,'nest1')">username = "admin"
+password = "1234"
+
+if username == "admin":
+    print("Username sahi hai!")
+    if password == "1234":
+        print("Password bhi sahi hai!")
+        print("Login successful!")
+    else:
+        print("Password galat hai. Access denied.")
+else:
+    print("Username galat hai. Access denied.")</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_nest1">
+                    <div class="output-header">
+                        <span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_nest1"></span>
+                            <button class="clear-btn" onclick="clearOutput('nest1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_nest1"></div>
+                    <div class="exec-time" id="execTime_nest1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> Teen numbers me sabse bada kaun sa hai</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_nest2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('nest2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('nest2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_nest2" onclick="runCell('nest2')">
+                            <div class="run-icon" id="runIcon_nest2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_nest2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_nest2" spellcheck="false"
+                            oninput="onCodeInput(this,'nest2')" onkeydown="handleKeydown(event,'nest2')">a = 10
+b = 35
+c = 22
+
+if a > b:
+    if a > c:
+        print(a, "sabse bada hai")
+    else:
+        print(c, "sabse bada hai")
+else:
+    if b > c:
+        print(b, "sabse bada hai")
+    else:
+        print(c, "sabse bada hai")</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_nest2">
+                    <div class="output-header">
+                        <span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_nest2"></span>
+                            <button class="clear-btn" onclick="clearOutput('nest2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_nest2"></div>
+                    <div class="exec-time" id="execTime_nest2"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 5. SHORTHAND (Ternary)        -->
+            <!-- ============================= -->
+            <h1>5. Shorthand if-else (Ternary Operator)</h1>
+            <p style="font-size: 19px;">Agar condition aur result simple ho toh <b>ek hi line me if-else</b> likh sakte hain.
+                Isse <b>Ternary Operator</b> ya <b>Shorthand if-else</b> kehte hain.
+            </p>
+
+            <div style="overflow-x:auto; margin: 20px 0;">
+                <table class="table table-bordered" style="font-size:17px;">
+                    <thead class="table-dark">
+                        <tr><th>Syntax</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>
+                            <pre style="margin:0; background:transparent; border:none;">value = "True wala" if condition else "False wala"</pre>
+                        </td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Cell 1 -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> Adult ya Minor — ek line me check</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_tern1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('tern1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('tern1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_tern1" onclick="runCell('tern1')">
+                            <div class="run-icon" id="runIcon_tern1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_tern1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_tern1" spellcheck="false"
+                            oninput="onCodeInput(this,'tern1')" onkeydown="handleKeydown(event,'tern1')">age = 16
+
+# Normal if-else (4 lines)
+# if age >= 18:
+#     status = "Adult"
+# else:
+#     status = "Minor"
+
+# Shorthand if-else (1 line) - same kaam
+status = "Adult" if age >= 18 else "Minor"
+
+print("Status:", status)</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_tern1">
+                    <div class="output-header">
+                        <span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_tern1"></span>
+                            <button class="clear-btn" onclick="clearOutput('tern1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_tern1"></div>
+                    <div class="exec-time" id="execTime_tern1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> Max of two numbers — shorthand se</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_tern2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('tern2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('tern2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_tern2" onclick="runCell('tern2')">
+                            <div class="run-icon" id="runIcon_tern2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_tern2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_tern2" spellcheck="false"
+                            oninput="onCodeInput(this,'tern2')" onkeydown="handleKeydown(event,'tern2')">x = 50
+y = 80
+
+max_val = x if x > y else y
+print("Bada number:", max_val)
+
+# Even/Odd bhi shorthand se
+n = 14
+result = "Even" if n % 2 == 0 else "Odd"
+print(n, "is", result)</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_tern2">
+                    <div class="output-header">
+                        <span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_tern2"></span>
+                            <button class="clear-btn" onclick="clearOutput('tern2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_tern2"></div>
+                    <div class="exec-time" id="execTime_tern2"></div>
+                </div>
+            </div></div>
+
+            <br><hr><br>
+
+            <!-- Quick Summary -->
+            <h4>Quick Summary — if-else ek nazar me</h4>
+            <div style="overflow-x:auto; margin: 20px 0;">
+                <table class="table table-bordered table-striped" style="font-size:17px;">
+                    <thead class="table-dark">
+                        <tr><th>Type</th><th>Use Kab Karo</th><th>Example</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>if</td><td>Sirf ek condition check karni ho</td><td>if age &gt;= 18:</td></tr>
+                        <tr><td>if-else</td><td>Do raste — True ya False</td><td>if pass: ... else: ...</td></tr>
+                        <tr><td>if-elif-else</td><td>2 se zyada conditions</td><td>Grades, menus, etc.</td></tr>
+                        <tr><td>Nested if</td><td>Condition ke andar condition</td><td>Login check, etc.</td></tr>
+                        <tr><td>Shorthand</td><td>Simple ek-line condition</td><td>x = "A" if n&gt;90 else "B"</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <br>
+
+            <!-- CTA Row -->
+            <div class="cta-row">
+                <a href="/py_components/py_datatypes.html" class="outline-btn">Previous</a>
+                <a href="/py_components/py_while.html" class="start-btn">
+                    Next
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
+                    </svg>
+                </a>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark py-4 mt-5">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-12">
+                    <h6 style="color: #adb5bd; margin-bottom: 0;">© 2026 Codepth . All Rights Reserved.</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SHARED CELL SCRIPT -->
+    <script>
+        const execCounts = {};
+
+        function getExecCount(id) {
+            if (!execCounts[id]) execCounts[id] = 1;
+            return execCounts[id];
+        }
+
+        function syncLines(ta, id) {
+            const lines = ta.value.split('\n').length;
+            const nums = Array.from({ length: lines }, (_, i) => i + 1).join('\n');
+            document.getElementById('lineNums_' + id).textContent = nums;
+        }
+
+        function autoResize(ta) {
+            ta.style.height = 'auto';
+            ta.style.height = ta.scrollHeight + 'px';
+        }
+
+        function onCodeInput(ta, id) {
+            autoResize(ta);
+            syncLines(ta, id);
+        }
+
+        function handleKeydown(e, id) {
+            if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+                e.preventDefault();
+                runCell(id);
+            }
+            if (e.key === 'Tab') {
+                e.preventDefault();
+                const ta = e.target;
+                const s = ta.selectionStart, end = ta.selectionEnd;
+                ta.value = ta.value.substring(0, s) + '    ' + ta.value.substring(end);
+                ta.selectionStart = ta.selectionEnd = s + 4;
+                syncLines(ta, id);
+            }
+        }
+
+        function copyCode(id) {
+            const code = document.getElementById('codeInput_' + id).value;
+            navigator.clipboard.writeText(code).catch(() => {});
+        }
+
+        function clearOutput(id) {
+            document.getElementById('outputSection_' + id).classList.remove('show');
+        }
+
+        function runCell(id) {
+            const code = document.getElementById('codeInput_' + id).value;
+            const btn  = document.getElementById('runBtn_' + id);
+            const icon = document.getElementById('runIcon_' + id);
+
+            btn.classList.add('running');
+            icon.className = 'run-icon spin';
+            btn.disabled = true;
+
+            setTimeout(() => {
+                const t0 = performance.now();
+                const printLines = [];
+                const fakePrint = (...args) => { printLines.push(args.map(String).join(' ')); };
+
+                let result;
+                let isError = false;
+                let errMsg = '';
+
+                try {
+                    const wrapped = code.replace(/\bprint\s*\(/g, '__print__(');
+                    const fn = new Function('__print__', wrapped);
+                    result = fn(fakePrint);
+                } catch (e) {
+                    isError = true;
+                    errMsg = e.toString();
+                }
+
+                const elapsed = (performance.now() - t0).toFixed(1);
+                const count = getExecCount(id);
+
+                const sec    = document.getElementById('outputSection_' + id);
+                const body   = document.getElementById('outputBody_' + id);
+                const status = document.getElementById('outputStatus_' + id);
+                const timeEl = document.getElementById('execTime_' + id);
+
+                if (isError) {
+                    body.textContent   = errMsg;
+                    body.className     = 'output-body error';
+                    status.textContent = '✗ Error';
+                    status.className   = 'output-status err';
+                } else {
+                    let out = printLines.join('\n');
+                    if (!out && result !== undefined) out = String(result);
+                    if (!out) out = '(no output)';
+                    body.textContent   = out;
+                    body.className     = 'output-body';
+                    status.textContent = '✓ OK';
+                    status.className   = 'output-status ok';
+                }
+
+                timeEl.textContent = `Executed in ${elapsed}ms  ·  In [${count}]`;
+                document.getElementById('cellNum_' + id).textContent = `In [${count}]:`;
+                execCounts[id] = count + 1;
+
+                sec.classList.add('show');
+                btn.classList.remove('running');
+                icon.className = 'run-icon';
+                btn.disabled   = false;
+            }, 120);
+        }
+
+        window.addEventListener('load', () => {
+            document.querySelectorAll('.code-input').forEach(ta => {
+                autoResize(ta);
+                const id = ta.id.replace('codeInput_', '');
+                syncLines(ta, id);
+            });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Tutorial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="py_download.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-5 col-md-6">
+                    <img src="/img/codepth_logo_2.png" class="img-fluid" height="70" width="170" alt="Codepth Logo">
+                </div>
+                <div class="col-7 col-md-6">
+                    <div class="input-group">
+                        <input class="form-control" type="text" placeholder="Search....">
+                        <button class="btn btn-success" type="button">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- TOP NAVBAR -->
+    <nav class="navbar navbar-expand-lg top-navbar">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="/home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/Python.html">Python</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/mysql.html">MySQL</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/dsa.html">DSA</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/ml.html">Machine Learning</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/dl.html">Deep Learning</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE BODY -->
+    <div class="page-wrapper">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <span class="sidebar-title">Python Tutorial</span>
+            <ul>
+                <li class="active"><a href="/py_components/Py_downloads.html">Python Download</a></li>
+                <li><a href="/py_components/py_intro.html">Python Intro <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_keywords.html">Python Keywords <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_variables.html">Python Variables <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_operators.html">Python Operators <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_datatypes.html">Python Data types <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_if_else.html">Python If-else...<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_while.html">Python While Loops <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_for.html">Python For Loops<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_string.html">Python Strings<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_list.html">Python List <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_tuple.html">Python Tuples <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_sets.html">Python Sets <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_dict.html">Python Dictionaries <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_function.html">Python Functions <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_recursion.html">Python Recursion <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_lamda.html">Python Lamda Function <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_OOP.html">Python OOP<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_file_handling.html">Python File Handling<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_exception_handling.html">Python Exception Handling<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_REGEXP.html">Python REGEXP<span class="arrow">▼</span></a></li>
+            </ul>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <h1>Operators kya hote hai ?</h1>
+            <hr>
+
+            <p style="font-size: 19px;">Operators kuch <b>symbols (Ex :- "+, -, *, /")</b> hai jo programming me
+                <b>variables par kuch operations karte hai</b>. Operators ka use
+                <b>calculations ya comparisons</b> karne ke liye hota hai.
+            </p>
+
+            <p style="font-size: 19px;">Python me mainly <b>7 types ke operators</b> hote hai :-</p>
+            <ul style="font-size: 18px; margin-left: 40px; line-height: 2;">
+                <li>1. Arithmetic Operators</li>
+                <li>2. Comparison (Relational) Operators</li>
+                <li>3. Assignment Operators</li>
+                <li>4. Logical Operators</li>
+                <li>5. Bitwise Operators</li>
+                <li>6. Membership Operators</li>
+                <li>7. Identity Operators</li>
+            </ul>
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 1. ARITHMETIC OPERATORS       -->
+            <!-- ============================= -->
+            <h1>1. Arithmetic Operators</h1>
+            <p style="font-size: 19px;">Ye operators <b>mathematical calculations</b> karne ke liye use hote hain.
+                <b>Operators:</b> +, -, *, /, %, //, **
+            </p>
+
+            <div style="overflow-x:auto; margin: 20px 0;">
+                <table class="table table-bordered table-striped" style="font-size:17px;">
+                    <thead class="table-dark">
+                        <tr><th>Operator</th><th>Naam</th><th>Example</th><th>Result</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>+</td><td>Addition</td><td>10 + 3</td><td>13</td></tr>
+                        <tr><td>-</td><td>Subtraction</td><td>10 - 3</td><td>7</td></tr>
+                        <tr><td>*</td><td>Multiplication</td><td>10 * 3</td><td>30</td></tr>
+                        <tr><td>/</td><td>Division</td><td>10 / 3</td><td>3.333...</td></tr>
+                        <tr><td>%</td><td>Modulus</td><td>10 % 3</td><td>1</td></tr>
+                        <tr><td>//</td><td>Floor Division</td><td>10 // 3</td><td>3</td></tr>
+                        <tr><td>**</td><td>Exponentiation</td><td>10 ** 3</td><td>1000</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Cell 1 - Basic arithmetic -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> Addition, Subtraction, Multiplication aur Division</p>
+            <div class="nb-shell"><div class="cell" id="cell_arith1">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_arith1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('arith1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('arith1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_arith1" onclick="runCell('arith1')">
+                            <div class="run-icon" id="runIcon_arith1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_arith1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_arith1" spellcheck="false"
+                            oninput="onCodeInput(this,'arith1')" onkeydown="handleKeydown(event,'arith1')"
+                            placeholder="# Write Python here…">a = 10
+b = 3
+
+print("Addition:", a + b)
+print("Subtraction:", a - b)
+print("Multiplication:", a * b)
+print("Division:", a / b)</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_arith1">
+                    <div class="output-header">
+                        <span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_arith1"></span>
+                            <button class="clear-btn" onclick="clearOutput('arith1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_arith1"></div>
+                    <div class="exec-time" id="execTime_arith1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 - Modulus, Floor, Exponent -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> Modulus (%), Floor Division (//) aur Exponentiation (**)</p>
+            <div class="nb-shell"><div class="cell" id="cell_arith2">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_arith2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('arith2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('arith2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_arith2" onclick="runCell('arith2')">
+                            <div class="run-icon" id="runIcon_arith2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_arith2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_arith2" spellcheck="false"
+                            oninput="onCodeInput(this,'arith2')" onkeydown="handleKeydown(event,'arith2')"
+                            placeholder="# Write Python here…">a = 10
+b = 3
+
+# Modulus - remainder deta hai
+print("Modulus (%):", a % b)
+
+# Floor Division - integer result deta hai (decimal cut hota hai)
+print("Floor Division (//):", a // b)
+
+# Exponentiation - power calculate karta hai
+print("Exponentiation (**):", a ** b)</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_arith2">
+                    <div class="output-header">
+                        <span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_arith2"></span>
+                            <button class="clear-btn" onclick="clearOutput('arith2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_arith2"></div>
+                    <div class="exec-time" id="execTime_arith2"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 2. COMPARISON OPERATORS       -->
+            <!-- ============================= -->
+            <h1>2. Comparison (Relational) Operators</h1>
+            <p style="font-size: 19px;">Ye operators <b>do values ko compare</b> karte hain aur result hamesha
+                <b>True ya False</b> (Boolean) hota hai.
+                <b>Operators:</b> ==, !=, &gt;, &lt;, &gt;=, &lt;=
+            </p>
+
+            <div style="overflow-x:auto; margin: 20px 0;">
+                <table class="table table-bordered table-striped" style="font-size:17px;">
+                    <thead class="table-dark">
+                        <tr><th>Operator</th><th>Matlab</th><th>Example</th><th>Result</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>==</td><td>Equal to</td><td>5 == 5</td><td>True</td></tr>
+                        <tr><td>!=</td><td>Not equal to</td><td>5 != 3</td><td>True</td></tr>
+                        <tr><td>&gt;</td><td>Greater than</td><td>5 &gt; 3</td><td>True</td></tr>
+                        <tr><td>&lt;</td><td>Less than</td><td>5 &lt; 3</td><td>False</td></tr>
+                        <tr><td>&gt;=</td><td>Greater than or equal</td><td>5 &gt;= 5</td><td>True</td></tr>
+                        <tr><td>&lt;=</td><td>Less than or equal</td><td>5 &lt;= 3</td><td>False</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Cell 1 - == and != -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> Equal (==) aur Not Equal (!=)</p>
+            <div class="nb-shell"><div class="cell" id="cell_comp1">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_comp1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('comp1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('comp1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_comp1" onclick="runCell('comp1')">
+                            <div class="run-icon" id="runIcon_comp1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_comp1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_comp1" spellcheck="false"
+                            oninput="onCodeInput(this,'comp1')" onkeydown="handleKeydown(event,'comp1')"
+                            placeholder="# Write Python here…">x = 5
+y = 10
+
+print("x == y:", x == y)   # Kya x aur y equal hain?
+print("x != y:", x != y)   # Kya x aur y unequal hain?
+print("x == 5:", x == 5)   # Kya x, 5 ke barabar hai?</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_comp1">
+                    <div class="output-header">
+                        <span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_comp1"></span>
+                            <button class="clear-btn" onclick="clearOutput('comp1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_comp1"></div>
+                    <div class="exec-time" id="execTime_comp1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 - >, <, >=, <= -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> Greater / Less than Operators</p>
+            <div class="nb-shell"><div class="cell" id="cell_comp2">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_comp2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('comp2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('comp2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_comp2" onclick="runCell('comp2')">
+                            <div class="run-icon" id="runIcon_comp2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_comp2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_comp2" spellcheck="false"
+                            oninput="onCodeInput(this,'comp2')" onkeydown="handleKeydown(event,'comp2')"
+                            placeholder="# Write Python here…">a = 8
+b = 5
+
+print("a > b :", a > b)    # a bada hai b se?
+print("a < b :", a < b)    # a chota hai b se?
+print("a >= 8:", a >= 8)   # a, 8 se bada ya barabar?
+print("b <= 4:", b <= 4)   # b, 4 se chota ya barabar?</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_comp2">
+                    <div class="output-header">
+                        <span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_comp2"></span>
+                            <button class="clear-btn" onclick="clearOutput('comp2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_comp2"></div>
+                    <div class="exec-time" id="execTime_comp2"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 3. ASSIGNMENT OPERATORS       -->
+            <!-- ============================= -->
+            <h1>3. Assignment Operators</h1>
+            <p style="font-size: 19px;">Ye operators <b>variable me value assign</b> karne ke liye use hote hain.
+                <b>=</b> simple assignment hai, baaki shorthand hain jaise <b>+=, -=, *=</b> etc.
+            </p>
+
+            <div style="overflow-x:auto; margin: 20px 0;">
+                <table class="table table-bordered table-striped" style="font-size:17px;">
+                    <thead class="table-dark">
+                        <tr><th>Operator</th><th>Example</th><th>Matlab</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>=</td><td>x = 5</td><td>x me 5 assign karo</td></tr>
+                        <tr><td>+=</td><td>x += 3</td><td>x = x + 3</td></tr>
+                        <tr><td>-=</td><td>x -= 3</td><td>x = x - 3</td></tr>
+                        <tr><td>*=</td><td>x *= 3</td><td>x = x * 3</td></tr>
+                        <tr><td>/=</td><td>x /= 3</td><td>x = x / 3</td></tr>
+                        <tr><td>%=</td><td>x %= 3</td><td>x = x % 3</td></tr>
+                        <tr><td>//=</td><td>x //= 3</td><td>x = x // 3</td></tr>
+                        <tr><td>**=</td><td>x **= 3</td><td>x = x ** 3</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Cell 1 - = and += -= -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> Simple aur Compound Assignment (+=, -=)</p>
+            <div class="nb-shell"><div class="cell" id="cell_assign1">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_assign1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('assign1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('assign1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_assign1" onclick="runCell('assign1')">
+                            <div class="run-icon" id="runIcon_assign1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_assign1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_assign1" spellcheck="false"
+                            oninput="onCodeInput(this,'assign1')" onkeydown="handleKeydown(event,'assign1')"
+                            placeholder="# Write Python here…">x = 10
+print("Initial x:", x)
+
+x += 5       # x = x + 5
+print("After x += 5 :", x)
+
+x -= 3       # x = x - 3
+print("After x -= 3 :", x)</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_assign1">
+                    <div class="output-header">
+                        <span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_assign1"></span>
+                            <button class="clear-btn" onclick="clearOutput('assign1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_assign1"></div>
+                    <div class="exec-time" id="execTime_assign1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 - *=, /=, **= -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> Multiply, Divide aur Power Assignment (*=, /=, **=)</p>
+            <div class="nb-shell"><div class="cell" id="cell_assign2">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_assign2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('assign2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('assign2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_assign2" onclick="runCell('assign2')">
+                            <div class="run-icon" id="runIcon_assign2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_assign2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_assign2" spellcheck="false"
+                            oninput="onCodeInput(this,'assign2')" onkeydown="handleKeydown(event,'assign2')"
+                            placeholder="# Write Python here…">x = 4
+print("Initial x:", x)
+
+x *= 3       # x = x * 3
+print("After x *= 3 :", x)
+
+x /= 6       # x = x / 6
+print("After x /= 6 :", x)
+
+x = 2
+x **= 4      # x = x ** 4
+print("After x **= 4 :", x)</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_assign2">
+                    <div class="output-header">
+                        <span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_assign2"></span>
+                            <button class="clear-btn" onclick="clearOutput('assign2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_assign2"></div>
+                    <div class="exec-time" id="execTime_assign2"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 4. LOGICAL OPERATORS          -->
+            <!-- ============================= -->
+            <h1>4. Logical Operators</h1>
+            <p style="font-size: 19px;">Ye operators <b>multiple conditions ko combine</b> karne ke liye use hote hain.
+                Result hamesha <b>True ya False</b> hota hai.
+                <b>Operators:</b> and, or, not
+            </p>
+
+            <div style="overflow-x:auto; margin: 20px 0;">
+                <table class="table table-bordered table-striped" style="font-size:17px;">
+                    <thead class="table-dark">
+                        <tr><th>Operator</th><th>Matlab</th><th>Example</th><th>Result</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>and</td><td>Dono conditions True hon tabhi True</td><td>True and False</td><td>False</td></tr>
+                        <tr><td>or</td><td>Koi ek condition True ho toh True</td><td>True or False</td><td>True</td></tr>
+                        <tr><td>not</td><td>Condition ko ulta kar deta hai</td><td>not True</td><td>False</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Cell 1 - and, or -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> and aur or Operator</p>
+            <div class="nb-shell"><div class="cell" id="cell_logic1">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_logic1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('logic1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('logic1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_logic1" onclick="runCell('logic1')">
+                            <div class="run-icon" id="runIcon_logic1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_logic1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_logic1" spellcheck="false"
+                            oninput="onCodeInput(this,'logic1')" onkeydown="handleKeydown(event,'logic1')"
+                            placeholder="# Write Python here…">age = 20
+has_id = True
+
+# and - dono True hone chahiye
+print("Age > 18 and has_id:", age > 18 and has_id)
+
+# or - koi ek True ho toh bhi chalega
+is_member = False
+print("Age > 18 or is_member:", age > 18 or is_member)</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_logic1">
+                    <div class="output-header">
+                        <span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_logic1"></span>
+                            <button class="clear-btn" onclick="clearOutput('logic1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_logic1"></div>
+                    <div class="exec-time" id="execTime_logic1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 - not -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> not Operator</p>
+            <div class="nb-shell"><div class="cell" id="cell_logic2">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_logic2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('logic2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('logic2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_logic2" onclick="runCell('logic2')">
+                            <div class="run-icon" id="runIcon_logic2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_logic2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_logic2" spellcheck="false"
+                            oninput="onCodeInput(this,'logic2')" onkeydown="handleKeydown(event,'logic2')"
+                            placeholder="# Write Python here…">is_raining = False
+
+# not - value ko ulta kar deta hai
+print("is_raining:", is_raining)
+print("not is_raining:", not is_raining)
+
+x = 10
+print("not (x > 5):", not (x > 5))   # x > 5 True hai, not karne se False</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_logic2">
+                    <div class="output-header">
+                        <span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_logic2"></span>
+                            <button class="clear-btn" onclick="clearOutput('logic2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_logic2"></div>
+                    <div class="exec-time" id="execTime_logic2"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 5. BITWISE OPERATORS          -->
+            <!-- ============================= -->
+            <h1>5. Bitwise Operators</h1>
+            <p style="font-size: 19px;">Ye operators <b>binary level par (bits pe) kaam</b> karte hain. Ye advanced
+                programming aur low-level operations me use hote hain.
+                <b>Operators:</b> &amp;, |, ^, ~, &lt;&lt;, &gt;&gt;
+            </p>
+
+            <div style="overflow-x:auto; margin: 20px 0;">
+                <table class="table table-bordered table-striped" style="font-size:17px;">
+                    <thead class="table-dark">
+                        <tr><th>Operator</th><th>Naam</th><th>Example (a=5, b=3)</th><th>Result</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>&amp;</td><td>AND</td><td>5 &amp; 3</td><td>1</td></tr>
+                        <tr><td>|</td><td>OR</td><td>5 | 3</td><td>7</td></tr>
+                        <tr><td>^</td><td>XOR</td><td>5 ^ 3</td><td>6</td></tr>
+                        <tr><td>~</td><td>NOT</td><td>~5</td><td>-6</td></tr>
+                        <tr><td>&lt;&lt;</td><td>Left Shift</td><td>5 &lt;&lt; 1</td><td>10</td></tr>
+                        <tr><td>&gt;&gt;</td><td>Right Shift</td><td>5 &gt;&gt; 1</td><td>2</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Cell 1 - &, |, ^ -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> AND (&amp;), OR (|) aur XOR (^)</p>
+            <div class="nb-shell"><div class="cell" id="cell_bit1">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_bit1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('bit1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('bit1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_bit1" onclick="runCell('bit1')">
+                            <div class="run-icon" id="runIcon_bit1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_bit1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_bit1" spellcheck="false"
+                            oninput="onCodeInput(this,'bit1')" onkeydown="handleKeydown(event,'bit1')"
+                            placeholder="# Write Python here…">a = 5   # Binary: 0101
+b = 3   # Binary: 0011
+
+print("a & b (AND):", a & b)   # 0001 = 1
+print("a | b (OR) :", a | b)   # 0111 = 7
+print("a ^ b (XOR):", a ^ b)   # 0110 = 6</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_bit1">
+                    <div class="output-header">
+                        <span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_bit1"></span>
+                            <button class="clear-btn" onclick="clearOutput('bit1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_bit1"></div>
+                    <div class="exec-time" id="execTime_bit1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 - ~, <<, >> -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> NOT (~), Left Shift (&lt;&lt;) aur Right Shift (&gt;&gt;)</p>
+            <div class="nb-shell"><div class="cell" id="cell_bit2">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_bit2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('bit2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('bit2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_bit2" onclick="runCell('bit2')">
+                            <div class="run-icon" id="runIcon_bit2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_bit2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_bit2" spellcheck="false"
+                            oninput="onCodeInput(this,'bit2')" onkeydown="handleKeydown(event,'bit2')"
+                            placeholder="# Write Python here…">a = 5   # Binary: 0101
+
+print("~a (NOT)         :", ~a)       # -(a+1) = -6
+print("a << 1 (Left)    :", a << 1)   # 1010 = 10 (multiply by 2)
+print("a >> 1 (Right)   :", a >> 1)   # 0010 = 2  (divide by 2)</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_bit2">
+                    <div class="output-header">
+                        <span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_bit2"></span>
+                            <button class="clear-btn" onclick="clearOutput('bit2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_bit2"></div>
+                    <div class="exec-time" id="execTime_bit2"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 6. MEMBERSHIP OPERATORS       -->
+            <!-- ============================= -->
+            <h1>6. Membership Operators</h1>
+            <p style="font-size: 19px;">Ye operators check karte hain ki koi <b>value sequence me hai ya nahi</b>
+                (jaise list, string, tuple, etc.).
+                <b>Operators:</b> in, not in
+            </p>
+
+            <div style="overflow-x:auto; margin: 20px 0;">
+                <table class="table table-bordered table-striped" style="font-size:17px;">
+                    <thead class="table-dark">
+                        <tr><th>Operator</th><th>Matlab</th><th>Example</th><th>Result</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>in</td><td>Value present hai sequence me</td><td>"a" in "apple"</td><td>True</td></tr>
+                        <tr><td>not in</td><td>Value present nahi hai sequence me</td><td>"z" not in "apple"</td><td>True</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Cell 1 - in with list -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> List me "in" operator</p>
+            <div class="nb-shell"><div class="cell" id="cell_mem1">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_mem1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('mem1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('mem1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_mem1" onclick="runCell('mem1')">
+                            <div class="run-icon" id="runIcon_mem1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_mem1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_mem1" spellcheck="false"
+                            oninput="onCodeInput(this,'mem1')" onkeydown="handleKeydown(event,'mem1')"
+                            placeholder="# Write Python here…">fruits = ["apple", "banana", "mango"]
+
+print("apple in fruits  :", "apple" in fruits)
+print("grapes in fruits :", "grapes" in fruits)
+print("grapes not in fruits:", "grapes" not in fruits)</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_mem1">
+                    <div class="output-header">
+                        <span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_mem1"></span>
+                            <button class="clear-btn" onclick="clearOutput('mem1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_mem1"></div>
+                    <div class="exec-time" id="execTime_mem1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 - in with string -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> String me "in" operator</p>
+            <div class="nb-shell"><div class="cell" id="cell_mem2">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_mem2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('mem2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('mem2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_mem2" onclick="runCell('mem2')">
+                            <div class="run-icon" id="runIcon_mem2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_mem2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_mem2" spellcheck="false"
+                            oninput="onCodeInput(this,'mem2')" onkeydown="handleKeydown(event,'mem2')"
+                            placeholder="# Write Python here…">sentence = "Python ek best language hai"
+
+print("'Python' in sentence :", "Python" in sentence)
+print("'Java' in sentence   :", "Java" in sentence)
+print("'Java' not in sentence:", "Java" not in sentence)</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_mem2">
+                    <div class="output-header">
+                        <span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_mem2"></span>
+                            <button class="clear-btn" onclick="clearOutput('mem2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_mem2"></div>
+                    <div class="exec-time" id="execTime_mem2"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 7. IDENTITY OPERATORS         -->
+            <!-- ============================= -->
+            <h1>7. Identity Operators</h1>
+            <p style="font-size: 19px;">Ye operators check karte hain ki <b>do variables same memory location</b> ko
+                point kar rahe hain ya nahi. Sirf values nahi, <b>identity (object) compare</b> hoti hai.
+                <b>Operators:</b> is, is not
+            </p>
+
+            <div style="overflow-x:auto; margin: 20px 0;">
+                <table class="table table-bordered table-striped" style="font-size:17px;">
+                    <thead class="table-dark">
+                        <tr><th>Operator</th><th>Matlab</th><th>Example</th><th>Result</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>is</td><td>Dono same object hain?</td><td>a is b</td><td>True / False</td></tr>
+                        <tr><td>is not</td><td>Dono alag objects hain?</td><td>a is not b</td><td>True / False</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Cell 1 - is -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> "is" Operator</p>
+            <div class="nb-shell"><div class="cell" id="cell_iden1">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_iden1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('iden1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('iden1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_iden1" onclick="runCell('iden1')">
+                            <div class="run-icon" id="runIcon_iden1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_iden1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_iden1" spellcheck="false"
+                            oninput="onCodeInput(this,'iden1')" onkeydown="handleKeydown(event,'iden1')"
+                            placeholder="# Write Python here…">a = [1, 2, 3]
+b = a         # b aur a same object ko point kar rahe hain
+c = [1, 2, 3] # c alag object hai (same values, alag memory)
+
+print("a is b :", a is b)   # True - same object
+print("a is c :", a is c)   # False - alag objects</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_iden1">
+                    <div class="output-header">
+                        <span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_iden1"></span>
+                            <button class="clear-btn" onclick="clearOutput('iden1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_iden1"></div>
+                    <div class="exec-time" id="execTime_iden1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 - is not + == vs is difference -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> "is not" aur == vs is ka fark</p>
+            <div class="nb-shell"><div class="cell" id="cell_iden2">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_iden2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('iden2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('iden2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_iden2" onclick="runCell('iden2')">
+                            <div class="run-icon" id="runIcon_iden2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_iden2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_iden2" spellcheck="false"
+                            oninput="onCodeInput(this,'iden2')" onkeydown="handleKeydown(event,'iden2')"
+                            placeholder="# Write Python here…">x = [1, 2, 3]
+y = [1, 2, 3]
+
+# == sirf values compare karta hai
+print("x == y :", x == y)     # True - values same hain
+
+# is memory address compare karta hai
+print("x is y :", x is y)     # False - alag objects
+
+# is not
+print("x is not y:", x is not y)  # True - dono alag hain</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_iden2">
+                    <div class="output-header">
+                        <span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_iden2"></span>
+                            <button class="clear-btn" onclick="clearOutput('iden2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_iden2"></div>
+                    <div class="exec-time" id="execTime_iden2"></div>
+                </div>
+            </div></div>
+
+            <br><hr><br>
+
+            <!-- CTA Row -->
+            <div class="cta-row">
+                <a href="/py_components/py_variables.html" class="outline-btn">Previous</a>
+                <a href="/py_components/py_datatypes.html" class="start-btn">
+                    Next
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
+                    </svg>
+                </a>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark py-4 mt-5">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-12">
+                    <h6 style="color: #adb5bd; margin-bottom: 0;">© 2026 Codepth . All Rights Reserved.</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================= -->
+    <!-- SHARED CELL SCRIPT            -->
+    <!-- ============================= -->
+    <script>
+        const execCounts = {};
+
+        function getExecCount(id) {
+            if (!execCounts[id]) execCounts[id] = 1;
+            return execCounts[id];
+        }
+
+        function syncLines(ta, id) {
+            const lines = ta.value.split('\n').length;
+            const nums = Array.from({ length: lines }, (_, i) => i + 1).join('\n');
+            document.getElementById('lineNums_' + id).textContent = nums;
+        }
+
+        function autoResize(ta) {
+            ta.style.height = 'auto';
+            ta.style.height = ta.scrollHeight + 'px';
+        }
+
+        function onCodeInput(ta, id) {
+            autoResize(ta);
+            syncLines(ta, id);
+        }
+
+        function handleKeydown(e, id) {
+            if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+                e.preventDefault();
+                runCell(id);
+            }
+            if (e.key === 'Tab') {
+                e.preventDefault();
+                const ta = e.target;
+                const s = ta.selectionStart, end = ta.selectionEnd;
+                ta.value = ta.value.substring(0, s) + '    ' + ta.value.substring(end);
+                ta.selectionStart = ta.selectionEnd = s + 4;
+                syncLines(ta, id);
+            }
+        }
+
+        function copyCode(id) {
+            const code = document.getElementById('codeInput_' + id).value;
+            navigator.clipboard.writeText(code).catch(() => {});
+        }
+
+        function clearOutput(id) {
+            document.getElementById('outputSection_' + id).classList.remove('show');
+        }
+
+        function runCell(id) {
+            const code = document.getElementById('codeInput_' + id).value;
+            const btn  = document.getElementById('runBtn_' + id);
+            const icon = document.getElementById('runIcon_' + id);
+
+            btn.classList.add('running');
+            icon.className = 'run-icon spin';
+            btn.disabled = true;
+
+            setTimeout(() => {
+                const t0 = performance.now();
+                const printLines = [];
+                const fakePrint = (...args) => { printLines.push(args.map(String).join(' ')); };
+
+                let result;
+                let isError = false;
+                let errMsg = '';
+
+                try {
+                    const wrapped = code.replace(/\bprint\s*\(/g, '__print__(');
+                    const fn = new Function('__print__', wrapped);
+                    result = fn(fakePrint);
+                } catch (e) {
+                    isError = true;
+                    errMsg = e.toString();
+                }
+
+                const elapsed = (performance.now() - t0).toFixed(1);
+                const count = getExecCount(id);
+
+                const sec    = document.getElementById('outputSection_' + id);
+                const body   = document.getElementById('outputBody_' + id);
+                const status = document.getElementById('outputStatus_' + id);
+                const timeEl = document.getElementById('execTime_' + id);
+
+                if (isError) {
+                    body.textContent   = errMsg;
+                    body.className     = 'output-body error';
+                    status.textContent = '✗ Error';
+                    status.className   = 'output-status err';
+                } else {
+                    let out = printLines.join('\n');
+                    if (!out && result !== undefined) out = String(result);
+                    if (!out) out = '(no output)';
+                    body.textContent   = out;
+                    body.className     = 'output-body';
+                    status.textContent = '✓ OK';
+                    status.className   = 'output-status ok';
+                }
+
+                timeEl.textContent = `Executed in ${elapsed}ms  ·  In [${count}]`;
+                document.getElementById('cellNum_' + id).textContent = `In [${count}]:`;
+                execCounts[id] = count + 1;
+
+                sec.classList.add('show');
+                btn.classList.remove('running');
+                icon.className = 'run-icon';
+                btn.disabled   = false;
+            }, 120);
+        }
+
+        window.addEventListener('load', () => {
+            document.querySelectorAll('.code-input').forEach(ta => {
+                autoResize(ta);
+                const id = ta.id.replace('codeInput_', '');
+                syncLines(ta, id);
+            });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+</html>

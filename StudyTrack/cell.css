@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #07070f;
+    padding: 2rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.nb-shell {
+    font-family: 'Inter', sans-serif;
+    padding: 1.5rem 0;
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+/* ── Cell Wrapper ── */
+.cell {
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1.5px solid #2a2a3e;
+    background: #0f0f1a;
+    transition: border-color 0.2s;
+}
+
+.cell:focus-within {
+    border-color: #4d7fff;
+}
+
+/* ── Cell Header ── */
+.cell-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 16px;
+    background: #0a0a14;
+    border-bottom: 1px solid #1e1e30;
+}
+
+.cell-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* ── Language Badge ── */
+.lang-badge {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    font-weight: 600;
+    color: #7090ff;
+    background: rgba(77, 127, 255, 0.1);
+    border: 1px solid rgba(77, 127, 255, 0.25);
+    padding: 4px 10px;
+    border-radius: 6px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.lang-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #4d7fff;
+}
+
+.cell-meta {
+    font-size: 11px;
+    color: #444466;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+/* ── Action Buttons ── */
+.cell-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.action-btn {
+    background: none;
+    border: 1px solid #2a2a40;
+    color: #666688;
+    padding: 5px 10px;
+    border-radius: 7px;
+    font-size: 11px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.15s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.action-btn:hover {
+    background: #1a1a2e;
+    color: #9999cc;
+    border-color: #3a3a58;
+}
+
+/* ── Run Button ── */
+.run-btn {
+    background: #4d7fff;
+    border: none;
+    color: #fff;
+    padding: 6px 16px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    transition: all 0.15s;
+    letter-spacing: 0.01em;
+}
+
+.run-btn:hover {
+    background: #3366ee;
+    transform: translateY(-1px);
+}
+
+.run-btn:active {
+    transform: translateY(0);
+}
+
+.run-btn.running {
+    background: #2a4a99;
+    cursor: not-allowed;
+}
+
+/* ── Run Icon ── */
+.run-icon {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 0 5px 9px;
+    border-color: transparent transparent transparent #fff;
+}
+
+.run-icon.spin {
+    width: 12px;
+    height: 12px;
+    border-width: 0;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-top-color: #fff;
+    animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* ── Gutter + Line Numbers ── */
+.gutter {
+    display: flex;
+    background: #0c0c18;
+    border-right: 1px solid #1a1a2c;
+}
+
+.line-nums {
+    padding: 18px 12px 18px 16px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    line-height: 1.75;
+    color: #333355;
+    user-select: none;
+    text-align: right;
+    min-width: 46px;
+    white-space: pre;
+}
+
+/* ── Code Area ── */
+.code-area-wrap {
+    flex: 1;
+    background: #0f0f1a;
+    position: relative;
+}
+
+textarea.code-input {
+    width: 100%;
+    background: transparent;
+    color: #c8d3f5;
+    border: none;
+    outline: none;
+    padding: 18px 20px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13.5px;
+    line-height: 1.75;
+    resize: none;
+    caret-color: #7090ff;
+    tab-size: 4;
+    min-height: 80px;
+    overflow: hidden;
+    display: block;
+}
+
+/* ── Output Section ── */
+.output-section {
+    border-top: 1px solid #1a1a2c;
+    display: none;
+}
+
+.output-section.show {
+    display: block;
+}
+
+.output-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    background: #0a0a14;
+    border-bottom: 1px solid #151525;
+}
+
+.output-label {
+    font-size: 10.5px;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #444466;
+}
+
+.output-status {
+    font-size: 10.5px;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.output-status.ok  { color: #3ddc84; }
+.output-status.err { color: #ff6b6b; }
+
+.clear-btn {
+    background: none;
+    border: none;
+    color: #333355;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 0 2px;
+    line-height: 1;
+}
+
+.clear-btn:hover { color: #666688; }
+
+.output-body {
+    padding: 16px 20px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    line-height: 1.75;
+    color: #a6e3a1;
+    white-space: pre-wrap;
+    word-break: break-all;
+}
+
+
+.output-body.error { color: #ff8080; }
+
+.exec-time {
+    padding: 6px 20px 10px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10.5px;
+    color: #333355;
+}

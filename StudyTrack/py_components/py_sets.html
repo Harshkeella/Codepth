@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Tutorial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="py_download.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-5 col-md-6">
+                    <img src="/img/codepth_logo_2.png" class="img-fluid" height="70" width="170" alt="Codepth Logo">
+                </div>
+                <div class="col-7 col-md-6">
+                    <div class="input-group">
+                        <input class="form-control" type="text" placeholder="Search....">
+                        <button class="btn btn-success" type="button">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- TOP NAVBAR -->
+    <nav class="navbar navbar-expand-lg top-navbar">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="/home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/Python.html">Python</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/mysql.html">MySQL</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/dsa.html">DSA</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/ml.html">Machine Learning</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/dl.html">Deep Learning</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE BODY -->
+    <div class="page-wrapper">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <span class="sidebar-title">Python Tutorial</span>
+            <ul>
+                <li class="active"><a href="/py_components/Py_downloads.html">Python Download</a></li>
+                <li><a href="/py_components/py_intro.html">Python Intro <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_keywords.html">Python Keywords <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_variables.html">Python Variables <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_operators.html">Python Operators <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_datatypes.html">Python Data types <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_if_else.html">Python If-else...<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_while.html">Python While Loops <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_for.html">Python For Loops<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_string.html">Python Strings<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_list.html">Python List <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_tuple.html">Python Tuples <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_sets.html">Python Sets <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_dict.html">Python Dictionaries <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_function.html">Python Functions <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_recursion.html">Python Recursion <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_lamda.html">Python Lamda Function <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_OOP.html">Python OOP<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_file_handling.html">Python File Handling<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_exception_handling.html">Python Exception Handling<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_REGEXP.html">Python REGEXP<span class="arrow">▼</span></a></li>
+            </ul>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <h1>Python me Sets kya hote hain?</h1>
+            <hr>
+
+            <p style="font-size: 19px;">Set Python ka ek <b>unordered collection</b> hai jisme
+            <b>duplicate values nahi hoti</b>. Matlab agar aap same value baar baar daalo,
+            woh <b>sirf ek baar store hogi</b>. Set ka use mainly
+            <b>unique items store karne</b> aur <b>mathematical set operations</b>
+            (union, intersection, difference) ke liye hota hai.</p>
+
+            <p style="font-size: 19px;">Set ki <b>4 main khasiyatein</b> hain :-</p>
+            <ul style="font-size: 18px; margin-left: 40px; line-height: 2.2;">
+                <li><b>Unordered</b> — items ka koi fixed order nahi hota</li>
+                <li><b>No Duplicates</b> — same value sirf ek baar store hogi</li>
+                <li><b>Mutable</b> — items add ya remove ho sakte hain</li>
+                <li><b>Not Indexed</b> — index se access nahi kar sakte (s[0] nahi chalega)</li>
+            </ul>
+
+            <p style="font-size: 19px;">Is page me yeh sab sikhenge :-</p>
+            <ul style="font-size: 18px; margin-left: 40px; line-height: 2.2;">
+                <li>1. <b>Set banana aur basics</b></li>
+                <li>2. <b>Items add aur remove karna</b></li>
+                <li>3. <b>Set Operations</b> — union, intersection, difference, symmetric difference</li>
+                <li>4. <b>Set Methods</b> — subset, superset, disjoint</li>
+                <li>5. <b>Set Comprehension</b></li>
+                <li>6. <b>Frozen Set</b></li>
+            </ul>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 1. SET BANANA & BASICS        -->
+            <!-- ============================= -->
+            <h1>1. Set Banana aur Basics</h1>
+            <p style="font-size: 19px;">Set ko <b>curly brackets { }</b> me likha jaata hai.
+            <b>Note:</b> Empty set banane ke liye <b>set()</b> likhna padta hai —
+            sirf <b>{ }</b> likhne se empty <b>dictionary</b> ban jaati hai!</p>
+
+            <!-- Cell 1 -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> Set banana — duplicates automatic remove ho jaate hain</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_s1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('s1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('s1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_s1" onclick="runCell('s1')">
+                            <div class="run-icon" id="runIcon_s1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_s1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_s1" spellcheck="false"
+                            oninput="onCodeInput(this,'s1')" onkeydown="handleKeydown(event,'s1')">nums = {1, 2, 3, 2, 1, 4, 3, 5}   # duplicates hain
+print("Set:", nums)                # duplicates auto remove!
+print("Type:", type(nums))
+print("Length:", len(nums))
+
+# Empty set banana
+empty_set = set()
+print("Empty set:", empty_set)</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_s1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_s1"></span>
+                            <button class="clear-btn" onclick="clearOutput('s1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_s1"></div>
+                    <div class="exec-time" id="execTime_s1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> List se duplicates hatane ke liye set use karna</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_s2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('s2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('s2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_s2" onclick="runCell('s2')">
+                            <div class="run-icon" id="runIcon_s2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_s2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_s2" spellcheck="false"
+                            oninput="onCodeInput(this,'s2')" onkeydown="handleKeydown(event,'s2')">votes = ["Delhi", "Mumbai", "Delhi", "Chennai", "Mumbai", "Delhi"]
+print("Original list:", votes)
+print("Total votes:", len(votes))
+
+# Set se unique cities nikalo
+unique_cities = set(votes)
+print("Unique cities:", unique_cities)
+print("Unique count:", len(unique_cities))
+
+# Wapas list me convert
+unique_list = list(unique_cities)
+print("As list:", unique_list)</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_s2">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_s2"></span>
+                            <button class="clear-btn" onclick="clearOutput('s2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_s2"></div>
+                    <div class="exec-time" id="execTime_s2"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 3 -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 3:</b> Set indexed nahi hota — in operator se check karo</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_s3">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('s3')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('s3')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_s3" onclick="runCell('s3')">
+                            <div class="run-icon" id="runIcon_s3"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_s3">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_s3" spellcheck="false"
+                            oninput="onCodeInput(this,'s3')" onkeydown="handleKeydown(event,'s3')">fruits = {"apple", "mango", "banana", "grapes"}
+
+# in operator se membership check karo
+print("apple in fruits:", "apple" in fruits)
+print("pizza in fruits:", "pizza" in fruits)
+
+# Index se access nahi kar sakte — error aayega
+try:
+    print(fruits[0])
+except TypeError as e:
+    print("Error:", e)</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_s3">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_s3"></span>
+                            <button class="clear-btn" onclick="clearOutput('s3')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_s3"></div>
+                    <div class="exec-time" id="execTime_s3"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 2. ADD & REMOVE               -->
+            <!-- ============================= -->
+            <h1>2. Items Add aur Remove Karna</h1>
+            <p style="font-size: 19px;">Set me items <b>add()</b> aur <b>update()</b> se add hote hain,
+            aur <b>remove()</b>, <b>discard()</b>, <b>pop()</b> se remove hote hain.</p>
+
+            <div style="overflow-x:auto; margin: 20px 0;">
+                <table class="table table-bordered table-striped" style="font-size:17px;">
+                    <thead class="table-dark">
+                        <tr><th>Method</th><th>Kaam</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>add(x)</td><td>Ek item add karta hai</td></tr>
+                        <tr><td>update(iterable)</td><td>Multiple items add karta hai</td></tr>
+                        <tr><td>remove(x)</td><td>Item remove — nahi mila toh KeyError</td></tr>
+                        <tr><td>discard(x)</td><td>Item remove — nahi mila toh koi error nahi</td></tr>
+                        <tr><td>pop()</td><td>Koi bhi ek random item remove karke return</td></tr>
+                        <tr><td>clear()</td><td>Saare items hata deta hai</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Cell 1 -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> add() aur update()</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_ar1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('ar1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('ar1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_ar1" onclick="runCell('ar1')">
+                            <div class="run-icon" id="runIcon_ar1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_ar1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_ar1" spellcheck="false"
+                            oninput="onCodeInput(this,'ar1')" onkeydown="handleKeydown(event,'ar1')">languages = {"Python", "Java"}
+print("Before:", languages)
+
+languages.add("C++")
+print("After add:", languages)
+
+languages.update(["Go", "Rust", "Python"])  # Python duplicate nahi hoga
+print("After update:", languages)</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_ar1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_ar1"></span>
+                            <button class="clear-btn" onclick="clearOutput('ar1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_ar1"></div>
+                    <div class="exec-time" id="execTime_ar1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> remove() vs discard() — fark samjho</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_ar2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('ar2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('ar2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_ar2" onclick="runCell('ar2')">
+                            <div class="run-icon" id="runIcon_ar2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_ar2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_ar2" spellcheck="false"
+                            oninput="onCodeInput(this,'ar2')" onkeydown="handleKeydown(event,'ar2')">s = {"apple", "banana", "mango"}
+
+s.remove("banana")          # exists — theek se remove
+print("After remove:", s)
+
+s.discard("grapes")         # exist nahi karta — phir bhi error nahi!
+print("After discard (grapes):", s)
+
+# remove karo jo exist nahi karta — KeyError
+try:
+    s.remove("grapes")
+except KeyError as e:
+    print("remove() Error:", e)</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_ar2">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_ar2"></span>
+                            <button class="clear-btn" onclick="clearOutput('ar2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_ar2"></div>
+                    <div class="exec-time" id="execTime_ar2"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 3 -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 3:</b> pop() aur clear()</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_ar3">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('ar3')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('ar3')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_ar3" onclick="runCell('ar3')">
+                            <div class="run-icon" id="runIcon_ar3"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_ar3">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_ar3" spellcheck="false"
+                            oninput="onCodeInput(this,'ar3')" onkeydown="handleKeydown(event,'ar3')">s = {10, 20, 30, 40, 50}
+print("Original:", s)
+
+popped = s.pop()   # random item remove hoga
+print("Popped item:", popped)
+print("After pop:", s)
+
+s.clear()
+print("After clear:", s)</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_ar3">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_ar3"></span>
+                            <button class="clear-btn" onclick="clearOutput('ar3')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_ar3"></div>
+                    <div class="exec-time" id="execTime_ar3"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 3. SET OPERATIONS             -->
+            <!-- ============================= -->
+            <h1>3. Set Operations</h1>
+            <p style="font-size: 19px;">Set ka sabse powerful feature hai <b>mathematical operations</b>.
+            Ye operations <b>operators</b> se bhi ho sakti hain aur <b>methods</b> se bhi.</p>
+
+            <div style="overflow-x:auto; margin: 20px 0;">
+                <table class="table table-bordered table-striped" style="font-size:17px;">
+                    <thead class="table-dark">
+                        <tr><th>Operation</th><th>Operator</th><th>Method</th><th>Matlab</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Union</td><td>a | b</td><td>a.union(b)</td><td>Dono sets ke saare items</td></tr>
+                        <tr><td>Intersection</td><td>a &amp; b</td><td>a.intersection(b)</td><td>Sirf common items</td></tr>
+                        <tr><td>Difference</td><td>a - b</td><td>a.difference(b)</td><td>a me jo b me nahi</td></tr>
+                        <tr><td>Symmetric Diff</td><td>a ^ b</td><td>a.symmetric_difference(b)</td><td>Dono me exclusive items</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Cell 1 -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> Union (|) aur Intersection (&amp;)</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_op1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('op1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('op1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_op1" onclick="runCell('op1')">
+                            <div class="run-icon" id="runIcon_op1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_op1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_op1" spellcheck="false"
+                            oninput="onCodeInput(this,'op1')" onkeydown="handleKeydown(event,'op1')">maths   = {"Rahul", "Priya", "Arjun", "Neha"}
+science = {"Priya", "Vikram", "Neha", "Sana"}
+
+# Union — dono classes ke saare students
+all_students = maths | science
+print("Union (|):", all_students)
+
+# Intersection — dono classes me common students
+both = maths & science
+print("Intersection (&):", both)</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_op1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_op1"></span>
+                            <button class="clear-btn" onclick="clearOutput('op1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_op1"></div>
+                    <div class="exec-time" id="execTime_op1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> Difference (-) aur Symmetric Difference (^)</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_op2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('op2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('op2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_op2" onclick="runCell('op2')">
+                            <div class="run-icon" id="runIcon_op2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_op2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_op2" spellcheck="false"
+                            oninput="onCodeInput(this,'op2')" onkeydown="handleKeydown(event,'op2')">a = {1, 2, 3, 4, 5}
+b = {3, 4, 5, 6, 7}
+
+# Difference — a me jo b me nahi hain
+print("a - b:", a - b)   # {1, 2}
+print("b - a:", b - a)   # {6, 7}
+
+# Symmetric Difference — jo sirf ek me hain
+print("a ^ b:", a ^ b)   # {1, 2, 6, 7}</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_op2">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_op2"></span>
+                            <button class="clear-btn" onclick="clearOutput('op2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_op2"></div>
+                    <div class="exec-time" id="execTime_op2"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 3 -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 3:</b> Real-life — do websites ke common visitors</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_op3">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('op3')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('op3')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_op3" onclick="runCell('op3')">
+                            <div class="run-icon" id="runIcon_op3"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_op3">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_op3" spellcheck="false"
+                            oninput="onCodeInput(this,'op3')" onkeydown="handleKeydown(event,'op3')">site_A = {"user1", "user2", "user3", "user4", "user5"}
+site_B = {"user3", "user4", "user5", "user6", "user7"}
+
+print("Dono pe aaye   :", site_A & site_B)
+print("Sirf A pe aaye :", site_A - site_B)
+print("Sirf B pe aaye :", site_B - site_A)
+print("Total unique   :", site_A | site_B)</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_op3">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_op3"></span>
+                            <button class="clear-btn" onclick="clearOutput('op3')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_op3"></div>
+                    <div class="exec-time" id="execTime_op3"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 4. SET METHODS                -->
+            <!-- ============================= -->
+            <h1>4. Set Methods — Subset, Superset aur In-place Operations</h1>
+            <p style="font-size: 19px;">Set ke kuch aur useful methods hain — check karne ke liye ki
+            ek set doosre ka <b>subset ya superset</b> hai, aur <b>in-place update</b> ke liye.</p>
+
+            <!-- Cell 1 -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> issubset(), issuperset(), isdisjoint()</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_m1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('m1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('m1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_m1" onclick="runCell('m1')">
+                            <div class="run-icon" id="runIcon_m1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_m1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_m1" spellcheck="false"
+                            oninput="onCodeInput(this,'m1')" onkeydown="handleKeydown(event,'m1')">all_students = {"Rahul", "Priya", "Arjun", "Neha", "Vikram"}
+top_students = {"Priya", "Arjun"}
+other_class  = {"Riya", "Amit"}
+
+# issubset — kya top_students, all_students ka hissa hai?
+print("top subset of all?   :", top_students.issubset(all_students))
+
+# issuperset — kya all_students top ko cover karta hai?
+print("all superset of top? :", all_students.issuperset(top_students))
+
+# isdisjoint — kya dono me koi common item nahi?
+print("all & other disjoint?:", all_students.isdisjoint(other_class))</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_m1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_m1"></span>
+                            <button class="clear-btn" onclick="clearOutput('m1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_m1"></div>
+                    <div class="exec-time" id="execTime_m1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> intersection_update() aur difference_update()</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_m2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('m2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('m2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_m2" onclick="runCell('m2')">
+                            <div class="run-icon" id="runIcon_m2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_m2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_m2" spellcheck="false"
+                            oninput="onCodeInput(this,'m2')" onkeydown="handleKeydown(event,'m2')">a = {1, 2, 3, 4, 5}
+b = {3, 4, 5, 6, 7}
+
+# intersection_update — a ko sirf common items tak ghata do (in-place)
+a.intersection_update(b)
+print("After intersection_update:", a)   # {3, 4, 5}
+
+x = {1, 2, 3, 4, 5}
+y = {3, 4}
+# difference_update — x se y ke items hata do (in-place)
+x.difference_update(y)
+print("After difference_update:", x)     # {1, 2, 5}</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_m2">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_m2"></span>
+                            <button class="clear-btn" onclick="clearOutput('m2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_m2"></div>
+                    <div class="exec-time" id="execTime_m2"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 5. SET COMPREHENSION          -->
+            <!-- ============================= -->
+            <h1>5. Set Comprehension</h1>
+            <p style="font-size: 19px;">List comprehension ki tarah <b>Set Comprehension</b> bhi hoti hai —
+            ek line me set banana with conditions.
+            Automatically duplicates remove ho jaate hain.</p>
+
+            <!-- Cell 1 -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> Squares ka set — duplicates hatenge automatically</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_sc1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('sc1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('sc1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_sc1" onclick="runCell('sc1')">
+                            <div class="run-icon" id="runIcon_sc1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_sc1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_sc1" spellcheck="false"
+                            oninput="onCodeInput(this,'sc1')" onkeydown="handleKeydown(event,'sc1')">nums = [-3, -2, -1, 0, 1, 2, 3]
+
+# -2 aur 2 dono ka square 4 hai — sirf ek store hoga
+squares = {n ** 2 for n in nums}
+print("Squares set:", squares)
+
+# Sirf even squares
+even_sq = {n**2 for n in range(1, 11) if n % 2 == 0}
+print("Even squares:", even_sq)</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_sc1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_sc1"></span>
+                            <button class="clear-btn" onclick="clearOutput('sc1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_sc1"></div>
+                    <div class="exec-time" id="execTime_sc1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> Sentence se unique words nikalna</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_sc2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('sc2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('sc2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_sc2" onclick="runCell('sc2')">
+                            <div class="run-icon" id="runIcon_sc2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_sc2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_sc2" spellcheck="false"
+                            oninput="onCodeInput(this,'sc2')" onkeydown="handleKeydown(event,'sc2')">sentence = "to be or not to be that is the question to be"
+
+unique_words = {word for word in sentence.split()}
+print("Unique words:", unique_words)
+print("Total unique:", len(unique_words))</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_sc2">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_sc2"></span>
+                            <button class="clear-btn" onclick="clearOutput('sc2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_sc2"></div>
+                    <div class="exec-time" id="execTime_sc2"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 6. FROZENSET                  -->
+            <!-- ============================= -->
+            <h1>6. Frozen Set</h1>
+            <p style="font-size: 19px;"><b>frozenset</b> ek <b>immutable set</b> hai — yaani ek baar banane ke
+            baad isme koi change nahi ho sakta. Yeh bilkul waise hai jaise tuple, list ka immutable version hota hai.
+            frozenset ko <b>dictionary key</b> ke roop me bhi use kar sakte hain (normal set nahi).</p>
+
+            <!-- Cell 1 -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> frozenset banana aur use karna</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_fs1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('fs1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('fs1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_fs1" onclick="runCell('fs1')">
+                            <div class="run-icon" id="runIcon_fs1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_fs1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_fs1" spellcheck="false"
+                            oninput="onCodeInput(this,'fs1')" onkeydown="handleKeydown(event,'fs1')">fs = frozenset([1, 2, 3, 4, 5])
+print("Frozenset:", fs)
+print("Type:", type(fs))
+
+# Membership check chal sakta hai
+print("3 in fs:", 3 in fs)
+print("Length:", len(fs))
+
+# Lekin add ya remove nahi kar sakte
+try:
+    fs.add(6)
+except AttributeError as e:
+    print("Error:", e)</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_fs1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_fs1"></span>
+                            <button class="clear-btn" onclick="clearOutput('fs1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_fs1"></div>
+                    <div class="exec-time" id="execTime_fs1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> frozenset pe set operations bhi chal sakti hain</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_fs2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('fs2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('fs2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_fs2" onclick="runCell('fs2')">
+                            <div class="run-icon" id="runIcon_fs2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_fs2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_fs2" spellcheck="false"
+                            oninput="onCodeInput(this,'fs2')" onkeydown="handleKeydown(event,'fs2')">fa = frozenset([1, 2, 3, 4])
+fb = frozenset([3, 4, 5, 6])
+
+print("Union       :", fa | fb)
+print("Intersection:", fa & fb)
+print("Difference  :", fa - fb)
+
+# frozenset as dictionary key — ye normal set nahi kar sakta!
+d = {fa: "Group A", fb: "Group B"}
+print("Dict:", d)</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_fs2">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_fs2"></span>
+                            <button class="clear-btn" onclick="clearOutput('fs2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_fs2"></div>
+                    <div class="exec-time" id="execTime_fs2"></div>
+                </div>
+            </div></div>
+
+            <br><hr><br>
+
+            <!-- Quick Summary -->
+            <h4>Quick Summary — Set ek nazar me</h4>
+            <div style="overflow-x:auto; margin: 20px 0;">
+                <table class="table table-bordered table-striped" style="font-size:17px;">
+                    <thead class="table-dark">
+                        <tr><th>Concept</th><th>Kaam</th><th>Example</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Banana</td><td>{ } me items</td><td>s = {1, 2, 3}</td></tr>
+                        <tr><td>Empty set</td><td>set() use karo</td><td>s = set()</td></tr>
+                        <tr><td>add(x)</td><td>Ek item add</td><td>s.add(5)</td></tr>
+                        <tr><td>update()</td><td>Multiple add</td><td>s.update([4,5])</td></tr>
+                        <tr><td>remove(x)</td><td>Hatao — error if missing</td><td>s.remove(3)</td></tr>
+                        <tr><td>discard(x)</td><td>Hatao — no error</td><td>s.discard(3)</td></tr>
+                        <tr><td>Union (|)</td><td>Saare items</td><td>a | b</td></tr>
+                        <tr><td>Intersection (&amp;)</td><td>Common items</td><td>a &amp; b</td></tr>
+                        <tr><td>Difference (-)</td><td>a me jo b me nahi</td><td>a - b</td></tr>
+                        <tr><td>Sym. Diff (^)</td><td>Exclusive items</td><td>a ^ b</td></tr>
+                        <tr><td>issubset()</td><td>Subset check</td><td>a.issubset(b)</td></tr>
+                        <tr><td>issuperset()</td><td>Superset check</td><td>a.issuperset(b)</td></tr>
+                        <tr><td>isdisjoint()</td><td>Koi common nahi?</td><td>a.isdisjoint(b)</td></tr>
+                        <tr><td>frozenset</td><td>Immutable set</td><td>frozenset([1,2,3])</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <br>
+
+            <!-- CTA Row -->
+            <div class="cta-row">
+                <a href="/py_components/py_tuple.html" class="outline-btn">Previous</a>
+                <a href="/py_components/py_dict.html" class="start-btn">
+                    Next
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
+                    </svg>
+                </a>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark py-4 mt-5">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-12">
+                    <h6 style="color: #adb5bd; margin-bottom: 0;">© 2026 Codepth . All Rights Reserved.</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SHARED CELL SCRIPT -->
+    <script>
+        const execCounts = {};
+
+        function getExecCount(id) {
+            if (!execCounts[id]) execCounts[id] = 1;
+            return execCounts[id];
+        }
+
+        function syncLines(ta, id) {
+            const lines = ta.value.split('\n').length;
+            const nums = Array.from({ length: lines }, (_, i) => i + 1).join('\n');
+            document.getElementById('lineNums_' + id).textContent = nums;
+        }
+
+        function autoResize(ta) {
+            ta.style.height = 'auto';
+            ta.style.height = ta.scrollHeight + 'px';
+        }
+
+        function onCodeInput(ta, id) {
+            autoResize(ta);
+            syncLines(ta, id);
+        }
+
+        function handleKeydown(e, id) {
+            if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+                e.preventDefault();
+                runCell(id);
+            }
+            if (e.key === 'Tab') {
+                e.preventDefault();
+                const ta = e.target;
+                const s = ta.selectionStart, end = ta.selectionEnd;
+                ta.value = ta.value.substring(0, s) + '    ' + ta.value.substring(end);
+                ta.selectionStart = ta.selectionEnd = s + 4;
+                syncLines(ta, id);
+            }
+        }
+
+        function copyCode(id) {
+            const code = document.getElementById('codeInput_' + id).value;
+            navigator.clipboard.writeText(code).catch(() => {});
+        }
+
+        function clearOutput(id) {
+            document.getElementById('outputSection_' + id).classList.remove('show');
+        }
+
+        function runCell(id) {
+            const code = document.getElementById('codeInput_' + id).value;
+            const btn  = document.getElementById('runBtn_' + id);
+            const icon = document.getElementById('runIcon_' + id);
+
+            btn.classList.add('running');
+            icon.className = 'run-icon spin';
+            btn.disabled = true;
+
+            setTimeout(() => {
+                const t0 = performance.now();
+                const printLines = [];
+                const fakePrint = (...args) => { printLines.push(args.map(String).join(' ')); };
+
+                let result;
+                let isError = false;
+                let errMsg = '';
+
+                try {
+                    const wrapped = code.replace(/\bprint\s*\(/g, '__print__(');
+                    const fn = new Function('__print__', wrapped);
+                    result = fn(fakePrint);
+                } catch (e) {
+                    isError = true;
+                    errMsg = e.toString();
+                }
+
+                const elapsed = (performance.now() - t0).toFixed(1);
+                const count = getExecCount(id);
+
+                const sec    = document.getElementById('outputSection_' + id);
+                const body   = document.getElementById('outputBody_' + id);
+                const status = document.getElementById('outputStatus_' + id);
+                const timeEl = document.getElementById('execTime_' + id);
+
+                if (isError) {
+                    body.textContent   = errMsg;
+                    body.className     = 'output-body error';
+                    status.textContent = '✗ Error';
+                    status.className   = 'output-status err';
+                } else {
+                    let out = printLines.join('\n');
+                    if (!out && result !== undefined) out = String(result);
+                    if (!out) out = '(no output)';
+                    body.textContent   = out;
+                    body.className     = 'output-body';
+                    status.textContent = '✓ OK';
+                    status.className   = 'output-status ok';
+                }
+
+                timeEl.textContent = `Executed in ${elapsed}ms  ·  In [${count}]`;
+                document.getElementById('cellNum_' + id).textContent = `In [${count}]:`;
+                execCounts[id] = count + 1;
+
+                sec.classList.add('show');
+                btn.classList.remove('running');
+                icon.className = 'run-icon';
+                btn.disabled   = false;
+            }, 120);
+        }
+
+        window.addEventListener('load', () => {
+            document.querySelectorAll('.code-input').forEach(ta => {
+                autoResize(ta);
+                const id = ta.id.replace('codeInput_', '');
+                syncLines(ta, id);
+            });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+</html>

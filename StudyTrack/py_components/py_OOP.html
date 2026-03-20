@@ -1,0 +1,1335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Tutorial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="py_download.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-5 col-md-6">
+                    <img src="/img/codepth_logo_2.png" class="img-fluid" height="70" width="170" alt="Codepth Logo">
+                </div>
+                <div class="col-7 col-md-6">
+                    <div class="input-group">
+                        <input class="form-control" type="text" placeholder="Search....">
+                        <button class="btn btn-success" type="button">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- TOP NAVBAR -->
+    <nav class="navbar navbar-expand-lg top-navbar">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="/home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/Python.html">Python</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/mysql.html">MySQL</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/dsa.html">DSA</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/ml.html">Machine Learning</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/dl.html">Deep Learning</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE BODY -->
+    <div class="page-wrapper">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <span class="sidebar-title">Python Tutorial</span>
+            <ul>
+                <li class="active"><a href="/py_components/Py_downloads.html">Python Download</a></li>
+                <li><a href="/py_components/py_intro.html">Python Intro <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_keywords.html">Python Keywords <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_variables.html">Python Variables <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_operators.html">Python Operators <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_datatypes.html">Python Data types <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_if_else.html">Python If-else...<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_while.html">Python While Loops <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_for.html">Python For Loops<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_string.html">Python Strings<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_list.html">Python List <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_tuple.html">Python Tuples <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_sets.html">Python Sets <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_dict.html">Python Dictionaries <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_function.html">Python Functions <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_recursion.html">Python Recursion <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_lamda.html">Python Lamda Function <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_OOP.html">Python OOP<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_file_handling.html">Python File Handling<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_exception_handling.html">Python Exception Handling<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_REGEXP.html">Python REGEXP<span class="arrow">▼</span></a></li>
+            </ul>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <h1>Python me OOP (Object-Oriented Programming) kya hai?</h1>
+            <hr>
+
+            <p style="font-size: 19px;">OOP ek <b>programming style</b> hai jisme hum <b>real-world cheezein</b>
+            ko code me represent karte hain. Jaise real life me ek <b>"Car"</b> ka concept hota hai —
+            har car ke kuch <b>properties</b> hote hain (color, speed) aur kuch <b>kaam</b> hote hain (start, stop).
+            OOP me isi tarah hum <b>Classes</b> aur <b>Objects</b> banate hain.</p>
+
+            <p style="font-size: 19px;">OOP ke <b>4 main pillars</b> hain :-</p>
+            <ul style="font-size: 18px; margin-left: 40px; line-height: 2.2;">
+                <li><b>Encapsulation</b> — data aur methods ek saath band karna</li>
+                <li><b>Inheritance</b> — ek class se doosri class banana</li>
+                <li><b>Polymorphism</b> — same method alag alag kaam kare</li>
+                <li><b>Abstraction</b> — implementation chhupaana, sirf zaroori dikhana</li>
+            </ul>
+
+            <p style="font-size: 19px;">Is page me yeh sab sikhenge :-</p>
+            <ul style="font-size: 18px; margin-left: 40px; line-height: 2.2;">
+                <li>1. <b>Class aur Object</b></li>
+                <li>2. <b>__init__() Constructor</b></li>
+                <li>3. <b>Instance Variables aur Methods</b></li>
+                <li>4. <b>Class Variables aur Class Methods</b></li>
+                <li>5. <b>Inheritance</b></li>
+                <li>6. <b>Method Overriding</b></li>
+                <li>7. <b>super()</b></li>
+                <li>8. <b>Encapsulation</b> — Private Variables</li>
+                <li>9. <b>Polymorphism</b></li>
+                <li>10. <b>Special (Dunder) Methods</b></li>
+            </ul>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 1. CLASS & OBJECT             -->
+            <!-- ============================= -->
+            <h1>1. Class aur Object</h1>
+            <p style="font-size: 19px;"><b>Class</b> ek <b>blueprint (naqsha)</b> hai — jaise ek ghar ka naqsha.
+            <b>Object</b> us naqshe se bana <b>asli ghar</b> hai. Class ek baar likhte hain,
+            objects baar baar bana sakte hain.</p>
+
+            <div style="overflow-x:auto; margin: 20px 0;">
+                <table class="table table-bordered" style="font-size:17px;">
+                    <thead class="table-dark"><tr><th>Syntax</th></tr></thead>
+                    <tbody><tr><td>
+                        <pre style="margin:0; background:transparent; border:none;">class ClassName:
+    # attributes aur methods
+
+obj = ClassName()   # object banana</pre>
+                    </td></tr></tbody>
+                </table>
+            </div>
+
+            <!-- Cell 1 -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> Pehli class banana aur object create karna</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_c1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('c1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('c1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_c1" onclick="runCell('c1')">
+                            <div class="run-icon" id="runIcon_c1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_c1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_c1" spellcheck="false"
+                            oninput="onCodeInput(this,'c1')" onkeydown="handleKeydown(event,'c1')">class Dog:
+    def bark(self):
+        print("Woof! Woof!")
+
+    def sit(self):
+        print("Dog baith gaya.")
+
+# Objects banana
+dog1 = Dog()
+dog2 = Dog()
+
+dog1.bark()
+dog2.bark()
+dog1.sit()
+
+print("dog1 ka type:", type(dog1))</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_c1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_c1"></span>
+                            <button class="clear-btn" onclick="clearOutput('c1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_c1"></div>
+                    <div class="exec-time" id="execTime_c1"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 2. __INIT__ CONSTRUCTOR       -->
+            <!-- ============================= -->
+            <h1>2. __init__() Constructor</h1>
+            <p style="font-size: 19px;"><b>__init__()</b> ek special method hai jo <b>object banate waqt automatically call</b>
+            hota hai. Isme hum object ki <b>initial properties (attributes) set</b> karte hain.
+            <b>self</b> parameter us particular object ka reference hota hai.</p>
+
+            <!-- Cell 1 -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> __init__() se attributes set karna</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_init1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('init1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('init1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_init1" onclick="runCell('init1')">
+                            <div class="run-icon" id="runIcon_init1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_init1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_init1" spellcheck="false"
+                            oninput="onCodeInput(this,'init1')" onkeydown="handleKeydown(event,'init1')">class Student:
+    def __init__(self, name, age, marks):
+        self.name  = name    # instance attributes
+        self.age   = age
+        self.marks = marks
+
+    def introduce(self):
+        print(f"Main {self.name} hoon, {self.age} saal ka.")
+        print(f"Mere marks: {self.marks}")
+
+s1 = Student("Rahul", 20, 88)
+s2 = Student("Priya", 21, 95)
+
+s1.introduce()
+print()
+s2.introduce()</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_init1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_init1"></span>
+                            <button class="clear-btn" onclick="clearOutput('init1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_init1"></div>
+                    <div class="exec-time" id="execTime_init1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> Attributes directly access aur modify karna</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_init2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('init2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('init2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_init2" onclick="runCell('init2')">
+                            <div class="run-icon" id="runIcon_init2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_init2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_init2" spellcheck="false"
+                            oninput="onCodeInput(this,'init2')" onkeydown="handleKeydown(event,'init2')">class Car:
+    def __init__(self, brand, model, year):
+        self.brand = brand
+        self.model = model
+        self.year  = year
+
+car1 = Car("Tata", "Nexon", 2022)
+
+# Attributes access karo
+print(car1.brand)
+print(car1.model)
+print(car1.year)
+
+# Attribute modify karo
+car1.year = 2024
+print("Updated year:", car1.year)
+
+# Naya attribute add karo
+car1.color = "Blue"
+print("Color:", car1.color)</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_init2">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_init2"></span>
+                            <button class="clear-btn" onclick="clearOutput('init2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_init2"></div>
+                    <div class="exec-time" id="execTime_init2"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 3. INSTANCE METHODS           -->
+            <!-- ============================= -->
+            <h1>3. Instance Variables aur Methods</h1>
+            <p style="font-size: 19px;"><b>Instance variables</b> har object ke apne alag hote hain.
+            <b>Instance methods</b> woh functions hain jo object ki properties pe kaam karte hain —
+            inhein hamesha <b>self</b> parameter milta hai.</p>
+
+            <!-- Cell 1 -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> Bank Account — realistic example</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_im1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('im1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('im1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_im1" onclick="runCell('im1')">
+                            <div class="run-icon" id="runIcon_im1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_im1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_im1" spellcheck="false"
+                            oninput="onCodeInput(this,'im1')" onkeydown="handleKeydown(event,'im1')">class BankAccount:
+    def __init__(self, owner, balance=0):
+        self.owner   = owner
+        self.balance = balance
+
+    def deposit(self, amount):
+        self.balance += amount
+        print(f"{amount} deposit hua. Balance: {self.balance}")
+
+    def withdraw(self, amount):
+        if amount > self.balance:
+            print("Insufficient balance!")
+        else:
+            self.balance -= amount
+            print(f"{amount} withdraw hua. Balance: {self.balance}")
+
+    def show_balance(self):
+        print(f"{self.owner} ka balance: Rs.{self.balance}")
+
+acc = BankAccount("Rahul", 1000)
+acc.show_balance()
+acc.deposit(5000)
+acc.withdraw(2000)
+acc.withdraw(10000)</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_im1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_im1"></span>
+                            <button class="clear-btn" onclick="clearOutput('im1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_im1"></div>
+                    <div class="exec-time" id="execTime_im1"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 4. CLASS VARIABLES            -->
+            <!-- ============================= -->
+            <h1>4. Class Variables aur Class Methods</h1>
+            <p style="font-size: 19px;"><b>Class variables</b> saare objects ke <b>beech share</b> hoti hain —
+            ek object badalta hai toh sabko dikhta hai.
+            <b>@classmethod</b> decorator se class methods banate hain — isme <b>cls</b> parameter hota hai (self nahi).</p>
+
+            <!-- Cell 1 -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> Class variable — kitne objects bane track karna</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_cv1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('cv1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('cv1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_cv1" onclick="runCell('cv1')">
+                            <div class="run-icon" id="runIcon_cv1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_cv1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_cv1" spellcheck="false"
+                            oninput="onCodeInput(this,'cv1')" onkeydown="handleKeydown(event,'cv1')">class Employee:
+    company  = "Codepth"    # Class variable — sabka shared
+    headcount = 0           # Kitne employees hain
+
+    def __init__(self, name, salary):
+        self.name   = name
+        self.salary = salary
+        Employee.headcount += 1   # har nayi employee par increment
+
+    @classmethod
+    def show_info(cls):
+        print(f"Company: {cls.company}, Total Employees: {cls.headcount}")
+
+e1 = Employee("Rahul", 50000)
+e2 = Employee("Priya", 60000)
+e3 = Employee("Arjun", 55000)
+
+Employee.show_info()
+print(e1.company)       # class variable instance se bhi access ho sakta hai</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_cv1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_cv1"></span>
+                            <button class="clear-btn" onclick="clearOutput('cv1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_cv1"></div>
+                    <div class="exec-time" id="execTime_cv1"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 5. INHERITANCE               -->
+            <!-- ============================= -->
+            <h1>5. Inheritance (Virasat)</h1>
+            <p style="font-size: 19px;">Inheritance matlab ek <b>class doosri class ki properties aur methods inherit</b>
+            kar leti hai. <b>Parent class (Base class)</b> ki saari cheezein
+            <b>Child class (Derived class)</b> ko mil jaati hain — aur wo apni nayi cheezein bhi add kar sakti hai.</p>
+
+            <!-- Cell 1 -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> Animal → Dog, Cat — basic inheritance</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_inh1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('inh1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('inh1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_inh1" onclick="runCell('inh1')">
+                            <div class="run-icon" id="runIcon_inh1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_inh1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_inh1" spellcheck="false"
+                            oninput="onCodeInput(this,'inh1')" onkeydown="handleKeydown(event,'inh1')">class Animal:                # Parent class
+    def __init__(self, name):
+        self.name = name
+
+    def eat(self):
+        print(f"{self.name} khaana kha raha hai.")
+
+    def sleep(self):
+        print(f"{self.name} so raha hai.")
+
+class Dog(Animal):           # Dog inherits Animal
+    def bark(self):
+        print(f"{self.name} bolta hai: Woof!")
+
+class Cat(Animal):           # Cat inherits Animal
+    def meow(self):
+        print(f"{self.name} bolti hai: Meow!")
+
+dog = Dog("Bruno")
+cat = Cat("Whiskers")
+
+dog.eat()       # inherited from Animal
+dog.bark()      # Dog ka apna method
+cat.sleep()     # inherited from Animal
+cat.meow()      # Cat ka apna method</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_inh1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_inh1"></span>
+                            <button class="clear-btn" onclick="clearOutput('inh1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_inh1"></div>
+                    <div class="exec-time" id="execTime_inh1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> Person → Student → GraduateStudent — multi-level</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_inh2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('inh2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('inh2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_inh2" onclick="runCell('inh2')">
+                            <div class="run-icon" id="runIcon_inh2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_inh2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_inh2" spellcheck="false"
+                            oninput="onCodeInput(this,'inh2')" onkeydown="handleKeydown(event,'inh2')">class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age  = age
+    def greet(self):
+        print(f"Main {self.name} hoon, {self.age} saal ka.")
+
+class Student(Person):
+    def __init__(self, name, age, rollno):
+        super().__init__(name, age)   # Parent ka __init__ call karo
+        self.rollno = rollno
+    def study(self):
+        print(f"{self.name} (Roll: {self.rollno}) padh raha hai.")
+
+class GraduateStudent(Student):
+    def __init__(self, name, age, rollno, thesis):
+        super().__init__(name, age, rollno)
+        self.thesis = thesis
+    def research(self):
+        print(f"{self.name} ka thesis topic: {self.thesis}")
+
+gs = GraduateStudent("Arjun", 24, "PG001", "AI in Healthcare")
+gs.greet()      # Person se
+gs.study()      # Student se
+gs.research()   # GraduateStudent ka apna</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_inh2">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_inh2"></span>
+                            <button class="clear-btn" onclick="clearOutput('inh2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_inh2"></div>
+                    <div class="exec-time" id="execTime_inh2"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 6. METHOD OVERRIDING          -->
+            <!-- ============================= -->
+            <h1>6. Method Overriding</h1>
+            <p style="font-size: 19px;">Jab <b>child class me parent class ka same naam ka method</b> likhte hain
+            toh child ka method <b>parent wale ko override</b> kar deta hai —
+            yaani child ka method chal jaata hai.</p>
+
+            <!-- Cell 1 -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> Shape → Circle, Rectangle — area method override</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_mo1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('mo1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('mo1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_mo1" onclick="runCell('mo1')">
+                            <div class="run-icon" id="runIcon_mo1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_mo1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_mo1" spellcheck="false"
+                            oninput="onCodeInput(this,'mo1')" onkeydown="handleKeydown(event,'mo1')">class Shape:
+    def area(self):
+        print("Shape ka area pata nahi.")
+
+class Circle(Shape):
+    def __init__(self, radius):
+        self.radius = radius
+    def area(self):                     # Override kiya!
+        a = 3.14 * self.radius ** 2
+        print(f"Circle ka area: {a:.2f}")
+
+class Rectangle(Shape):
+    def __init__(self, length, width):
+        self.length = length
+        self.width  = width
+    def area(self):                     # Override kiya!
+        print(f"Rectangle ka area: {self.length * self.width}")
+
+s = Shape()
+c = Circle(7)
+r = Rectangle(5, 8)
+
+s.area()   # Parent ka
+c.area()   # Circle ka (overridden)
+r.area()   # Rectangle ka (overridden)</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_mo1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_mo1"></span>
+                            <button class="clear-btn" onclick="clearOutput('mo1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_mo1"></div>
+                    <div class="exec-time" id="execTime_mo1"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 7. SUPER()                    -->
+            <!-- ============================= -->
+            <h1>7. super() Function</h1>
+            <p style="font-size: 19px;"><b>super()</b> se child class, <b>parent class ke methods aur
+            __init__ ko call</b> kar sakti hai. Yeh tab useful hota hai jab child class me kuch
+            extra karna ho parent ke upar se.</p>
+
+            <!-- Cell 1 -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> super() se parent ka __init__ extend karna</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_sup1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('sup1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('sup1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_sup1" onclick="runCell('sup1')">
+                            <div class="run-icon" id="runIcon_sup1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_sup1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_sup1" spellcheck="false"
+                            oninput="onCodeInput(this,'sup1')" onkeydown="handleKeydown(event,'sup1')">class Vehicle:
+    def __init__(self, brand, speed):
+        self.brand = brand
+        self.speed = speed
+    def describe(self):
+        print(f"Brand: {self.brand}, Max Speed: {self.speed} km/h")
+
+class ElectricCar(Vehicle):
+    def __init__(self, brand, speed, battery):
+        super().__init__(brand, speed)   # Parent ka __init__
+        self.battery = battery           # Extra attribute
+    def describe(self):
+        super().describe()               # Parent ka describe call karo
+        print(f"Battery: {self.battery} kWh (Electric)")
+
+v = Vehicle("Honda", 180)
+e = ElectricCar("Tesla", 250, 100)
+
+print("--- Vehicle ---")
+v.describe()
+print("\n--- Electric Car ---")
+e.describe()</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_sup1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_sup1"></span>
+                            <button class="clear-btn" onclick="clearOutput('sup1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_sup1"></div>
+                    <div class="exec-time" id="execTime_sup1"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 8. ENCAPSULATION              -->
+            <!-- ============================= -->
+            <h1>8. Encapsulation — Private Variables</h1>
+            <p style="font-size: 19px;">Encapsulation matlab <b>data ko bahar se direct access hone se rokna</b>.
+            Python me <b>double underscore (__)</b> se variable ko private banate hain.
+            Private variables sirf class ke andar se access ho sakte hain.</p>
+
+            <!-- Cell 1 -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> Private variables — __ (double underscore)</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_enc1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('enc1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('enc1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_enc1" onclick="runCell('enc1')">
+                            <div class="run-icon" id="runIcon_enc1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_enc1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_enc1" spellcheck="false"
+                            oninput="onCodeInput(this,'enc1')" onkeydown="handleKeydown(event,'enc1')">class SecureAccount:
+    def __init__(self, owner, pin, balance):
+        self.owner    = owner       # public
+        self.__pin    = pin         # private — __ se
+        self.__balance = balance    # private
+
+    def check_balance(self, pin):
+        if pin == self.__pin:
+            print(f"Balance: Rs.{self.__balance}")
+        else:
+            print("Galat PIN!")
+
+    def deposit(self, amount, pin):
+        if pin == self.__pin:
+            self.__balance += amount
+            print(f"Deposit successful! New balance: Rs.{self.__balance}")
+        else:
+            print("Galat PIN! Transaction failed.")
+
+acc = SecureAccount("Rahul", 1234, 5000)
+acc.check_balance(1234)    # sahi PIN
+acc.check_balance(9999)    # galat PIN
+acc.deposit(2000, 1234)
+
+# Direct access nahi hoga
+try:
+    print(acc.__balance)
+except AttributeError as e:
+    print("Error:", e)</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_enc1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_enc1"></span>
+                            <button class="clear-btn" onclick="clearOutput('enc1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_enc1"></div>
+                    <div class="exec-time" id="execTime_enc1"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 9. POLYMORPHISM               -->
+            <!-- ============================= -->
+            <h1>9. Polymorphism</h1>
+            <p style="font-size: 19px;">Polymorphism matlab <b>"same naam, alag kaam"</b>.
+            Alag alag classes ke objects par <b>same method call karo</b> —
+            har class apne hisaab se kaam karegi.</p>
+
+            <!-- Cell 1 -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> speak() method — alag animals alag awaaz</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_poly1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('poly1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('poly1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_poly1" onclick="runCell('poly1')">
+                            <div class="run-icon" id="runIcon_poly1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_poly1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_poly1" spellcheck="false"
+                            oninput="onCodeInput(this,'poly1')" onkeydown="handleKeydown(event,'poly1')">class Dog:
+    def speak(self):
+        return "Woof!"
+
+class Cat:
+    def speak(self):
+        return "Meow!"
+
+class Cow:
+    def speak(self):
+        return "Moo!"
+
+# Same function — alag alag objects pass karo
+def make_sound(animal):
+    print(f"{animal.__class__.__name__} kehta hai: {animal.speak()}")
+
+animals = [Dog(), Cat(), Cow()]
+for a in animals:
+    make_sound(a)</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_poly1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_poly1"></span>
+                            <button class="clear-btn" onclick="clearOutput('poly1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_poly1"></div>
+                    <div class="exec-time" id="execTime_poly1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> len() — built-in polymorphism</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_poly2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('poly2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('poly2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_poly2" onclick="runCell('poly2')">
+                            <div class="run-icon" id="runIcon_poly2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_poly2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_poly2" spellcheck="false"
+                            oninput="onCodeInput(this,'poly2')" onkeydown="handleKeydown(event,'poly2')"># len() ek polymorphic function hai — alag types pe kaam karta hai
+print(len("Python"))          # string me characters
+print(len([1, 2, 3, 4, 5]))  # list me elements
+print(len({"a": 1, "b": 2})) # dict me keys
+print(len((10, 20, 30)))      # tuple me items
+
+# + operator bhi polymorphic hai
+print(10 + 20)                # numbers add karta hai
+print("Hello" + " World")</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_poly2">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_poly2"></span>
+                            <button class="clear-btn" onclick="clearOutput('poly2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_poly2"></div>
+                    <div class="exec-time" id="execTime_poly2"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 10. DUNDER METHODS            -->
+            <!-- ============================= -->
+            <h1>10. Special (Dunder) Methods</h1>
+            <p style="font-size: 19px;">Python me kuch <b>special methods</b> hote hain jo <b>double underscore
+            (__) se shuru aur khatam</b> hote hain — inhe <b>Dunder methods</b> kehte hain.
+            Yeh methods Python ke built-in operations ko customize karne ke kaam aate hain.</p>
+
+            <!-- Cell 1 -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> __str__, __len__ aur __add__</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_dn1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('dn1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('dn1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_dn1" onclick="runCell('dn1')">
+                            <div class="run-icon" id="runIcon_dn1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_dn1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_dn1" spellcheck="false"
+                            oninput="onCodeInput(this,'dn1')" onkeydown="handleKeydown(event,'dn1')">class Book:
+    def __init__(self, title, author, pages):
+        self.title  = title
+        self.author = author
+        self.pages  = pages
+
+    def __str__(self):
+        # print(obj) pe yeh chalega
+        return f"'{self.title}' by {self.author}"
+
+    def __len__(self):
+        # len(obj) pe yeh chalega
+        return self.pages
+
+    def __add__(self, other):
+        # obj1 + obj2 pe yeh chalega
+        total = self.pages + other.pages
+        return f"Combined pages: {total}"
+
+b1 = Book("Python Basics", "Rahul", 350)
+b2 = Book("Advanced Python", "Priya", 500)
+
+print(b1)            # __str__ call hoga
+print(len(b1))       # __len__ call hoga
+print(b1 + b2)       # __add__ call hoga</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_dn1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_dn1"></span>
+                            <button class="clear-btn" onclick="clearOutput('dn1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_dn1"></div>
+                    <div class="exec-time" id="execTime_dn1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> __eq__ aur __gt__ — comparison operators customize karna</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_dn2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('dn2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('dn2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_dn2" onclick="runCell('dn2')">
+                            <div class="run-icon" id="runIcon_dn2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_dn2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_dn2" spellcheck="false"
+                            oninput="onCodeInput(this,'dn2')" onkeydown="handleKeydown(event,'dn2')">class Student:
+    def __init__(self, name, marks):
+        self.name  = name
+        self.marks = marks
+
+    def __str__(self):
+        return f"{self.name} ({self.marks})"
+
+    def __eq__(self, other):
+        return self.marks == other.marks   # == operator
+
+    def __gt__(self, other):
+        return self.marks > other.marks    # > operator
+
+s1 = Student("Rahul", 85)
+s2 = Student("Priya", 92)
+s3 = Student("Arjun", 85)
+
+print(s1, "==", s3, "?", s1 == s3)   # same marks
+print(s1, "==", s2, "?", s1 == s2)   # alag marks
+print(s2, ">",  s1, "?", s2 > s1)    # Priya ke zyada marks</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_dn2">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_dn2"></span>
+                            <button class="clear-btn" onclick="clearOutput('dn2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_dn2"></div>
+                    <div class="exec-time" id="execTime_dn2"></div>
+                </div>
+            </div></div>
+
+            <br><hr><br>
+
+            <!-- Quick Summary -->
+            <h4>Quick Summary — OOP ek nazar me</h4>
+            <div style="overflow-x:auto; margin: 20px 0;">
+                <table class="table table-bordered table-striped" style="font-size:17px;">
+                    <thead class="table-dark">
+                        <tr><th>Concept</th><th>Kaam</th><th>Example</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>class</td><td>Blueprint banana</td><td>class Dog:</td></tr>
+                        <tr><td>object</td><td>Class ka instance</td><td>d = Dog()</td></tr>
+                        <tr><td>__init__</td><td>Constructor — attributes set</td><td>def __init__(self, name):</td></tr>
+                        <tr><td>self</td><td>Current object ka reference</td><td>self.name = name</td></tr>
+                        <tr><td>Instance var</td><td>Har object ka apna</td><td>self.age = 20</td></tr>
+                        <tr><td>Class var</td><td>Sabka shared</td><td>count = 0</td></tr>
+                        <tr><td>@classmethod</td><td>Class method</td><td>def f(cls):</td></tr>
+                        <tr><td>Inheritance</td><td>Parent se properties milna</td><td>class Cat(Animal):</td></tr>
+                        <tr><td>super()</td><td>Parent class call karna</td><td>super().__init__()</td></tr>
+                        <tr><td>Override</td><td>Parent method rewrite karna</td><td>def area(self): ...</td></tr>
+                        <tr><td>Encapsulation</td><td>Private variables</td><td>self.__balance</td></tr>
+                        <tr><td>Polymorphism</td><td>Same naam, alag kaam</td><td>obj.speak()</td></tr>
+                        <tr><td>__str__</td><td>print() ke liye string</td><td>def __str__(self):</td></tr>
+                        <tr><td>__len__</td><td>len() ke liye</td><td>def __len__(self):</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <br>
+
+            <!-- CTA Row -->
+            <div class="cta-row">
+                <a href="/py_components/py_lamda.html" class="outline-btn">Previous</a>
+                <a href="/py_components/py_file_handling.html" class="start-btn">
+                    Next
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
+                    </svg>
+                </a>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark py-4 mt-5">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-12">
+                    <h6 style="color: #adb5bd; margin-bottom: 0;">© 2026 Codepth . All Rights Reserved.</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SHARED CELL SCRIPT -->
+    <script>
+        const execCounts = {};
+
+        function getExecCount(id) {
+            if (!execCounts[id]) execCounts[id] = 1;
+            return execCounts[id];
+        }
+
+        function syncLines(ta, id) {
+            const lines = ta.value.split('\n').length;
+            const nums  = Array.from({ length: lines }, (_, i) => i + 1).join('\n');
+            document.getElementById('lineNums_' + id).textContent = nums;
+        }
+
+        function autoResize(ta) {
+            ta.style.height = 'auto';
+            ta.style.height = ta.scrollHeight + 'px';
+        }
+
+        function onCodeInput(ta, id) {
+            autoResize(ta);
+            syncLines(ta, id);
+        }
+
+        function handleKeydown(e, id) {
+            if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+                e.preventDefault();
+                runCell(id);
+            }
+            if (e.key === 'Tab') {
+                e.preventDefault();
+                const ta  = e.target;
+                const s   = ta.selectionStart;
+                const end = ta.selectionEnd;
+                ta.value  = ta.value.substring(0, s) + '    ' + ta.value.substring(end);
+                ta.selectionStart = ta.selectionEnd = s + 4;
+                syncLines(ta, id);
+            }
+        }
+
+        function copyCode(id) {
+            navigator.clipboard.writeText(document.getElementById('codeInput_' + id).value).catch(() => {});
+        }
+
+        function clearOutput(id) {
+            document.getElementById('outputSection_' + id).classList.remove('show');
+        }
+
+        // ─── Python-in-JS OOP transpiler ────────────────────────────────────────
+        function transpilePython(code) {
+            // We simulate Python classes in JavaScript using a simple approach:
+            // We execute the code using Function() with a custom Python-like runtime.
+            return code;
+        }
+
+        function runCell(id) {
+            const code = document.getElementById('codeInput_' + id).value;
+            const btn  = document.getElementById('runBtn_' + id);
+            const icon = document.getElementById('runIcon_' + id);
+
+            btn.classList.add('running');
+            icon.className = 'run-icon spin';
+            btn.disabled   = true;
+
+            setTimeout(() => {
+                const t0         = performance.now();
+                const printLines = [];
+                const fakePrint  = (...args) => { printLines.push(args.map(a => String(a)).join(' ')); };
+
+                let result;
+                let isError = false;
+                let errMsg  = '';
+
+                try {
+                    // Transpile Python class syntax to JS
+                    let js = code;
+
+                    // Replace print( with __p__(
+                    js = js.replace(/\bprint\s*\(/g, '__p__(');
+
+                    // Handle Python class → JS class
+                    // class Foo:  →  class Foo {
+                    js = js.replace(/^class\s+(\w+)\s*:\s*$/gm, 'class $1 {');
+                    // class Foo(Bar):  →  class Foo extends Bar {
+                    js = js.replace(/^class\s+(\w+)\s*\((\w+)\)\s*:\s*$/gm, 'class $1 extends $2 {');
+
+                    // def __init__(self, ...)  →  constructor(...)
+                    js = js.replace(/def\s+__init__\s*\(self(?:,\s*)?([^)]*)\)\s*:/g, 'constructor($1) {');
+
+                    // @classmethod + def name(cls,...):
+                    js = js.replace(/@classmethod\s*\ndef\s+(\w+)\s*\(cls(?:,\s*)?([^)]*)\)\s*:/g,
+                        'static $1($2) {');
+
+                    // @staticmethod
+                    js = js.replace(/@staticmethod\s*\ndef\s+(\w+)\s*\(([^)]*)\)\s*:/g, 'static $1($2) {');
+
+                    // def name(self, ...):  →  name(...) {
+                    js = js.replace(/def\s+(\w+)\s*\(self(?:,\s*)?([^)]*)\)\s*:/g, '$1($2) {');
+
+                    // def name(...):  →  name(...) {  (no self)
+                    js = js.replace(/def\s+(\w+)\s*\(([^)]*)\)\s*:/g, '$1($2) {');
+
+                    // self.x  →  this.x
+                    js = js.replace(/\bself\./g, 'this.');
+                    // self  alone (in constructor args already removed, but edge cases)
+                    js = js.replace(/\bself\b/g, 'this');
+
+                    // cls.  →  this.constructor. or ClassName.
+                    js = js.replace(/\bcls\./g, 'this.constructor.');
+
+                    // super().__init__(...)  →  super(...)
+                    js = js.replace(/super\s*\(\s*\)\s*\.__init__\s*\(([^)]*)\)/g, 'super($1)');
+                    // super().method(...)  →  super.method(...)
+                    js = js.replace(/super\s*\(\s*\)\s*\./g, 'super.');
+
+                    // Python f-strings: f"...{expr}..."  →  `...${expr}...`
+                    js = js.replace(/f"([^"]*)"/g, (_, inner) => '`' + inner.replace(/\{([^}]+)\}/g, '${$1}') + '`');
+                    js = js.replace(/f'([^']*)'/g, (_, inner) => '`' + inner.replace(/\{([^}]+)\}/g, '${$1}') + '`');
+
+                    // __class__.__name__  →  this.constructor.name
+                    js = js.replace(/\b__class__\.__name__/g, 'this.constructor.name');
+
+                    // Python None → null, True/False
+                    js = js.replace(/\bNone\b/g, 'null');
+                    js = js.replace(/\bTrue\b/g, 'true');
+                    js = js.replace(/\bFalse\b/g, 'false');
+
+                    // elif → else if
+                    js = js.replace(/\belif\b/g, 'else if');
+
+                    // Python not → !  (only simple cases)
+                    js = js.replace(/\bnot\s+\(/g, '!(');
+                    js = js.replace(/\bnot\s+(\w)/g, '!$1');
+
+                    // Python and / or
+                    js = js.replace(/\band\b/g, '&&');
+                    js = js.replace(/\bor\b/g, '||');
+
+                    // len(x) → x.length  (strings/arrays)
+                    js = js.replace(/\blen\s*\(([^)]+)\)/g, '($1).length');
+
+                    // range(n), range(a,b), range(a,b,c) → array
+                    js = js.replace(/\brange\s*\((\d+)\s*,\s*(\d+)\s*,\s*(-?\d+)\s*\)/g,
+                        (_, a, b, s) => `Array.from({length:Math.max(0,Math.ceil((${b}-${a})/${s}))},(_,i)=>${a}+i*${s})`);
+                    js = js.replace(/\brange\s*\((\w+|\d+)\s*,\s*(\w+|\d+)\s*\)/g,
+                        (_, a, b) => `Array.from({length:Math.max(0,${b}-${a})},(_,i)=>${a}+i)`);
+                    js = js.replace(/\brange\s*\((\w+|\d+)\s*\)/g,
+                        (_, n) => `Array.from({length:${n}},(_,i)=>i)`);
+
+                    // for x in list:  →  for (const x of list) {
+                    js = js.replace(/^(\s*)for\s+(\w+)\s+in\s+(.+)\s*:\s*$/gm, '$1for (const $2 of $3) {');
+
+                    // while cond:  →  while (cond) {
+                    js = js.replace(/^(\s*)while\s+(.+)\s*:\s*$/gm, (_, indent, cond) => {
+                        cond = cond.replace(/\band\b/g,'&&').replace(/\bor\b/g,'||');
+                        return `${indent}while (${cond}) {`;
+                    });
+
+                    // if cond:  →  if (cond) {
+                    js = js.replace(/^(\s*)if\s+(.+)\s*:\s*$/gm, (_, indent, cond) => {
+                        cond = cond.replace(/\band\b/g,'&&').replace(/\bor\b/g,'||');
+                        return `${indent}if (${cond}) {`;
+                    });
+
+                    // else if cond:  →  else if (cond) {
+                    js = js.replace(/^(\s*)else if\s+(.+)\s*:\s*$/gm, (_, indent, cond) => {
+                        return `${indent}else if (${cond}) {`;
+                    });
+
+                    // else:  →  else {
+                    js = js.replace(/^(\s*)else\s*:\s*$/gm, '$1else {');
+
+                    // try:  →  try {
+                    js = js.replace(/^(\s*)try\s*:\s*$/gm, '$1try {');
+
+                    // except SomeError as e:  →  } catch(e) {
+                    js = js.replace(/^(\s*)except\s+\w+(?:\s+as\s+(\w+))?\s*:\s*$/gm, (_, indent, varName) => {
+                        return `${indent}} catch(${varName || '_e'}) {`;
+                    });
+
+                    // return → return
+                    // pass → (nothing needed, just remove)
+                    js = js.replace(/^\s*pass\s*$/gm, '');
+
+                    // Add closing braces based on indentation
+                    const lines = js.split('\n');
+                    const result_lines = [];
+                    const indent_stack = [0];
+
+                    for (let i = 0; i < lines.length; i++) {
+                        const line     = lines[i];
+                        const trimmed  = line.trimStart();
+                        const indent   = line.length - trimmed.length;
+
+                        if (trimmed === '') {
+                            result_lines.push('');
+                            continue;
+                        }
+
+                        // Close braces when indentation decreases
+                        while (indent_stack.length > 1 && indent < indent_stack[indent_stack.length - 1]) {
+                            indent_stack.pop();
+                            const closeIndent = ' '.repeat(indent_stack[indent_stack.length - 1]);
+                            result_lines.push(closeIndent + '}');
+                        }
+
+                        result_lines.push(line);
+
+                        // If line ends with { push new indent level
+                        if (trimmed.endsWith('{')) {
+                            indent_stack.push(indent + 4);
+                        }
+                    }
+
+                    // Close remaining open braces
+                    while (indent_stack.length > 1) {
+                        indent_stack.pop();
+                        const closeIndent = ' '.repeat(indent_stack[indent_stack.length - 1]);
+                        result_lines.push(closeIndent + '}');
+                    }
+
+                    js = result_lines.join('\n');
+
+                    // Execute
+                    const fn = new Function('__p__', js);
+                    fn(fakePrint);
+
+                } catch (e) {
+                    isError = true;
+                    errMsg  = e.toString();
+                }
+
+                const elapsed = (performance.now() - t0).toFixed(1);
+                const count   = getExecCount(id);
+
+                const sec    = document.getElementById('outputSection_' + id);
+                const body   = document.getElementById('outputBody_' + id);
+                const status = document.getElementById('outputStatus_' + id);
+                const timeEl = document.getElementById('execTime_' + id);
+
+                if (isError) {
+                    body.textContent   = errMsg;
+                    body.className     = 'output-body error';
+                    status.textContent = '✗ Error';
+                    status.className   = 'output-status err';
+                } else {
+                    let out = printLines.join('\n');
+                    if (!out) out = '(no output)';
+                    body.textContent   = out;
+                    body.className     = 'output-body';
+                    status.textContent = '✓ OK';
+                    status.className   = 'output-status ok';
+                }
+
+                timeEl.textContent = `Executed in ${elapsed}ms  ·  In [${count}]`;
+                document.getElementById('cellNum_' + id).textContent = `In [${count}]:`;
+                execCounts[id] = count + 1;
+
+                sec.classList.add('show');
+                btn.classList.remove('running');
+                icon.className = 'run-icon';
+                btn.disabled   = false;
+            }, 120);
+        }
+
+        window.addEventListener('load', () => {
+            document.querySelectorAll('.code-input').forEach(ta => {
+                autoResize(ta);
+                const id = ta.id.replace('codeInput_', '');
+                syncLines(ta, id);
+            });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+</html>

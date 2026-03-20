@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Tutorial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="py_download.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-5 col-md-6">
+                    <img src="/img/codepth_logo_2.png" class="img-fluid" height="70" width="170" alt="Codepth Logo">
+                </div>
+                <div class="col-7 col-md-6">
+                    <div class="input-group">
+                        <input class="form-control" type="text" placeholder="Search....">
+                        <button class="btn btn-success" type="button">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- TOP NAVBAR -->
+    <nav class="navbar navbar-expand-lg top-navbar">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="/home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/Python.html">Python</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/mysql.html">MySQL</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/dsa.html">DSA</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/ml.html">Machine Learning</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/dl.html">Deep Learning</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE BODY -->
+    <div class="page-wrapper">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <span class="sidebar-title">Python Tutorial</span>
+            <ul>
+                <li class="active"><a href="/py_components/Py_downloads.html">Python Download</a></li>
+                <li><a href="/py_components/py_intro.html">Python Intro <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_keywords.html">Python Keywords <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_variables.html">Python Variables <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_operators.html">Python Operators <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_datatypes.html">Python Data types <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_if_else.html">Python If-else...<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_while.html">Python While Loops <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_for.html">Python For Loops<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_string.html">Python Strings<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_list.html">Python List <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_tuple.html">Python Tuples <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_sets.html">Python Sets <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_dict.html">Python Dictionaries <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_function.html">Python Functions <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_recursion.html">Python Recursion <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_lamda.html">Python Lamda Function <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_OOP.html">Python OOP<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_file_handling.html">Python File Handling<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_exception_handling.html">Python Exception Handling<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_REGEXP.html">Python REGEXP<span class="arrow">▼</span></a></li>
+            </ul>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <h1>Python me Recursion kya hota hai?</h1>
+            <hr>
+
+            <p style="font-size: 19px;">Recursion ek aisi technique hai jisme <b>function khud apne aap ko call karta hai</b>.
+            Jaise aap ek darwaza kholte hain aur andar jaate hain, phir aur ek darwaza, phir aur —
+            jab tak aakhri kamra na aaye. Wapas aate waqt har darwaza band karte jaate hain.
+            Exactly yahi Recursion me hota hai.</p>
+
+            <p style="font-size: 19px;">Har recursive function me <b>2 zaroori cheezein</b> honi chahiye :-</p>
+            <ul style="font-size: 18px; margin-left: 40px; line-height: 2.2;">
+                <li><b>Base Case</b> — woh condition jab recursion rukti hai (warna infinite loop)</li>
+                <li><b>Recursive Case</b> — function khud ko chhote problem ke saath call karta hai</li>
+            </ul>
+
+            <p style="font-size: 19px;">Is page me yeh sab sikhenge :-</p>
+            <ul style="font-size: 18px; margin-left: 40px; line-height: 2.2;">
+                <li>1. <b>Recursion kaise kaam karta hai</b> — step by step</li>
+                <li>2. <b>Countdown</b> — simple recursion example</li>
+                <li>3. <b>Factorial</b> — classic recursion problem</li>
+                <li>4. <b>Fibonacci Series</b></li>
+                <li>5. <b>Sum of digits</b></li>
+                <li>6. <b>String reverse karna</b></li>
+                <li>7. <b>Recursion vs Loop</b></li>
+                <li>8. <b>RecursionError</b> — jab base case bhool jaate hain</li>
+            </ul>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 1. KAISE KAAM KARTA HAI       -->
+            <!-- ============================= -->
+            <h1>1. Recursion Kaise Kaam Karta Hai?</h1>
+            <p style="font-size: 19px;">Recursion me function har baar <b>chhoti problem</b> ke saath apne aap ko call karta hai,
+            jab tak <b>base case</b> na aa jaye. Phir sab answers <b>wapas aate hain (unwind)</b>.</p>
+
+            <div style="overflow-x:auto; margin: 20px 0;">
+                <table class="table table-bordered" style="font-size:17px;">
+                    <thead class="table-dark"><tr><th>Syntax</th></tr></thead>
+                    <tbody><tr><td>
+                        <pre style="margin:0; background:transparent; border:none;">def recursive_function(problem):
+    if base_case:          # yahan rukna hai
+        return answer
+    else:
+        return recursive_function(smaller_problem)  # apne aap ko call</pre>
+                    </td></tr></tbody>
+                </table>
+            </div>
+
+            <!-- Cell 1 -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> Simple countdown — recursion ka flow samjho</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_rc1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('rc1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('rc1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_rc1" onclick="runCell('rc1')">
+                            <div class="run-icon" id="runIcon_rc1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_rc1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_rc1" spellcheck="false"
+                            oninput="onCodeInput(this,'rc1')" onkeydown="handleKeydown(event,'rc1')">def countdown(n):
+    if n == 0:                # Base Case — yahaan rukna hai
+        print("Go!")
+        return
+    print(n)
+    countdown(n - 1)          # Recursive Case — chhoti problem se call
+
+countdown(5)</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_rc1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_rc1"></span>
+                            <button class="clear-btn" onclick="clearOutput('rc1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_rc1"></div>
+                    <div class="exec-time" id="execTime_rc1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 - with trace -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> Call trace — recursion ka flow step by step dekhna</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_rc2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('rc2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('rc2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_rc2" onclick="runCell('rc2')">
+                            <div class="run-icon" id="runIcon_rc2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_rc2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_rc2" spellcheck="false"
+                            oninput="onCodeInput(this,'rc2')" onkeydown="handleKeydown(event,'rc2')">def sum_to_n(n, depth=0):
+    indent = "  " * depth
+    print(f"{indent}sum_to_n({n}) called")
+
+    if n == 0:                          # Base Case
+        print(f"{indent}Base case! return 0")
+        return 0
+
+    result = n + sum_to_n(n - 1, depth + 1)   # Recursive call
+    print(f"{indent}sum_to_n({n}) = {result}")
+    return result
+
+print("Answer:", sum_to_n(4))</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_rc2">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_rc2"></span>
+                            <button class="clear-btn" onclick="clearOutput('rc2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_rc2"></div>
+                    <div class="exec-time" id="execTime_rc2"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 2. FACTORIAL                  -->
+            <!-- ============================= -->
+            <h1>2. Factorial — Classic Recursion Problem</h1>
+            <p style="font-size: 19px;">Factorial ka matlab hai ek number ko usse chhote saare numbers se multiply karna.
+            <b>n! = n × (n-1) × (n-2) × ... × 1</b><br>
+            Jaise: 5! = 5 × 4 × 3 × 2 × 1 = 120</p>
+
+            <!-- Cell 1 -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> Factorial — recursion se</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_fa1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('fa1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('fa1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_fa1" onclick="runCell('fa1')">
+                            <div class="run-icon" id="runIcon_fa1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_fa1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_fa1" spellcheck="false"
+                            oninput="onCodeInput(this,'fa1')" onkeydown="handleKeydown(event,'fa1')">def factorial(n):
+    if n == 0 or n == 1:    # Base Case: 0! = 1, 1! = 1
+        return 1
+    return n * factorial(n - 1)   # Recursive Case
+
+print("0! =", factorial(0))
+print("1! =", factorial(1))
+print("5! =", factorial(5))
+print("6! =", factorial(6))
+print("10! =", factorial(10))</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_fa1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_fa1"></span>
+                            <button class="clear-btn" onclick="clearOutput('fa1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_fa1"></div>
+                    <div class="exec-time" id="execTime_fa1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 - how it works -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> Factorial ka step-by-step execution — 5! kaise calculate hota hai</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_fa2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('fa2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('fa2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_fa2" onclick="runCell('fa2')">
+                            <div class="run-icon" id="runIcon_fa2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_fa2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_fa2" spellcheck="false"
+                            oninput="onCodeInput(this,'fa2')" onkeydown="handleKeydown(event,'fa2')">def factorial_trace(n):
+    if n == 0 or n == 1:
+        print(f"  factorial({n}) = 1  ← Base Case")
+        return 1
+    result = n * factorial_trace(n - 1)
+    print(f"  factorial({n}) = {n} × factorial({n-1}) = {result}")
+    return result
+
+print("5! ka trace:")
+ans = factorial_trace(5)
+print(f"\nFinal Answer: {ans}")</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_fa2">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_fa2"></span>
+                            <button class="clear-btn" onclick="clearOutput('fa2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_fa2"></div>
+                    <div class="exec-time" id="execTime_fa2"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 3. FIBONACCI                  -->
+            <!-- ============================= -->
+            <h1>3. Fibonacci Series</h1>
+            <p style="font-size: 19px;">Fibonacci series me <b>har number, usse pehle ke do numbers ka sum</b> hota hai.
+            <b>0, 1, 1, 2, 3, 5, 8, 13, 21, 34...</b><br>
+            Formula: fib(n) = fib(n-1) + fib(n-2)</p>
+
+            <!-- Cell 1 -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> Fibonacci — recursion se nth number nikalna</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_fib1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('fib1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('fib1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_fib1" onclick="runCell('fib1')">
+                            <div class="run-icon" id="runIcon_fib1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_fib1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_fib1" spellcheck="false"
+                            oninput="onCodeInput(this,'fib1')" onkeydown="handleKeydown(event,'fib1')">def fib(n):
+    if n == 0:          # Base Case 1
+        return 0
+    if n == 1:          # Base Case 2
+        return 1
+    return fib(n-1) + fib(n-2)   # Recursive Case
+
+print("fib(0) =", fib(0))
+print("fib(1) =", fib(1))
+print("fib(6) =", fib(6))
+print("fib(10) =", fib(10))</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_fib1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_fib1"></span>
+                            <button class="clear-btn" onclick="clearOutput('fib1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_fib1"></div>
+                    <div class="exec-time" id="execTime_fib1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 - print series -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> Pehle N Fibonacci numbers print karna</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_fib2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('fib2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('fib2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_fib2" onclick="runCell('fib2')">
+                            <div class="run-icon" id="runIcon_fib2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_fib2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_fib2" spellcheck="false"
+                            oninput="onCodeInput(this,'fib2')" onkeydown="handleKeydown(event,'fib2')">def fib(n):
+    if n <= 0: return 0
+    if n == 1: return 1
+    return fib(n-1) + fib(n-2)
+
+n = 10
+print(f"Pehle {n} Fibonacci numbers:")
+series = [fib(i) for i in range(n)]
+print(series)</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_fib2">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_fib2"></span>
+                            <button class="clear-btn" onclick="clearOutput('fib2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_fib2"></div>
+                    <div class="exec-time" id="execTime_fib2"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 4. SUM OF DIGITS              -->
+            <!-- ============================= -->
+            <h1>4. Sum of Digits</h1>
+            <p style="font-size: 19px;">Kisi number ke saare digits ka sum nikalna recursion se —
+            jaise 1234 → 1 + 2 + 3 + 4 = 10.</p>
+
+            <!-- Cell 1 -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> Digits ka sum — recursion se</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_sd1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('sd1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('sd1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_sd1" onclick="runCell('sd1')">
+                            <div class="run-icon" id="runIcon_sd1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_sd1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_sd1" spellcheck="false"
+                            oninput="onCodeInput(this,'sd1')" onkeydown="handleKeydown(event,'sd1')">def digit_sum(n):
+    n = abs(n)              # negative numbers handle karo
+    if n < 10:              # Base Case — single digit
+        return n
+    return (n % 10) + digit_sum(n // 10)   # last digit + baaki
+
+# n % 10  → last digit milti hai (1234 % 10 = 4)
+# n // 10 → last digit hat jaati hai (1234 // 10 = 123)
+
+print("digit_sum(0)    =", digit_sum(0))
+print("digit_sum(9)    =", digit_sum(9))
+print("digit_sum(123)  =", digit_sum(123))    # 1+2+3 = 6
+print("digit_sum(9999) =", digit_sum(9999))   # 9+9+9+9 = 36</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_sd1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_sd1"></span>
+                            <button class="clear-btn" onclick="clearOutput('sd1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_sd1"></div>
+                    <div class="exec-time" id="execTime_sd1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 - power -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> Power function — recursion se a^b nikalna</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_sd2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('sd2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('sd2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_sd2" onclick="runCell('sd2')">
+                            <div class="run-icon" id="runIcon_sd2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_sd2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_sd2" spellcheck="false"
+                            oninput="onCodeInput(this,'sd2')" onkeydown="handleKeydown(event,'sd2')">def power(base, exp):
+    if exp == 0:                    # Base Case: koi bhi number^0 = 1
+        return 1
+    return base * power(base, exp - 1)   # Recursive Case
+
+print("2^0  =", power(2, 0))
+print("2^5  =", power(2, 5))
+print("3^4  =", power(3, 4))
+print("10^3 =", power(10, 3))</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_sd2">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_sd2"></span>
+                            <button class="clear-btn" onclick="clearOutput('sd2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_sd2"></div>
+                    <div class="exec-time" id="execTime_sd2"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 5. STRING REVERSE             -->
+            <!-- ============================= -->
+            <h1>5. String Reverse Karna</h1>
+            <p style="font-size: 19px;">String ko recursion se reverse karna — pehla character end me daalo
+            aur baaki string ko recursion se reverse karo.</p>
+
+            <!-- Cell 1 -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> String reverse — recursion se</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_sr1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('sr1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('sr1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_sr1" onclick="runCell('sr1')">
+                            <div class="run-icon" id="runIcon_sr1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_sr1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_sr1" spellcheck="false"
+                            oninput="onCodeInput(this,'sr1')" onkeydown="handleKeydown(event,'sr1')">def reverse_string(s):
+    if len(s) == 0:          # Base Case — empty string
+        return ""
+    return reverse_string(s[1:]) + s[0]   # baaki reverse karo + pehla char end me
+
+print(reverse_string("Python"))
+print(reverse_string("Namaste"))
+print(reverse_string("racecar"))  # palindrome!</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_sr1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_sr1"></span>
+                            <button class="clear-btn" onclick="clearOutput('sr1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_sr1"></div>
+                    <div class="exec-time" id="execTime_sr1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 - palindrome check -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> Palindrome check — recursion se</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_sr2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('sr2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('sr2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_sr2" onclick="runCell('sr2')">
+                            <div class="run-icon" id="runIcon_sr2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_sr2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_sr2" spellcheck="false"
+                            oninput="onCodeInput(this,'sr2')" onkeydown="handleKeydown(event,'sr2')">def is_palindrome(s):
+    if len(s) <= 1:                  # Base Case — 0 ya 1 char
+        return True
+    if s[0] != s[-1]:                # Pehla aur aakhri alag hai
+        return False
+    return is_palindrome(s[1:-1])   # beech ki string check karo
+
+words = ["madam", "racecar", "python", "level", "hello"]
+for word in words:
+    result = "Palindrome!" if is_palindrome(word) else "Nahi hai."
+    print(f"'{word}' — {result}")</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_sr2">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_sr2"></span>
+                            <button class="clear-btn" onclick="clearOutput('sr2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_sr2"></div>
+                    <div class="exec-time" id="execTime_sr2"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 6. RECURSION VS LOOP          -->
+            <!-- ============================= -->
+            <h1>6. Recursion vs Loop — Kab Kaun?</h1>
+            <p style="font-size: 19px;">Recursion aur Loop dono same kaam kar sakte hain — lekin dono ke <b>apne apne advantages</b> hain.</p>
+
+            <div style="overflow-x:auto; margin: 20px 0;">
+                <table class="table table-bordered table-striped" style="font-size:17px;">
+                    <thead class="table-dark">
+                        <tr><th>Feature</th><th>Recursion</th><th>Loop</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Code length</td><td>Chhota, elegant</td><td>Thoda lamba</td></tr>
+                        <tr><td>Speed</td><td>Relatively slow</td><td>Fast</td></tr>
+                        <tr><td>Memory</td><td>Stack use karta hai (zyada)</td><td>Kam memory</td></tr>
+                        <tr><td>Samajhna</td><td>Thoda mushkil</td><td>Aasaan</td></tr>
+                        <tr><td>Best for</td><td>Tree, graph, divide & conquer</td><td>Simple repetition</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Cell 1 -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> Factorial — Loop vs Recursion</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_vl1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('vl1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('vl1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_vl1" onclick="runCell('vl1')">
+                            <div class="run-icon" id="runIcon_vl1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_vl1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_vl1" spellcheck="false"
+                            oninput="onCodeInput(this,'vl1')" onkeydown="handleKeydown(event,'vl1')"># Loop se factorial
+def factorial_loop(n):
+    result = 1
+    for i in range(1, n + 1):
+        result *= i
+    return result
+
+# Recursion se factorial
+def factorial_recursion(n):
+    if n <= 1:
+        return 1
+    return n * factorial_recursion(n - 1)
+
+n = 7
+print(f"Loop     : {n}! = {factorial_loop(n)}")
+print(f"Recursion: {n}! = {factorial_recursion(n)}")
+print("Dono ka result same hai!")</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_vl1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_vl1"></span>
+                            <button class="clear-btn" onclick="clearOutput('vl1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_vl1"></div>
+                    <div class="exec-time" id="execTime_vl1"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 7. RECURSION ERROR            -->
+            <!-- ============================= -->
+            <h1>7. RecursionError — Jab Base Case Bhool Jaayein</h1>
+            <p style="font-size: 19px;">Agar <b>base case nahi likha</b> ya galat likha, toh function
+            <b>infinite baar call hota rehta hai</b> aur Python ek
+            <b>RecursionError</b> deta hai — "maximum recursion depth exceeded".</p>
+
+            <!-- Cell 1 -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> RecursionError — base case missing</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_re1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('re1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('re1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_re1" onclick="runCell('re1')">
+                            <div class="run-icon" id="runIcon_re1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_re1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_re1" spellcheck="false"
+                            oninput="onCodeInput(this,'re1')" onkeydown="handleKeydown(event,'re1')"># GALAT — Base case nahi hai
+def infinite_recursion(n):
+    print(n)
+    return infinite_recursion(n + 1)  # kabhi nahi rukega!
+
+# try-except se error handle karte hain
+try:
+    infinite_recursion(1)
+except RecursionError as e:
+    print("\nRecursionError pakda gaya!")
+    print("Reason: Base case missing tha.")</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_re1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_re1"></span>
+                            <button class="clear-btn" onclick="clearOutput('re1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_re1"></div>
+                    <div class="exec-time" id="execTime_re1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 - recursion limit -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> Python ka default recursion limit dekhna</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_re2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('re2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('re2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_re2" onclick="runCell('re2')">
+                            <div class="run-icon" id="runIcon_re2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_re2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_re2" spellcheck="false"
+                            oninput="onCodeInput(this,'re2')" onkeydown="handleKeydown(event,'re2')">import sys
+print("Python ka default recursion limit:", sys.getrecursionlimit())
+
+# Recursion se bachne ke liye — hamesha base case check karo
+print("\nSafe recursion ka formula:")
+print("1. Pehle base case likhna")
+print("2. Har call me problem chhoti honi chahiye")
+print("3. Base case tak pahunchna guaranteed hona chahiye")</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_re2">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_re2"></span>
+                            <button class="clear-btn" onclick="clearOutput('re2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_re2"></div>
+                    <div class="exec-time" id="execTime_re2"></div>
+                </div>
+            </div></div>
+
+            <br><hr><br>
+
+            <!-- Quick Summary -->
+            <h4>Quick Summary — Recursion ek nazar me</h4>
+            <div style="overflow-x:auto; margin: 20px 0;">
+                <table class="table table-bordered table-striped" style="font-size:17px;">
+                    <thead class="table-dark">
+                        <tr><th>Concept</th><th>Matlab</th><th>Example</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Recursion</td><td>Function apne aap ko call karta hai</td><td>def f(n): return f(n-1)</td></tr>
+                        <tr><td>Base Case</td><td>Recursion kahan rukegi</td><td>if n == 0: return 1</td></tr>
+                        <tr><td>Recursive Case</td><td>Chhoti problem se call</td><td>return n * f(n-1)</td></tr>
+                        <tr><td>Factorial</td><td>n! = n × (n-1)!</td><td>factorial(5) = 120</td></tr>
+                        <tr><td>Fibonacci</td><td>fib(n) = fib(n-1) + fib(n-2)</td><td>0,1,1,2,3,5,8...</td></tr>
+                        <tr><td>RecursionError</td><td>Base case nahi — infinite loop</td><td>max depth exceeded</td></tr>
+                        <tr><td>Stack</td><td>Har call memory me store hoti hai</td><td>Call Stack</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <br>
+
+            <!-- CTA Row -->
+            <div class="cta-row">
+                <a href="/py_components/py_function.html" class="outline-btn">Previous</a>
+                <a href="/py_components/py_lamda.html" class="start-btn">
+                    Next
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
+                    </svg>
+                </a>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark py-4 mt-5">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-12">
+                    <h6 style="color: #adb5bd; margin-bottom: 0;">© 2026 Codepth . All Rights Reserved.</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SHARED CELL SCRIPT -->
+    <script>
+        const execCounts = {};
+
+        function getExecCount(id) {
+            if (!execCounts[id]) execCounts[id] = 1;
+            return execCounts[id];
+        }
+
+        function syncLines(ta, id) {
+            const lines = ta.value.split('\n').length;
+            const nums = Array.from({ length: lines }, (_, i) => i + 1).join('\n');
+            document.getElementById('lineNums_' + id).textContent = nums;
+        }
+
+        function autoResize(ta) {
+            ta.style.height = 'auto';
+            ta.style.height = ta.scrollHeight + 'px';
+        }
+
+        function onCodeInput(ta, id) {
+            autoResize(ta);
+            syncLines(ta, id);
+        }
+
+        function handleKeydown(e, id) {
+            if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+                e.preventDefault();
+                runCell(id);
+            }
+            if (e.key === 'Tab') {
+                e.preventDefault();
+                const ta = e.target;
+                const s = ta.selectionStart, end = ta.selectionEnd;
+                ta.value = ta.value.substring(0, s) + '    ' + ta.value.substring(end);
+                ta.selectionStart = ta.selectionEnd = s + 4;
+                syncLines(ta, id);
+            }
+        }
+
+        function copyCode(id) {
+            const code = document.getElementById('codeInput_' + id).value;
+            navigator.clipboard.writeText(code).catch(() => {});
+        }
+
+        function clearOutput(id) {
+            document.getElementById('outputSection_' + id).classList.remove('show');
+        }
+
+        function runCell(id) {
+            const code = document.getElementById('codeInput_' + id).value;
+            const btn  = document.getElementById('runBtn_' + id);
+            const icon = document.getElementById('runIcon_' + id);
+
+            btn.classList.add('running');
+            icon.className = 'run-icon spin';
+            btn.disabled = true;
+
+            setTimeout(() => {
+                const t0 = performance.now();
+                const printLines = [];
+                const fakePrint = (...args) => { printLines.push(args.map(String).join(' ')); };
+
+                let result;
+                let isError = false;
+                let errMsg  = '';
+
+                try {
+                    // handle import sys specially
+                    const sysModule = { getrecursionlimit: () => 1000 };
+                    const wrapped = code
+                        .replace(/\bprint\s*\(/g, '__print__(')
+                        .replace(/import sys\s*\n/, '')
+                        .replace(/sys\./g, '__sys__.');
+                    const fn = new Function('__print__', '__sys__', wrapped);
+                    result = fn(fakePrint, sysModule);
+                } catch (e) {
+                    isError = true;
+                    errMsg  = e.toString();
+                }
+
+                const elapsed = (performance.now() - t0).toFixed(1);
+                const count = getExecCount(id);
+
+                const sec    = document.getElementById('outputSection_' + id);
+                const body   = document.getElementById('outputBody_' + id);
+                const status = document.getElementById('outputStatus_' + id);
+                const timeEl = document.getElementById('execTime_' + id);
+
+                if (isError) {
+                    body.textContent   = errMsg;
+                    body.className     = 'output-body error';
+                    status.textContent = '✗ Error';
+                    status.className   = 'output-status err';
+                } else {
+                    let out = printLines.join('\n');
+                    if (!out && result !== undefined) out = String(result);
+                    if (!out) out = '(no output)';
+                    body.textContent   = out;
+                    body.className     = 'output-body';
+                    status.textContent = '✓ OK';
+                    status.className   = 'output-status ok';
+                }
+
+                timeEl.textContent = `Executed in ${elapsed}ms  ·  In [${count}]`;
+                document.getElementById('cellNum_' + id).textContent = `In [${count}]:`;
+                execCounts[id] = count + 1;
+
+                sec.classList.add('show');
+                btn.classList.remove('running');
+                icon.className = 'run-icon';
+                btn.disabled   = false;
+            }, 120);
+        }
+
+        window.addEventListener('load', () => {
+            document.querySelectorAll('.code-input').forEach(ta => {
+                autoResize(ta);
+                const id = ta.id.replace('codeInput_', '');
+                syncLines(ta, id);
+            });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+</html>

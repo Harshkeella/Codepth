@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Tutorial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="py_download.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-5 col-md-6">
+                    <img src="/img/codepth_logo_2.png" class="img-fluid" height="70" width="170" alt="Codepth Logo">
+                </div>
+                <div class="col-7 col-md-6">
+                    <div class="input-group">
+                        <input class="form-control" type="text" placeholder="Search....">
+                        <button class="btn btn-success" type="button">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- TOP NAVBAR -->
+    <nav class="navbar navbar-expand-lg top-navbar">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="/home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/Python.html">Python</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/mysql.html">MySQL</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/dsa.html">DSA</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/ml.html">Machine Learning</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/dl.html">Deep Learning</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE BODY -->
+    <div class="page-wrapper">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <span class="sidebar-title">Python Tutorial</span>
+            <ul>
+                <li class="active"><a href="/py_components/Py_downloads.html">Python Download</a></li>
+                <li><a href="/py_components/py_intro.html">Python Intro <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_keywords.html">Python Keywords <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_variables.html">Python Variables <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_operators.html">Python Operators <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_datatypes.html">Python Data types <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_if_else.html">Python If-else...<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_while.html">Python While Loops <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_for.html">Python For Loops<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_string.html">Python Strings<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_list.html">Python List <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_tuple.html">Python Tuples <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_sets.html">Python Sets <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_dict.html">Python Dictionaries <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_function.html">Python Functions <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_recursion.html">Python Recursion <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_lamda.html">Python Lamda Function <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_OOP.html">Python OOP<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_file_handling.html">Python File Handling<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_exception_handling.html">Python Exception Handling<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_REGEXP.html">Python REGEXP<span class="arrow">▼</span></a></li>
+            </ul>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <h1>Python me While Loop kya hota hai?</h1>
+            <hr>
+
+            <p style="font-size: 19px;">Jab hume <b>ek kaam baar baar karna ho</b> — jab tak koi condition True rahe —
+                tab hum <b>while loop</b> use karte hain. Jaise ek cricket match me batting tab tak chalti hai
+                <b>jab tak batsman out na ho jaye</b> — exactly waise hi while loop kaam karta hai.
+            </p>
+
+            <p style="font-size: 19px;">Is page me yeh sab sikhenge :-</p>
+            <ul style="font-size: 18px; margin-left: 40px; line-height: 2.2;">
+                <li>1. <b>Basic while loop</b></li>
+                <li>2. <b>while loop me counter</b></li>
+                <li>3. <b>break</b> — loop beech me rokna</li>
+                <li>4. <b>continue</b> — ek iteration skip karna</li>
+                <li>5. <b>while-else</b></li>
+                <li>6. <b>Infinite loop</b> — aur use kaise sambhalen</li>
+            </ul>
+
+            <p style="font-size: 19px; margin-top: 10px;">
+                <b>Note :-</b> While loop me <b>condition ka False hona zaroori hai</b> warna loop
+                kabhi band nahi hoga — ise <b>Infinite Loop</b> kehte hain. Isliye loop ke andar
+                <b>counter ya update</b> zaroor likhein.
+            </p>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 1. BASIC WHILE LOOP           -->
+            <!-- ============================= -->
+            <h1>1. Basic while Loop</h1>
+            <p style="font-size: 19px;">while loop tab tak chalta rehta hai <b>jab tak condition True ho</b>.
+                Jaise hi condition False hoti hai, loop band ho jata hai.
+            </p>
+
+            <div style="overflow-x:auto; margin: 20px 0;">
+                <table class="table table-bordered" style="font-size:17px;">
+                    <thead class="table-dark">
+                        <tr><th>Syntax</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>
+                            <pre style="margin:0; background:transparent; border:none;">while condition:
+    # yeh code tab tak chalega jab tak condition True ho
+    # counter update karna mat bhoolna!</pre>
+                        </td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Cell 1 -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> 1 se 5 tak print karna</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_w1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('w1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('w1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_w1" onclick="runCell('w1')">
+                            <div class="run-icon" id="runIcon_w1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_w1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_w1" spellcheck="false"
+                            oninput="onCodeInput(this,'w1')" onkeydown="handleKeydown(event,'w1')">i = 1
+
+while i <= 5:
+    print(i)
+    i += 1     # i = i + 1 — yeh na likho toh loop kabhi band nahi hoga!
+
+print("Loop khatam!")</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_w1">
+                    <div class="output-header">
+                        <span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_w1"></span>
+                            <button class="clear-btn" onclick="clearOutput('w1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_w1"></div>
+                    <div class="exec-time" id="execTime_w1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> Ulti ginti — 10 se 1 tak countdown</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_w2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('w2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('w2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_w2" onclick="runCell('w2')">
+                            <div class="run-icon" id="runIcon_w2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_w2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_w2" spellcheck="false"
+                            oninput="onCodeInput(this,'w2')" onkeydown="handleKeydown(event,'w2')">n = 10
+
+while n >= 1:
+    print(n)
+    n -= 1     # har baar 1 kam karo
+
+print("Rocket launch! 🚀")</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_w2">
+                    <div class="output-header">
+                        <span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_w2"></span>
+                            <button class="clear-btn" onclick="clearOutput('w2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_w2"></div>
+                    <div class="exec-time" id="execTime_w2"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 2. COUNTER & SUM              -->
+            <!-- ============================= -->
+            <h1>2. While Loop se Calculations</h1>
+            <p style="font-size: 19px;">While loop ka use sirf print karne ke liye nahi, <b>calculations ke liye bhi</b>
+                hota hai — jaise numbers ka sum nikalna, factorial calculate karna, etc.
+            </p>
+
+            <!-- Cell 1 -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> 1 se N tak ka sum nikalna</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_wc1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('wc1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('wc1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_wc1" onclick="runCell('wc1')">
+                            <div class="run-icon" id="runIcon_wc1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_wc1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_wc1" spellcheck="false"
+                            oninput="onCodeInput(this,'wc1')" onkeydown="handleKeydown(event,'wc1')">n = 10
+i = 1
+total = 0
+
+while i <= n:
+    total += i    # total = total + i
+    i += 1
+
+print("1 se", n, "tak ka sum:", total)</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_wc1">
+                    <div class="output-header">
+                        <span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_wc1"></span>
+                            <button class="clear-btn" onclick="clearOutput('wc1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_wc1"></div>
+                    <div class="exec-time" id="execTime_wc1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> Kisi number ki multiplication table print karna</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_wc2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('wc2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('wc2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_wc2" onclick="runCell('wc2')">
+                            <div class="run-icon" id="runIcon_wc2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_wc2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_wc2" spellcheck="false"
+                            oninput="onCodeInput(this,'wc2')" onkeydown="handleKeydown(event,'wc2')">num = 5
+i = 1
+
+print(num, "ka Pahada:")
+while i <= 10:
+    print(num, "x", i, "=", num * i)
+    i += 1</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_wc2">
+                    <div class="output-header">
+                        <span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_wc2"></span>
+                            <button class="clear-btn" onclick="clearOutput('wc2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_wc2"></div>
+                    <div class="exec-time" id="execTime_wc2"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 3 -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 3:</b> Factorial calculate karna (n!)</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_wc3">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('wc3')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('wc3')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_wc3" onclick="runCell('wc3')">
+                            <div class="run-icon" id="runIcon_wc3"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_wc3">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_wc3" spellcheck="false"
+                            oninput="onCodeInput(this,'wc3')" onkeydown="handleKeydown(event,'wc3')">n = 6
+i = 1
+factorial = 1
+
+while i <= n:
+    factorial *= i    # factorial = factorial * i
+    i += 1
+
+print(n, "! =", factorial)    # 6! = 720</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_wc3">
+                    <div class="output-header">
+                        <span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_wc3"></span>
+                            <button class="clear-btn" onclick="clearOutput('wc3')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_wc3"></div>
+                    <div class="exec-time" id="execTime_wc3"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 3. BREAK                      -->
+            <!-- ============================= -->
+            <h1>3. break Statement</h1>
+            <p style="font-size: 19px;"><b>break</b> ka use karke hum loop ko <b>beech me hi band</b> kar sakte hain —
+                chahe condition abhi bhi True ho. Jaise exam me ek baar answer mil gaya toh aage dekhna band karo.
+            </p>
+
+            <!-- Cell 1 -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> 5 aate hi loop band karo</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_brk1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('brk1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('brk1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_brk1" onclick="runCell('brk1')">
+                            <div class="run-icon" id="runIcon_brk1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_brk1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_brk1" spellcheck="false"
+                            oninput="onCodeInput(this,'brk1')" onkeydown="handleKeydown(event,'brk1')">i = 1
+
+while i <= 10:
+    if i == 5:
+        print("5 mil gaya! Loop band karte hain.")
+        break        # loop yahan rok do
+    print(i)
+    i += 1
+
+print("Loop ke baad")</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_brk1">
+                    <div class="output-header">
+                        <span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_brk1"></span>
+                            <button class="clear-btn" onclick="clearOutput('brk1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_brk1"></div>
+                    <div class="exec-time" id="execTime_brk1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> ATM PIN — 3 galat tries ke baad block karo</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_brk2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('brk2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('brk2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_brk2" onclick="runCell('brk2')">
+                            <div class="run-icon" id="runIcon_brk2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_brk2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_brk2" spellcheck="false"
+                            oninput="onCodeInput(this,'brk2')" onkeydown="handleKeydown(event,'brk2')">correct_pin = 1234
+tries = 0
+attempts = [1234, 9999, 5678]   # user ke attempts simulate kar rahe hain
+
+while tries < 3:
+    entered = attempts[tries]
+    tries += 1
+    print(f"Attempt {tries}: PIN {entered} enter kiya")
+
+    if entered == correct_pin:
+        print("Sahi PIN! Access granted.")
+        break
+    else:
+        print("Galat PIN!")
+
+if tries == 3 and attempts[tries-1] != correct_pin:
+    print("3 baar galat — Card block ho gaya!")</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_brk2">
+                    <div class="output-header">
+                        <span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_brk2"></span>
+                            <button class="clear-btn" onclick="clearOutput('brk2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_brk2"></div>
+                    <div class="exec-time" id="execTime_brk2"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 4. CONTINUE                   -->
+            <!-- ============================= -->
+            <h1>4. continue Statement</h1>
+            <p style="font-size: 19px;"><b>continue</b> ek iteration ko <b>skip</b> kar deta hai aur loop
+                <b>agli iteration se aage chalta rehta hai</b>. break ki tarah loop band nahi hota —
+                sirf uss ek step ko chhod deta hai.
+            </p>
+
+            <!-- Cell 1 -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> 1 se 10 me sirf odd numbers print karo</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_con1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('con1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('con1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_con1" onclick="runCell('con1')">
+                            <div class="run-icon" id="runIcon_con1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_con1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_con1" spellcheck="false"
+                            oninput="onCodeInput(this,'con1')" onkeydown="handleKeydown(event,'con1')">i = 0
+
+while i < 10:
+    i += 1
+    if i % 2 == 0:
+        continue     # even number aaye toh skip karo
+    print(i)         # sirf odd numbers print honge</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_con1">
+                    <div class="output-header">
+                        <span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_con1"></span>
+                            <button class="clear-btn" onclick="clearOutput('con1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_con1"></div>
+                    <div class="exec-time" id="execTime_con1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> 1 se 20 me 3 ke multiples skip karo</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_con2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('con2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('con2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_con2" onclick="runCell('con2')">
+                            <div class="run-icon" id="runIcon_con2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_con2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_con2" spellcheck="false"
+                            oninput="onCodeInput(this,'con2')" onkeydown="handleKeydown(event,'con2')">i = 0
+
+print("3 ke multiples chhodkar baaki numbers:")
+while i < 20:
+    i += 1
+    if i % 3 == 0:
+        continue    # 3 ka multiple? skip!
+    print(i, end=" ")</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_con2">
+                    <div class="output-header">
+                        <span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_con2"></span>
+                            <button class="clear-btn" onclick="clearOutput('con2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_con2"></div>
+                    <div class="exec-time" id="execTime_con2"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 5. WHILE-ELSE                 -->
+            <!-- ============================= -->
+            <h1>5. while-else Statement</h1>
+            <p style="font-size: 19px;">Python me while ke saath <b>else bhi likh sakte hain</b>. <b>else wala block
+                tab chalta hai jab loop normally khatam ho</b> — yaani condition False ho gayi ho.
+                Agar loop <b>break se band hua</b> ho toh else <b>nahi chalega</b>.
+            </p>
+
+            <!-- Cell 1 -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> Normal loop — else chalega</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_we1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('we1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('we1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_we1" onclick="runCell('we1')">
+                            <div class="run-icon" id="runIcon_we1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_we1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_we1" spellcheck="false"
+                            oninput="onCodeInput(this,'we1')" onkeydown="handleKeydown(event,'we1')">i = 1
+
+while i <= 5:
+    print(i)
+    i += 1
+else:
+    print("Loop normally khatam hua — else chala!")</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_we1">
+                    <div class="output-header">
+                        <span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_we1"></span>
+                            <button class="clear-btn" onclick="clearOutput('we1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_we1"></div>
+                    <div class="exec-time" id="execTime_we1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> break se band — else nahi chalega</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_we2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('we2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('we2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_we2" onclick="runCell('we2')">
+                            <div class="run-icon" id="runIcon_we2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_we2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_we2" spellcheck="false"
+                            oninput="onCodeInput(this,'we2')" onkeydown="handleKeydown(event,'we2')">i = 1
+
+while i <= 5:
+    if i == 3:
+        print("3 par break kiya!")
+        break
+    print(i)
+    i += 1
+else:
+    # break se loop band hua isliye yeh nahi chalega
+    print("Yeh print NAHI hoga")</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_we2">
+                    <div class="output-header">
+                        <span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_we2"></span>
+                            <button class="clear-btn" onclick="clearOutput('we2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_we2"></div>
+                    <div class="exec-time" id="execTime_we2"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 6. INFINITE LOOP              -->
+            <!-- ============================= -->
+            <h1>6. Infinite Loop</h1>
+            <p style="font-size: 19px;">Jab while loop ki <b>condition kabhi False nahi hoti</b> toh loop hamesha
+                chalta rehta hai — isse <b>Infinite Loop</b> kehte hain. Yeh zyaadatar <b>galti se</b> hota hai,
+                lekin kabhi kabhi <b>jaanboojhkar bhi</b> use kiya jaata hai (jaise server programs).
+                Isse rokne ke liye <b>break</b> use karte hain.
+            </p>
+
+            <!-- Cell 1 - controlled infinite -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> while True — break se control karna</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_inf1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('inf1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('inf1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_inf1" onclick="runCell('inf1')">
+                            <div class="run-icon" id="runIcon_inf1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_inf1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_inf1" spellcheck="false"
+                            oninput="onCodeInput(this,'inf1')" onkeydown="handleKeydown(event,'inf1')">count = 0
+
+while True:    # yeh hamesha True rahega
+    count += 1
+    print("Iteration:", count)
+
+    if count == 5:
+        print("5 tak pahuncha — ab band karte hain!")
+        break  # break nahi hota toh yeh kabhi band nahi hota</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_inf1">
+                    <div class="output-header">
+                        <span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_inf1"></span>
+                            <button class="clear-btn" onclick="clearOutput('inf1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_inf1"></div>
+                    <div class="exec-time" id="execTime_inf1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 - common mistake -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> Common galti — counter update bhool jana (simulated)</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_inf2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('inf2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('inf2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_inf2" onclick="runCell('inf2')">
+                            <div class="run-icon" id="runIcon_inf2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_inf2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_inf2" spellcheck="false"
+                            oninput="onCodeInput(this,'inf2')" onkeydown="handleKeydown(event,'inf2')"># GALAT tarika — i += 1 nahi likha toh infinite loop ban jata
+# i = 1
+# while i <= 5:
+#     print(i)
+#     # i += 1 — yeh bhool gaye! Ab i hamesha 1 rahega
+
+# SAHI tarika — hamesha counter update karo
+i = 1
+while i <= 5:
+    print(i)
+    i += 1    # yeh ZAROORI hai!
+
+print("Loop sahi se khatam hua!")</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_inf2">
+                    <div class="output-header">
+                        <span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_inf2"></span>
+                            <button class="clear-btn" onclick="clearOutput('inf2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_inf2"></div>
+                    <div class="exec-time" id="execTime_inf2"></div>
+                </div>
+            </div></div>
+
+            <br><hr><br>
+
+            <!-- Quick Summary -->
+            <h4>Quick Summary — while loop ek nazar me</h4>
+            <div style="overflow-x:auto; margin: 20px 0;">
+                <table class="table table-bordered table-striped" style="font-size:17px;">
+                    <thead class="table-dark">
+                        <tr><th>Concept</th><th>Kaam</th><th>Example</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>while</td><td>Condition True hone tak loop chalaao</td><td>while i &lt;= 5:</td></tr>
+                        <tr><td>break</td><td>Loop beech me rokna</td><td>if i == 3: break</td></tr>
+                        <tr><td>continue</td><td>Ek step skip karna</td><td>if i % 2 == 0: continue</td></tr>
+                        <tr><td>while-else</td><td>Loop normally khatam ho toh else chalao</td><td>while ...: ... else: ...</td></tr>
+                        <tr><td>while True</td><td>Infinite loop — break se rokna padta hai</td><td>while True: ... break</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <br>
+
+            <!-- CTA Row -->
+            <div class="cta-row">
+                <a href="/py_components/py_if_else.html" class="outline-btn">Previous</a>
+                <a href="/py_components/py_for.html" class="start-btn">
+                    Next
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
+                    </svg>
+                </a>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark py-4 mt-5">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-12">
+                    <h6 style="color: #adb5bd; margin-bottom: 0;">© 2026 Codepth . All Rights Reserved.</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SHARED CELL SCRIPT -->
+    <script>
+        const execCounts = {};
+
+        function getExecCount(id) {
+            if (!execCounts[id]) execCounts[id] = 1;
+            return execCounts[id];
+        }
+
+        function syncLines(ta, id) {
+            const lines = ta.value.split('\n').length;
+            const nums = Array.from({ length: lines }, (_, i) => i + 1).join('\n');
+            document.getElementById('lineNums_' + id).textContent = nums;
+        }
+
+        function autoResize(ta) {
+            ta.style.height = 'auto';
+            ta.style.height = ta.scrollHeight + 'px';
+        }
+
+        function onCodeInput(ta, id) {
+            autoResize(ta);
+            syncLines(ta, id);
+        }
+
+        function handleKeydown(e, id) {
+            if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+                e.preventDefault();
+                runCell(id);
+            }
+            if (e.key === 'Tab') {
+                e.preventDefault();
+                const ta = e.target;
+                const s = ta.selectionStart, end = ta.selectionEnd;
+                ta.value = ta.value.substring(0, s) + '    ' + ta.value.substring(end);
+                ta.selectionStart = ta.selectionEnd = s + 4;
+                syncLines(ta, id);
+            }
+        }
+
+        function copyCode(id) {
+            const code = document.getElementById('codeInput_' + id).value;
+            navigator.clipboard.writeText(code).catch(() => {});
+        }
+
+        function clearOutput(id) {
+            document.getElementById('outputSection_' + id).classList.remove('show');
+        }
+
+        function runCell(id) {
+            const code = document.getElementById('codeInput_' + id).value;
+            const btn  = document.getElementById('runBtn_' + id);
+            const icon = document.getElementById('runIcon_' + id);
+
+            btn.classList.add('running');
+            icon.className = 'run-icon spin';
+            btn.disabled = true;
+
+            setTimeout(() => {
+                const t0 = performance.now();
+                const printLines = [];
+                const fakePrint = (...args) => { printLines.push(args.map(String).join(' ')); };
+
+                let result;
+                let isError = false;
+                let errMsg = '';
+
+                try {
+                    const wrapped = code.replace(/\bprint\s*\(/g, '__print__(');
+                    const fn = new Function('__print__', wrapped);
+                    result = fn(fakePrint);
+                } catch (e) {
+                    isError = true;
+                    errMsg = e.toString();
+                }
+
+                const elapsed = (performance.now() - t0).toFixed(1);
+                const count = getExecCount(id);
+
+                const sec    = document.getElementById('outputSection_' + id);
+                const body   = document.getElementById('outputBody_' + id);
+                const status = document.getElementById('outputStatus_' + id);
+                const timeEl = document.getElementById('execTime_' + id);
+
+                if (isError) {
+                    body.textContent   = errMsg;
+                    body.className     = 'output-body error';
+                    status.textContent = '✗ Error';
+                    status.className   = 'output-status err';
+                } else {
+                    let out = printLines.join('\n');
+                    if (!out && result !== undefined) out = String(result);
+                    if (!out) out = '(no output)';
+                    body.textContent   = out;
+                    body.className     = 'output-body';
+                    status.textContent = '✓ OK';
+                    status.className   = 'output-status ok';
+                }
+
+                timeEl.textContent = `Executed in ${elapsed}ms  ·  In [${count}]`;
+                document.getElementById('cellNum_' + id).textContent = `In [${count}]:`;
+                execCounts[id] = count + 1;
+
+                sec.classList.add('show');
+                btn.classList.remove('running');
+                icon.className = 'run-icon';
+                btn.disabled   = false;
+            }, 120);
+        }
+
+        window.addEventListener('load', () => {
+            document.querySelectorAll('.code-input').forEach(ta => {
+                autoResize(ta);
+                const id = ta.id.replace('codeInput_', '');
+                syncLines(ta, id);
+            });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+</html>

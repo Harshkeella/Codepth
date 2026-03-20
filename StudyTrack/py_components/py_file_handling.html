@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Tutorial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="py_download.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-5 col-md-6">
+                    <img src="/img/codepth_logo_2.png" class="img-fluid" height="70" width="170" alt="Codepth Logo">
+                </div>
+                <div class="col-7 col-md-6">
+                    <div class="input-group">
+                        <input class="form-control" type="text" placeholder="Search....">
+                        <button class="btn btn-success" type="button">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- TOP NAVBAR -->
+    <nav class="navbar navbar-expand-lg top-navbar">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="/home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/Python.html">Python</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/mysql.html">MySQL</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/dsa.html">DSA</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/ml.html">Machine Learning</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/dl.html">Deep Learning</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE BODY -->
+    <div class="page-wrapper">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <span class="sidebar-title">Python Tutorial</span>
+            <ul>
+                <li class="active"><a href="/py_components/Py_downloads.html">Python Download</a></li>
+                <li><a href="/py_components/py_intro.html">Python Intro <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_keywords.html">Python Keywords <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_variables.html">Python Variables <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_operators.html">Python Operators <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_datatypes.html">Python Data types <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_if_else.html">Python If-else...<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_while.html">Python While Loops <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_for.html">Python For Loops<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_string.html">Python Strings<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_list.html">Python List <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_tuple.html">Python Tuples <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_sets.html">Python Sets <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_dict.html">Python Dictionaries <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_function.html">Python Functions <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_recursion.html">Python Recursion <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_lamda.html">Python Lamda Function <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_OOP.html">Python OOP<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_file_handling.html">Python File Handling<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_exception_handling.html">Python Exception Handling<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_REGEXP.html">Python REGEXP<span class="arrow">▼</span></a></li>
+            </ul>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <h1>Python me File Handling kya hai?</h1>
+            <hr>
+
+            <p style="font-size: 19px;">File Handling ka matlab hai <b>computer ki files ke saath kaam karna</b> —
+            files ko <b>padhna (read)</b>, <b>likhna (write)</b>, <b>kuch aur add karna (append)</b>
+            aur <b>band karna (close)</b>. Real applications me data hamesha files me save hota hai —
+            jaise notes app, login systems, log files etc.</p>
+
+            <p style="font-size: 19px;">Is page me yeh sab sikhenge :-</p>
+            <ul style="font-size: 18px; margin-left: 40px; line-height: 2.2;">
+                <li>1. <b>File open karna</b> — open() aur modes</li>
+                <li>2. <b>File me likhna</b> — write() aur writelines()</li>
+                <li>3. <b>File padhna</b> — read(), readline(), readlines()</li>
+                <li>4. <b>File me add karna</b> — append mode</li>
+                <li>5. <b>with statement</b> — best practice</li>
+                <li>6. <b>File exist check karna</b> — os module</li>
+                <li>7. <b>CSV file handling</b></li>
+            </ul>
+
+            <p style="font-size: 19px; margin-top: 10px; background: #fff3cd; padding: 12px 16px; border-left: 4px solid #ffc107; border-radius: 4px;">
+                <b>Note :-</b> Yeh page ek <b>interactive simulator</b> hai. Real Python me files
+                disk pe save hoti hain, lekin yahan hum ek <b>virtual file system</b> use karte hain
+                taaki aap browser me hi sab kuch try kar sakein aur output dekh sakein.
+            </p>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 1. FILE OPEN MODES            -->
+            <!-- ============================= -->
+            <h1>1. File Open Karna — open() aur Modes</h1>
+            <p style="font-size: 19px;">Python me file kholne ke liye <b>open()</b> function use hota hai.
+            Isme <b>file ka naam</b> aur <b>mode</b> dena padta hai.</p>
+
+            <div style="overflow-x:auto; margin: 20px 0;">
+                <table class="table table-bordered table-striped" style="font-size:17px;">
+                    <thead class="table-dark">
+                        <tr><th>Mode</th><th>Matlab</th><th>File nahi toh?</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><b>"r"</b></td><td>Read — file padhna (default)</td><td>FileNotFoundError</td></tr>
+                        <tr><td><b>"w"</b></td><td>Write — likhna (purana data mit jaata hai)</td><td>Nai file ban jaati hai</td></tr>
+                        <tr><td><b>"a"</b></td><td>Append — end me add karna</td><td>Nai file ban jaati hai</td></tr>
+                        <tr><td><b>"x"</b></td><td>Create — nai file banana</td><td>FileExistsError agar already hai</td></tr>
+                        <tr><td><b>"r+"</b></td><td>Read + Write dono</td><td>FileNotFoundError</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Cell 1 -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> open() modes ka demonstration</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_m1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('m1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('m1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_m1" onclick="runCell('m1')">
+                            <div class="run-icon" id="runIcon_m1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_m1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_m1" spellcheck="false"
+                            oninput="onCodeInput(this,'m1')" onkeydown="handleKeydown(event,'m1')">print("File Modes:")
+print("'r'  — Read mode    : file padhne ke liye")
+print("'w'  — Write mode   : likhne ke liye (purana data delete)")
+print("'a'  — Append mode  : end me add karna")
+print("'x'  — Create mode  : nai file banana")
+print("'r+' — Read+Write   : dono kaam")
+print()
+print("Syntax: f = open('filename.txt', 'mode')")
+print("File band karna: f.close()")</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_m1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_m1"></span>
+                            <button class="clear-btn" onclick="clearOutput('m1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_m1"></div>
+                    <div class="exec-time" id="execTime_m1"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 2. FILE WRITE                 -->
+            <!-- ============================= -->
+            <h1>2. File Me Likhna — write() aur writelines()</h1>
+            <p style="font-size: 19px;"><b>"w" mode</b> me file open karo aur <b>write()</b> se likhو.
+            Agar file pehle se hai toh <b>purana data delete</b> ho jaata hai.
+            <b>writelines()</b> se list ki saari lines ek saath likh sakte hain.</p>
+
+            <!-- Cell 1 -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> File create karke likhna — write()</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_w1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('w1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('w1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_w1" onclick="runCell('w1')">
+                            <div class="run-icon" id="runIcon_w1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_w1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_w1" spellcheck="false"
+                            oninput="onCodeInput(this,'w1')" onkeydown="handleKeydown(event,'w1')">f = open("notes.txt", "w")   # write mode
+f.write("Python bahut aasaan hai.\n")
+f.write("Main Python seekh raha hoon.\n")
+f.write("File Handling bahut useful hai.\n")
+f.close()
+
+print("File 'notes.txt' successfully likhi gayi!")</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_w1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_w1"></span>
+                            <button class="clear-btn" onclick="clearOutput('w1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_w1"></div>
+                    <div class="exec-time" id="execTime_w1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> writelines() — list ki saari lines ek saath likhna</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_w2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('w2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('w2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_w2" onclick="runCell('w2')">
+                            <div class="run-icon" id="runIcon_w2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_w2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_w2" spellcheck="false"
+                            oninput="onCodeInput(this,'w2')" onkeydown="handleKeydown(event,'w2')">students = [
+    "Rahul - 88\n",
+    "Priya - 95\n",
+    "Arjun - 76\n",
+    "Neha  - 91\n"
+]
+
+f = open("marks.txt", "w")
+f.writelines(students)    # list ki saari lines ek baar me
+f.close()
+
+print("File 'marks.txt' mein", len(students), "students ke marks likhe gaye!")</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_w2">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_w2"></span>
+                            <button class="clear-btn" onclick="clearOutput('w2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_w2"></div>
+                    <div class="exec-time" id="execTime_w2"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 3. FILE READ                  -->
+            <!-- ============================= -->
+            <h1>3. File Padhna — read(), readline(), readlines()</h1>
+            <p style="font-size: 19px;">File padhne ke <b>3 tarike</b> hain — poori file ek saath,
+            ek line, ya saari lines ki list.</p>
+
+            <div style="overflow-x:auto; margin: 20px 0;">
+                <table class="table table-bordered table-striped" style="font-size:17px;">
+                    <thead class="table-dark">
+                        <tr><th>Method</th><th>Kaam</th><th>Return Type</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>read()</td><td>Poori file ek string me</td><td>str</td></tr>
+                        <tr><td>readline()</td><td>Ek line padho</td><td>str</td></tr>
+                        <tr><td>readlines()</td><td>Saari lines ki list</td><td>list</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Cell 1 -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> read() — poori file ek saath padhna</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_r1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('r1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('r1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_r1" onclick="runCell('r1')">
+                            <div class="run-icon" id="runIcon_r1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_r1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_r1" spellcheck="false"
+                            oninput="onCodeInput(this,'r1')" onkeydown="handleKeydown(event,'r1')"># Pehle file likhte hain
+f = open("story.txt", "w")
+f.write("Ek baar ki baat hai.\n")
+f.write("Ek chhota sa gaon tha.\n")
+f.write("Wahan ek Python developer rehta tha.\n")
+f.close()
+
+# Ab read karte hain
+f = open("story.txt", "r")
+content = f.read()     # poori file
+f.close()
+
+print("--- File Content ---")
+print(content)</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_r1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_r1"></span>
+                            <button class="clear-btn" onclick="clearOutput('r1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_r1"></div>
+                    <div class="exec-time" id="execTime_r1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> readline() — ek ek line padhna</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_r2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('r2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('r2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_r2" onclick="runCell('r2')">
+                            <div class="run-icon" id="runIcon_r2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_r2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_r2" spellcheck="false"
+                            oninput="onCodeInput(this,'r2')" onkeydown="handleKeydown(event,'r2')"># File likhna
+f = open("data.txt", "w")
+f.write("Line 1: Pehli line\nLine 2: Doosri line\nLine 3: Teesri line\n")
+f.close()
+
+# readline() se ek ek line padhna
+f = open("data.txt", "r")
+line1 = f.readline()    # pehli line
+line2 = f.readline()    # doosri line
+line3 = f.readline()    # teesri line
+f.close()
+
+print(repr(line1))   # \n dikhega
+print(repr(line2))
+print(repr(line3))</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_r2">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_r2"></span>
+                            <button class="clear-btn" onclick="clearOutput('r2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_r2"></div>
+                    <div class="exec-time" id="execTime_r2"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 3 -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 3:</b> readlines() — saari lines list me + loop se padhna</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_r3">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('r3')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('r3')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_r3" onclick="runCell('r3')">
+                            <div class="run-icon" id="runIcon_r3"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_r3">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_r3" spellcheck="false"
+                            oninput="onCodeInput(this,'r3')" onkeydown="handleKeydown(event,'r3')"># File likhna
+f = open("fruits.txt", "w")
+f.write("Apple\nMango\nBanana\nGrapes\nKiwi\n")
+f.close()
+
+# readlines() — list milti hai
+f = open("fruits.txt", "r")
+lines = f.readlines()
+f.close()
+
+print("All lines:", lines)
+print()
+print("Loop se padhna:")
+for i, line in enumerate(lines, 1):
+    print(f"  Line {i}: {line.strip()}")   # strip() \n hatata hai</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_r3">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_r3"></span>
+                            <button class="clear-btn" onclick="clearOutput('r3')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_r3"></div>
+                    <div class="exec-time" id="execTime_r3"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 4. APPEND MODE                -->
+            <!-- ============================= -->
+            <h1>4. File Me Add Karna — Append Mode ("a")</h1>
+            <p style="font-size: 19px;"><b>Append mode</b> me file ka <b>purana data safe rehta hai</b>
+            aur naya data <b>end me add</b> hota hai. Yeh log files aur diaries ke liye perfect hai.</p>
+
+            <!-- Cell 1 -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> Append — diary me roz nayi entry add karna</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_a1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('a1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('a1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_a1" onclick="runCell('a1')">
+                            <div class="run-icon" id="runIcon_a1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_a1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_a1" spellcheck="false"
+                            oninput="onCodeInput(this,'a1')" onkeydown="handleKeydown(event,'a1')"># Pehli baar file banana
+f = open("diary.txt", "w")
+f.write("Day 1: Python install kiya.\n")
+f.close()
+
+# Append — nai entries add karo, purani delete nahi hogi
+f = open("diary.txt", "a")
+f.write("Day 2: Variables aur Data Types seekhe.\n")
+f.close()
+
+f = open("diary.txt", "a")
+f.write("Day 3: Functions aur OOP padha.\n")
+f.close()
+
+# Final file padhna
+f = open("diary.txt", "r")
+print("--- Diary ---")
+print(f.read())
+f.close()</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_a1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_a1"></span>
+                            <button class="clear-btn" onclick="clearOutput('a1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_a1"></div>
+                    <div class="exec-time" id="execTime_a1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> Write vs Append — fark dekhna</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_a2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('a2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('a2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_a2" onclick="runCell('a2')">
+                            <div class="run-icon" id="runIcon_a2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_a2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_a2" spellcheck="false"
+                            oninput="onCodeInput(this,'a2')" onkeydown="handleKeydown(event,'a2')"># Write mode — purana data delete ho jaata hai
+f = open("test.txt", "w")
+f.write("Pehli baar likha.\n")
+f.close()
+
+f = open("test.txt", "w")    # dobara write mode
+f.write("Doosri baar likha.\n")   # pehla data CHALA GAYA!
+f.close()
+
+f = open("test.txt", "r")
+print("Write mode ke baad:")
+print(f.read())
+f.close()
+
+# Append mode — purana data safe rehta hai
+f = open("test2.txt", "w")
+f.write("Pehli baar likha.\n")
+f.close()
+
+f = open("test2.txt", "a")   # append mode
+f.write("Doosri baar add kiya.\n")
+f.close()
+
+f = open("test2.txt", "r")
+print("Append mode ke baad:")
+print(f.read())
+f.close()</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_a2">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_a2"></span>
+                            <button class="clear-btn" onclick="clearOutput('a2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_a2"></div>
+                    <div class="exec-time" id="execTime_a2"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 5. WITH STATEMENT             -->
+            <!-- ============================= -->
+            <h1>5. with Statement — Best Practice</h1>
+            <p style="font-size: 19px;"><b>with</b> statement se file automatically <b>band ho jaati hai</b>
+            — chahe koi error aaye ya nahi. Yeh f.close() likhne se better aur safer hai.
+            Professional code me hamesha <b>with</b> use karna chahiye.</p>
+
+            <div style="overflow-x:auto; margin: 20px 0;">
+                <table class="table table-bordered" style="font-size:17px;">
+                    <thead class="table-dark"><tr><th>Syntax</th></tr></thead>
+                    <tbody><tr><td>
+                        <pre style="margin:0; background:transparent; border:none;">with open("filename.txt", "mode") as f:
+    # yahan kaam karo
+    # block khatam hone par file auto-close ho jaati hai</pre>
+                    </td></tr></tbody>
+                </table>
+            </div>
+
+            <!-- Cell 1 -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> with statement se file likhna aur padhna</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_ws1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('ws1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('ws1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_ws1" onclick="runCell('ws1')">
+                            <div class="run-icon" id="runIcon_ws1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_ws1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_ws1" spellcheck="false"
+                            oninput="onCodeInput(this,'ws1')" onkeydown="handleKeydown(event,'ws1')"># with se likhna — f.close() ki zarurat nahi!
+with open("student.txt", "w") as f:
+    f.write("Name: Rahul\n")
+    f.write("Age: 21\n")
+    f.write("City: Delhi\n")
+    f.write("Marks: 88\n")
+# yahan file automatically band ho gayi
+
+# with se padhna
+with open("student.txt", "r") as f:
+    content = f.read()
+
+print("--- student.txt ---")
+print(content)</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_ws1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_ws1"></span>
+                            <button class="clear-btn" onclick="clearOutput('ws1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_ws1"></div>
+                    <div class="exec-time" id="execTime_ws1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> with + loop — multiple students ka data save karna</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_ws2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('ws2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('ws2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_ws2" onclick="runCell('ws2')">
+                            <div class="run-icon" id="runIcon_ws2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_ws2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_ws2" spellcheck="false"
+                            oninput="onCodeInput(this,'ws2')" onkeydown="handleKeydown(event,'ws2')">students = [
+    ("Rahul", 88), ("Priya", 95), ("Arjun", 76),
+    ("Neha", 91),  ("Vikram", 83)
+]
+
+# Write
+with open("results.txt", "w") as f:
+    f.write("=== Exam Results ===\n")
+    for name, marks in students:
+        grade = "A" if marks >= 90 else "B" if marks >= 80 else "C"
+        f.write(f"{name:<10} {marks}  Grade: {grade}\n")
+
+# Read back
+with open("results.txt", "r") as f:
+    for line in f:
+        print(line.strip())</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_ws2">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_ws2"></span>
+                            <button class="clear-btn" onclick="clearOutput('ws2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_ws2"></div>
+                    <div class="exec-time" id="execTime_ws2"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 6. FILE EXISTENCE CHECK       -->
+            <!-- ============================= -->
+            <h1>6. File Exist Check Karna — os Module</h1>
+            <p style="font-size: 19px;"><b>os module</b> se file exist karti hai ya nahi check kar sakte hain,
+            file rename, delete aur bahut kuch kar sakte hain.</p>
+
+            <!-- Cell 1 -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> os.path.exists() — file exist karti hai ya nahi</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_os1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('os1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('os1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_os1" onclick="runCell('os1')">
+                            <div class="run-icon" id="runIcon_os1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_os1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_os1" spellcheck="false"
+                            oninput="onCodeInput(this,'os1')" onkeydown="handleKeydown(event,'os1')">import os
+
+# Pehle ek file banana
+with open("check_me.txt", "w") as f:
+    f.write("Main exist karta hoon!")
+
+# os.path.exists() — file hai ya nahi
+if os.path.exists("check_me.txt"):
+    print("check_me.txt exist karti hai!")
+else:
+    print("File nahi mili.")
+
+if os.path.exists("ghost.txt"):
+    print("ghost.txt exist karti hai!")
+else:
+    print("ghost.txt exist nahi karti.")
+
+# os.path.getsize() — file ka size
+size = os.path.getsize("check_me.txt")
+print(f"check_me.txt ka size: {size} bytes")</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_os1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_os1"></span>
+                            <button class="clear-btn" onclick="clearOutput('os1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_os1"></div>
+                    <div class="exec-time" id="execTime_os1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> os.rename() aur os.remove() — file rename aur delete</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_os2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('os2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('os2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_os2" onclick="runCell('os2')">
+                            <div class="run-icon" id="runIcon_os2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_os2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_os2" spellcheck="false"
+                            oninput="onCodeInput(this,'os2')" onkeydown="handleKeydown(event,'os2')">import os
+
+# File banana
+with open("old_name.txt", "w") as f:
+    f.write("Mera naam badla jayega!")
+
+print("old_name.txt exist:", os.path.exists("old_name.txt"))
+
+# Rename karna
+os.rename("old_name.txt", "new_name.txt")
+print("Rename ke baad:")
+print("old_name.txt exist:", os.path.exists("old_name.txt"))
+print("new_name.txt exist:", os.path.exists("new_name.txt"))
+
+# Delete karna
+os.remove("new_name.txt")
+print("Delete ke baad:")
+print("new_name.txt exist:", os.path.exists("new_name.txt"))</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_os2">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_os2"></span>
+                            <button class="clear-btn" onclick="clearOutput('os2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_os2"></div>
+                    <div class="exec-time" id="execTime_os2"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 7. CSV FILE HANDLING          -->
+            <!-- ============================= -->
+            <h1>7. CSV File Handling</h1>
+            <p style="font-size: 19px;"><b>CSV (Comma Separated Values)</b> ek popular format hai
+            data store karne ke liye — jaise Excel files. Python ka <b>csv module</b> isse
+            bahut aasaan banata hai.</p>
+
+            <!-- Cell 1 -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> CSV file likhna — csv.writer</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_csv1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('csv1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('csv1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_csv1" onclick="runCell('csv1')">
+                            <div class="run-icon" id="runIcon_csv1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_csv1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_csv1" spellcheck="false"
+                            oninput="onCodeInput(this,'csv1')" onkeydown="handleKeydown(event,'csv1')">import csv
+
+students = [
+    ["Name",   "Age", "City",    "Marks"],
+    ["Rahul",   21,   "Delhi",    88],
+    ["Priya",   20,   "Mumbai",   95],
+    ["Arjun",   22,   "Pune",     76],
+    ["Neha",    21,   "Chennai",  91]
+]
+
+with open("students.csv", "w", newline="") as f:
+    writer = csv.writer(f)
+    writer.writerows(students)
+
+print("students.csv successfully likhi gayi!")
+print("Rows written:", len(students))</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_csv1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_csv1"></span>
+                            <button class="clear-btn" onclick="clearOutput('csv1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_csv1"></div>
+                    <div class="exec-time" id="execTime_csv1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> CSV file padhna — csv.reader aur DictReader</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_csv2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('csv2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('csv2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_csv2" onclick="runCell('csv2')">
+                            <div class="run-icon" id="runIcon_csv2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_csv2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_csv2" spellcheck="false"
+                            oninput="onCodeInput(this,'csv2')" onkeydown="handleKeydown(event,'csv2')">import csv
+
+# Pehle CSV write karte hain
+data = [
+    ["Product", "Price", "Stock"],
+    ["Laptop",  55000,   10],
+    ["Phone",   18000,   25],
+    ["Tablet",  25000,   15]
+]
+with open("products.csv", "w", newline="") as f:
+    csv.writer(f).writerows(data)
+
+# DictReader se padhna — keys automatically header se milti hain
+print("--- Products (DictReader) ---")
+with open("products.csv", "r") as f:
+    reader = csv.DictReader(f)
+    for row in reader:
+        print(f"{row['Product']:<10} Rs.{row['Price']:<8} Stock: {row['Stock']}")</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_csv2">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_csv2"></span>
+                            <button class="clear-btn" onclick="clearOutput('csv2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_csv2"></div>
+                    <div class="exec-time" id="execTime_csv2"></div>
+                </div>
+            </div></div>
+
+            <br><hr><br>
+
+            <!-- Quick Summary -->
+            <h4>Quick Summary — File Handling ek nazar me</h4>
+            <div style="overflow-x:auto; margin: 20px 0;">
+                <table class="table table-bordered table-striped" style="font-size:17px;">
+                    <thead class="table-dark">
+                        <tr><th>Concept</th><th>Kaam</th><th>Example</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>open("f","r")</td><td>File read ke liye kholna</td><td>f = open("a.txt","r")</td></tr>
+                        <tr><td>open("f","w")</td><td>File write ke liye (reset)</td><td>f = open("a.txt","w")</td></tr>
+                        <tr><td>open("f","a")</td><td>File append ke liye</td><td>f = open("a.txt","a")</td></tr>
+                        <tr><td>write()</td><td>String likhna</td><td>f.write("hello\n")</td></tr>
+                        <tr><td>writelines()</td><td>List likhna</td><td>f.writelines(lst)</td></tr>
+                        <tr><td>read()</td><td>Poori file padhna</td><td>f.read()</td></tr>
+                        <tr><td>readline()</td><td>Ek line padhna</td><td>f.readline()</td></tr>
+                        <tr><td>readlines()</td><td>Saari lines list me</td><td>f.readlines()</td></tr>
+                        <tr><td>close()</td><td>File band karna</td><td>f.close()</td></tr>
+                        <tr><td>with open()</td><td>Auto-close (best practice)</td><td>with open(...) as f:</td></tr>
+                        <tr><td>os.path.exists()</td><td>File exist check</td><td>os.path.exists("f.txt")</td></tr>
+                        <tr><td>os.rename()</td><td>File rename karna</td><td>os.rename("a","b")</td></tr>
+                        <tr><td>os.remove()</td><td>File delete karna</td><td>os.remove("f.txt")</td></tr>
+                        <tr><td>csv.writer</td><td>CSV likhna</td><td>csv.writer(f).writerow()</td></tr>
+                        <tr><td>csv.DictReader</td><td>CSV dict se padhna</td><td>csv.DictReader(f)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <br>
+
+            <!-- CTA Row -->
+            <div class="cta-row">
+                <a href="/py_components/py_OOP.html" class="outline-btn">Previous</a>
+                <a href="/py_components/py_exception_handling.html" class="start-btn">
+                    Next
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
+                    </svg>
+                </a>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark py-4 mt-5">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-12">
+                    <h6 style="color: #adb5bd; margin-bottom: 0;">© 2026 Codepth . All Rights Reserved.</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SHARED CELL SCRIPT WITH VIRTUAL FILE SYSTEM -->
+    <script>
+        const execCounts = {};
+        // Virtual File System — simulates disk files in memory
+        const VFS = {};
+
+        function getExecCount(id) {
+            if (!execCounts[id]) execCounts[id] = 1;
+            return execCounts[id];
+        }
+
+        function syncLines(ta, id) {
+            const lines = ta.value.split('\n').length;
+            const nums  = Array.from({ length: lines }, (_, i) => i + 1).join('\n');
+            document.getElementById('lineNums_' + id).textContent = nums;
+        }
+
+        function autoResize(ta) {
+            ta.style.height = 'auto';
+            ta.style.height = ta.scrollHeight + 'px';
+        }
+
+        function onCodeInput(ta, id) {
+            autoResize(ta);
+            syncLines(ta, id);
+        }
+
+        function handleKeydown(e, id) {
+            if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+                e.preventDefault();
+                runCell(id);
+            }
+            if (e.key === 'Tab') {
+                e.preventDefault();
+                const ta  = e.target;
+                const s   = ta.selectionStart;
+                const end = ta.selectionEnd;
+                ta.value  = ta.value.substring(0, s) + '    ' + ta.value.substring(end);
+                ta.selectionStart = ta.selectionEnd = s + 4;
+                syncLines(ta, id);
+            }
+        }
+
+        function copyCode(id) {
+            navigator.clipboard.writeText(document.getElementById('codeInput_' + id).value).catch(() => {});
+        }
+
+        function clearOutput(id) {
+            document.getElementById('outputSection_' + id).classList.remove('show');
+        }
+
+        function runCell(id) {
+            const code = document.getElementById('codeInput_' + id).value;
+            const btn  = document.getElementById('runBtn_' + id);
+            const icon = document.getElementById('runIcon_' + id);
+
+            btn.classList.add('running');
+            icon.className = 'run-icon spin';
+            btn.disabled   = true;
+
+            setTimeout(() => {
+                const t0         = performance.now();
+                const printLines = [];
+                const fakePrint  = (...args) => { printLines.push(args.map(a => String(a)).join(' ')); };
+
+                let isError = false;
+                let errMsg  = '';
+
+                try {
+                    // ── Virtual File Object ──────────────────────────────────
+                    function VFile(name, mode) {
+                        this._name   = name;
+                        this._mode   = mode;
+                        this._pos    = 0;
+                        this._closed = false;
+
+                        if (mode === 'w') {
+                            VFS[name] = '';
+                        } else if (mode === 'a') {
+                            if (VFS[name] === undefined) VFS[name] = '';
+                        } else if (mode === 'x') {
+                            if (VFS[name] !== undefined) throw new Error(`FileExistsError: [Errno 17] File exists: '${name}'`);
+                            VFS[name] = '';
+                        } else { // 'r' or 'r+'
+                            if (VFS[name] === undefined) throw new Error(`FileNotFoundError: [Errno 2] No such file: '${name}'`);
+                        }
+                    }
+                    VFile.prototype.write = function(s) {
+                        if (this._mode === 'a') VFS[this._name] += s;
+                        else VFS[this._name] = (VFS[this._name] || '') + s;
+                        return s.length;
+                    };
+                    VFile.prototype.writelines = function(lines) {
+                        for (const l of lines) this.write(String(l));
+                    };
+                    VFile.prototype.read = function() {
+                        const full = VFS[this._name] || '';
+                        const result = full.slice(this._pos);
+                        this._pos = full.length;
+                        return result;
+                    };
+                    VFile.prototype.readline = function() {
+                        const full  = VFS[this._name] || '';
+                        const start = this._pos;
+                        const nl    = full.indexOf('\n', start);
+                        if (nl === -1) {
+                            const result = full.slice(start);
+                            this._pos = full.length;
+                            return result;
+                        }
+                        const result = full.slice(start, nl + 1);
+                        this._pos = nl + 1;
+                        return result;
+                    };
+                    VFile.prototype.readlines = function() {
+                        const all = this.read();
+                        if (!all) return [];
+                        return all.split('\n').slice(0, -1).map(l => l + '\n')
+                            .concat(all.endsWith('\n') ? [] : [all.split('\n').pop()]);
+                    };
+                    VFile.prototype[Symbol.iterator] = function*() {
+                        let line;
+                        while ((line = this.readline()) !== '') yield line;
+                    };
+                    VFile.prototype.close = function() { this._closed = true; };
+                    VFile.prototype.__enter__ = function() { return this; };
+                    VFile.prototype.__exit__  = function() { this.close(); };
+
+                    // ── Virtual open() ────────────────────────────────────────
+                    function fakeOpen(name, mode = 'r', ...rest) {
+                        return new VFile(name, mode);
+                    }
+
+                    // ── Virtual os module ─────────────────────────────────────
+                    const fakeOs = {
+                        path: {
+                            exists:  (p) => VFS[p] !== undefined,
+                            getsize: (p) => (VFS[p] || '').length,
+                            isfile:  (p) => VFS[p] !== undefined,
+                        },
+                        rename: (src, dst) => {
+                            if (VFS[src] === undefined) throw new Error(`FileNotFoundError: '${src}'`);
+                            VFS[dst] = VFS[src];
+                            delete VFS[src];
+                        },
+                        remove: (p) => {
+                            if (VFS[p] === undefined) throw new Error(`FileNotFoundError: '${p}'`);
+                            delete VFS[p];
+                        },
+                        listdir: (p) => Object.keys(VFS),
+                    };
+
+                    // ── Virtual csv module ────────────────────────────────────
+                    const fakeCsv = {
+                        writer: (f, ...opts) => ({
+                            writerow:  (row) => f.write(row.map(String).join(',') + '\n'),
+                            writerows: (rows) => rows.forEach(r => f.write(r.map(String).join(',') + '\n')),
+                        }),
+                        reader: (f) => {
+                            const lines = f.read().trim().split('\n');
+                            let idx = 0;
+                            return {
+                                [Symbol.iterator]() {
+                                    return {
+                                        next() {
+                                            if (idx >= lines.length) return { done: true };
+                                            return { value: lines[idx++].split(','), done: false };
+                                        }
+                                    };
+                                }
+                            };
+                        },
+                        DictReader: function(f) {
+                            const lines  = f.read().trim().split('\n');
+                            const keys   = lines[0].split(',');
+                            const rows   = lines.slice(1).map(l => {
+                                const vals = l.split(',');
+                                const obj  = {};
+                                keys.forEach((k, i) => obj[k] = vals[i]);
+                                return obj;
+                            });
+                            let idx = 0;
+                            return {
+                                [Symbol.iterator]() {
+                                    return {
+                                        next() {
+                                            if (idx >= rows.length) return { done: true };
+                                            return { value: rows[idx++], done: false };
+                                        }
+                                    };
+                                }
+                            };
+                        },
+                    };
+
+                    // ── with-block simulation ─────────────────────────────────
+                    // We convert `with open(...) as f:` to a closure call
+                    let js = code;
+
+                    // f-strings
+                    js = js.replace(/f"((?:[^"\\]|\\.)*)"/g, (_, inner) =>
+                        '`' + inner.replace(/\{([^}]+)\}/g, '${$1}') + '`');
+                    js = js.replace(/f'((?:[^'\\]|\\.)*)'/g, (_, inner) =>
+                        '`' + inner.replace(/\{([^}]+)\}/g, '${$1}') + '`');
+
+                    // print(
+                    js = js.replace(/\bprint\s*\(/g, '__p__(');
+
+                    // import os  /  import csv
+                    js = js.replace(/\bimport\s+os\b/g,  'const os  = __os__;');
+                    js = js.replace(/\bimport\s+csv\b/g, 'const csv = __csv__;');
+
+                    // with open(...) as varname:  →  { const varname = __open__(...);
+                    js = js.replace(
+                        /^(\s*)with\s+open\s*\(([^)]+)\)\s+as\s+(\w+)\s*:\s*$/gm,
+                        (_, indent, args, varname) =>
+                            `${indent}{ const ${varname} = __open__(${args});`
+                    );
+
+                    // repr(x) simulation
+                    js = js.replace(/\brepr\s*\(([^)]+)\)/g, 'JSON.stringify($1)');
+
+                    // None / True / False
+                    js = js.replace(/\bNone\b/g,  'null');
+                    js = js.replace(/\bTrue\b/g,  'true');
+                    js = js.replace(/\bFalse\b/g, 'false');
+
+                    // elif → else if
+                    js = js.replace(/\belif\b/g, 'else if');
+
+                    // for line in f: — iterate virtual file
+                    js = js.replace(/^(\s*)for\s+(\w+)\s+in\s+(\w+)\s*:\s*$/gm,
+                        '$1for (const $2 of $3) {');
+
+                    // for (i, x) in enumerate(lst, start): — basic
+                    js = js.replace(/^(\s*)for\s+(\w+),\s*(\w+)\s+in\s+enumerate\s*\(([^,)]+)(?:,\s*(\d+))?\s*\)\s*:\s*$/gm,
+                        (_, ind, i, x, lst, start) => {
+                            const s = start || '0';
+                            return `${ind}{ let __ei=0; for (const ${x} of ${lst}) { const ${i} = __ei + ${s}; __ei++;`;
+                        });
+
+                    // for (a, b) in list:
+                    js = js.replace(/^(\s*)for\s+(\w+),\s*(\w+)\s+in\s+(.+)\s*:\s*$/gm,
+                        '$1for (const [$2, $3] of $4) {');
+
+                    // range()
+                    js = js.replace(/\brange\s*\((\d+)\s*,\s*(\d+)\s*,\s*(-?\d+)\s*\)/g,
+                        (_, a, b, s) => `Array.from({length:Math.max(0,Math.ceil((${b}-${a})/${s}))},(_,i)=>${a}+i*${s})`);
+                    js = js.replace(/\brange\s*\((\w+|\d+)\s*,\s*(\w+|\d+)\s*\)/g,
+                        (_, a, b) => `Array.from({length:Math.max(0,${b}-${a})},(_,i)=>${a}+i)`);
+                    js = js.replace(/\brange\s*\((\w+|\d+)\s*\)/g,
+                        (_, n) => `Array.from({length:${n}},(_,i)=>i)`);
+
+                    // len()
+                    js = js.replace(/\blen\s*\(([^)]+)\)/g, '($1).length');
+
+                    // if / while / else
+                    js = js.replace(/^(\s*)if\s+(.+)\s*:\s*$/gm, (_, ind, cond) => `${ind}if (${cond}) {`);
+                    js = js.replace(/^(\s*)else if\s+(.+)\s*:\s*$/gm, (_, ind, cond) => `${ind}else if (${cond}) {`);
+                    js = js.replace(/^(\s*)else\s*:\s*$/gm, '$1else {');
+                    js = js.replace(/^(\s*)while\s+(.+)\s*:\s*$/gm, (_, ind, cond) => `${ind}while (${cond}) {`);
+
+                    // try / except
+                    js = js.replace(/^(\s*)try\s*:\s*$/gm, '$1try {');
+                    js = js.replace(/^(\s*)except\s+\w+(?:\s+as\s+(\w+))?\s*:\s*$/gm,
+                        (_, ind, v) => `${ind}} catch(${v || '_e'}) {`);
+
+                    // pass
+                    js = js.replace(/^\s*pass\s*$/gm, '');
+
+                    // and / or / not
+                    js = js.replace(/\band\b/g, '&&').replace(/\bor\b/g, '||');
+                    js = js.replace(/\bnot\s+\(/g, '!(').replace(/\bnot\s+(\w)/g, '!$1');
+
+                    // strip(), upper(), lower(), split(), join()
+                    // These map directly in JS so no change needed.
+
+                    // newline='' kwarg in open — strip it
+                    js = js.replace(/,\s*newline\s*=\s*["'][^'"]*["']/g, '');
+
+                    // Add closing braces via indentation analysis
+                    const rawLines  = js.split('\n');
+                    const outLines  = [];
+                    const indStack  = [0];
+
+                    for (let i = 0; i < rawLines.length; i++) {
+                        const line    = rawLines[i];
+                        const trimmed = line.trimStart();
+                        const indent  = line.length - trimmed.length;
+
+                        if (trimmed === '') { outLines.push(''); continue; }
+
+                        while (indStack.length > 1 && indent < indStack[indStack.length - 1]) {
+                            indStack.pop();
+                            outLines.push(' '.repeat(indStack[indStack.length - 1]) + '}');
+                        }
+
+                        outLines.push(line);
+
+                        if (trimmed.endsWith('{')) {
+                            indStack.push(indent + 4);
+                        }
+                    }
+
+                    while (indStack.length > 1) {
+                        indStack.pop();
+                        outLines.push(' '.repeat(indStack[indStack.length - 1]) + '}');
+                    }
+
+                    js = outLines.join('\n');
+
+                    const fn = new Function('__p__', '__open__', '__os__', '__csv__', js);
+                    fn(fakePrint, fakeOpen, fakeOs, fakeCsv);
+
+                } catch (e) {
+                    isError = true;
+                    errMsg  = e.toString();
+                }
+
+                const elapsed = (performance.now() - t0).toFixed(1);
+                const count   = getExecCount(id);
+
+                const sec    = document.getElementById('outputSection_' + id);
+                const body   = document.getElementById('outputBody_' + id);
+                const status = document.getElementById('outputStatus_' + id);
+                const timeEl = document.getElementById('execTime_' + id);
+
+                if (isError) {
+                    body.textContent   = errMsg;
+                    body.className     = 'output-body error';
+                    status.textContent = '✗ Error';
+                    status.className   = 'output-status err';
+                } else {
+                    const out = printLines.join('\n') || '(no output)';
+                    body.textContent   = out;
+                    body.className     = 'output-body';
+                    status.textContent = '✓ OK';
+                    status.className   = 'output-status ok';
+                }
+
+                timeEl.textContent = `Executed in ${elapsed}ms  ·  In [${count}]`;
+                document.getElementById('cellNum_' + id).textContent = `In [${count}]:`;
+                execCounts[id] = count + 1;
+
+                sec.classList.add('show');
+                btn.classList.remove('running');
+                icon.className = 'run-icon';
+                btn.disabled   = false;
+            }, 120);
+        }
+
+        window.addEventListener('load', () => {
+            document.querySelectorAll('.code-input').forEach(ta => {
+                autoResize(ta);
+                const id = ta.id.replace('codeInput_', '');
+                syncLines(ta, id);
+            });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+</html>

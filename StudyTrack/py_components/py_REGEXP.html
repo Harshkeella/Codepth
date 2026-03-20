@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Tutorial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="py_download.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-5 col-md-6">
+                    <img src="/img/codepth_logo_2.png" class="img-fluid" height="70" width="170" alt="Codepth Logo">
+                </div>
+                <div class="col-7 col-md-6">
+                    <div class="input-group">
+                        <input class="form-control" type="text" placeholder="Search....">
+                        <button class="btn btn-success" type="button">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg top-navbar">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="/home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/Python.html">Python</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/mysql.html">MySQL</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/dsa.html">DSA</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/ml.html">Machine Learning</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/dl.html">Deep Learning</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-wrapper">
+        <aside class="sidebar">
+            <span class="sidebar-title">Python Tutorial</span>
+            <ul>
+                <li class="active"><a href="/py_components/Py_downloads.html">Python Download</a></li>
+                <li><a href="/py_components/py_intro.html">Python Intro <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_keywords.html">Python Keywords <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_variables.html">Python Variables <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_operators.html">Python Operators <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_datatypes.html">Python Data types <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_if_else.html">Python If-else...<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_while.html">Python While Loops <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_for.html">Python For Loops<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_string.html">Python Strings<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_list.html">Python List <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_tuple.html">Python Tuples <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_sets.html">Python Sets <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_dict.html">Python Dictionaries <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_function.html">Python Functions <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_recursion.html">Python Recursion <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_lamda.html">Python Lamda Function <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_OOP.html">Python OOP<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_file_handling.html">Python File Handling<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_exception_handling.html">Python Exception Handling<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_REGEXP.html">Python REGEXP<span class="arrow">▼</span></a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+
+            <h1>Python me Regular Expressions (RegEx) kya hai?</h1>
+            <hr>
+            <p style="font-size: 19px;">Regular Expression (RegEx) ek <b>pattern</b> hai jo strings me
+            <b>specific text dhundhne, check karne ya replace karne</b> ke kaam aata hai.
+            Jaise email validate karna, phone number check karna — yeh sab RegEx se bahut aasaan ho jaata hai.
+            Python me <b>re module</b> use hota hai.</p>
+
+            <p style="font-size: 19px;">Is page me yeh sab sikhenge :-</p>
+            <ul style="font-size: 18px; margin-left: 40px; line-height: 2.2;">
+                <li>1. <b>re module aur basic functions</b></li>
+                <li>2. <b>Meta characters</b></li>
+                <li>3. <b>re.search() aur re.match()</b></li>
+                <li>4. <b>re.findall()</b></li>
+                <li>5. <b>re.sub()</b></li>
+                <li>6. <b>re.split()</b></li>
+                <li>7. <b>Groups aur Practical Examples</b></li>
+            </ul>
+            <hr><br>
+
+            <!-- 1. RE MODULE -->
+            <h1>1. re Module aur Basic Functions</h1>
+            <div style="overflow-x:auto; margin: 20px 0;">
+                <table class="table table-bordered table-striped" style="font-size:17px;">
+                    <thead class="table-dark">
+                        <tr><th>Function</th><th>Kaam</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>re.match(pat, str)</td><td>String ke <b>shuru</b> me pattern dhundho</td></tr>
+                        <tr><td>re.search(pat, str)</td><td>String ke <b>kahi bhi</b> pattern dhundho</td></tr>
+                        <tr><td>re.findall(pat, str)</td><td>Saare matches ki <b>list</b> do</td></tr>
+                        <tr><td>re.sub(pat, repl, str)</td><td>Pattern ko <b>replace</b> karo</td></tr>
+                        <tr><td>re.split(pat, str)</td><td>Pattern pe <b>split</b> karo</td></tr>
+                        <tr><td>re.compile(pat)</td><td>Pattern ko <b>compile</b> karo</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> re.search() — basic pattern dhundhna</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left"><div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_r1">In [1]:</span></div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('r1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('r1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_r1" onclick="runCell('r1')"><div class="run-icon" id="runIcon_r1"></div>Run</button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_r1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_r1" spellcheck="false" oninput="onCodeInput(this,'r1')" onkeydown="handleKeydown(event,'r1')">import re
+
+text = "Mujhe Python bahut pasand hai. Python ek great language hai."
+
+result = re.search("Python", text)
+
+if result:
+    print("Pattern mila!")
+    print("Match      :", result.group())
+    print("Start index:", result.start())
+    print("End index  :", result.end())
+else:
+    print("Pattern nahi mila.")</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_r1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;"><span class="output-status" id="outputStatus_r1"></span>
+                        <button class="clear-btn" onclick="clearOutput('r1')">✕</button></div>
+                    </div>
+                    <div class="output-body" id="outputBody_r1"></div>
+                    <div class="exec-time" id="execTime_r1"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- 2. META CHARACTERS -->
+            <h1>2. Meta Characters — Special Symbols</h1>
+            <div style="overflow-x:auto; margin: 20px 0;">
+                <table class="table table-bordered table-striped" style="font-size:17px;">
+                    <thead class="table-dark">
+                        <tr><th>Symbol</th><th>Matlab</th><th>Example</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>.</td><td>Koi bhi ek character</td><td>a.c → abc, aXc</td></tr>
+                        <tr><td>^</td><td>String ka shuru</td><td>^Hello</td></tr>
+                        <tr><td>$</td><td>String ka ant</td><td>world$</td></tr>
+                        <tr><td>*</td><td>0 ya zyada baar</td><td>ab*</td></tr>
+                        <tr><td>+</td><td>1 ya zyada baar</td><td>ab+</td></tr>
+                        <tr><td>?</td><td>Optional (0 ya 1 baar)</td><td>colou?r</td></tr>
+                        <tr><td>{n,m}</td><td>n se m baar</td><td>\d{2,4}</td></tr>
+                        <tr><td>\d</td><td>Digit (0-9)</td><td>\d+</td></tr>
+                        <tr><td>\w</td><td>Word character</td><td>\w+</td></tr>
+                        <tr><td>\s</td><td>Whitespace</td><td>\s+</td></tr>
+                        <tr><td>[]</td><td>Character class</td><td>[aeiou]</td></tr>
+                        <tr><td>()</td><td>Group</td><td>(\d{2})</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> \d, \w, \s meta characters</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left"><div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_mc1">In [1]:</span></div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('mc1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('mc1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_mc1" onclick="runCell('mc1')"><div class="run-icon" id="runIcon_mc1"></div>Run</button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_mc1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_mc1" spellcheck="false" oninput="onCodeInput(this,'mc1')" onkeydown="handleKeydown(event,'mc1')">import re
+
+text = "Rahul ke 3 subjects me 95, 88, aur 76 marks hain."
+
+# \d+ — saare numbers
+numbers = re.findall(r"\d+", text)
+print("Numbers:", numbers)
+
+# \w+ — saare words
+words = re.findall(r"\w+", text)
+print("Word count:", len(words))
+print("First 5 words:", words[:5])</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_mc1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;"><span class="output-status" id="outputStatus_mc1"></span>
+                        <button class="clear-btn" onclick="clearOutput('mc1')">✕</button></div>
+                    </div>
+                    <div class="output-body" id="outputBody_mc1"></div>
+                    <div class="exec-time" id="execTime_mc1"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- 3. SEARCH VS MATCH -->
+            <h1>3. re.search() vs re.match()</h1>
+            <p style="font-size: 19px;"><b>re.match()</b> sirf string ke <b>bilkul shuru</b> me dhundhta hai.
+            <b>re.search()</b> string me <b>kahin bhi</b> dhundhta hai.</p>
+
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> match vs search — fark samjho</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left"><div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_sm1">In [1]:</span></div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('sm1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('sm1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_sm1" onclick="runCell('sm1')"><div class="run-icon" id="runIcon_sm1"></div>Run</button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_sm1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_sm1" spellcheck="false" oninput="onCodeInput(this,'sm1')" onkeydown="handleKeydown(event,'sm1')">import re
+
+text = "Hello, Python world!"
+
+m1 = re.match(r"Hello", text)
+m2 = re.match(r"Python", text)   # Python shuru me nahi
+
+print("match('Hello') :", m1.group() if m1 else "Not found")
+print("match('Python'):", m2.group() if m2 else "Not found")
+
+s1 = re.search(r"Hello", text)
+s2 = re.search(r"Python", text)
+
+print("search('Hello') :", s1.group() if s1 else "Not found")
+print("search('Python'):", s2.group() if s2 else "Not found")</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_sm1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;"><span class="output-status" id="outputStatus_sm1"></span>
+                        <button class="clear-btn" onclick="clearOutput('sm1')">✕</button></div>
+                    </div>
+                    <div class="output-body" id="outputBody_sm1"></div>
+                    <div class="exec-time" id="execTime_sm1"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- 4. FINDALL -->
+            <h1>4. re.findall() — Saare Matches Nikalna</h1>
+
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> Emails aur phone numbers nikalna</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left"><div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_fa1">In [1]:</span></div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('fa1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('fa1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_fa1" onclick="runCell('fa1')"><div class="run-icon" id="runIcon_fa1"></div>Run</button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_fa1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_fa1" spellcheck="false" oninput="onCodeInput(this,'fa1')" onkeydown="handleKeydown(event,'fa1')">import re
+
+data = "Contact: support@codepth.com or admin@python.org. Call: 9876543210 or 8765432109"
+
+emails = re.findall(r"[\w.]+@[\w.]+\.\w+", data)
+print("Emails:", emails)
+
+phones = re.findall(r"\d{10}", data)
+print("Phones:", phones)</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_fa1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;"><span class="output-status" id="outputStatus_fa1"></span>
+                        <button class="clear-btn" onclick="clearOutput('fa1')">✕</button></div>
+                    </div>
+                    <div class="output-body" id="outputBody_fa1"></div>
+                    <div class="exec-time" id="execTime_fa1"></div>
+                </div>
+            </div></div>
+
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> Dates aur hashtags dhundhna</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left"><div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_fa2">In [1]:</span></div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('fa2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('fa2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_fa2" onclick="runCell('fa2')"><div class="run-icon" id="runIcon_fa2"></div>Run</button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_fa2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_fa2" spellcheck="false" oninput="onCodeInput(this,'fa2')" onkeydown="handleKeydown(event,'fa2')">import re
+
+post = "Aaj 15-03-2024 ko #Python aur #Coding class thi. Bahut #Maza aaya!"
+
+dates    = re.findall(r"\d{2}-\d{2}-\d{4}", post)
+hashtags = re.findall(r"#\w+", post)
+caps     = re.findall(r"[A-Z][a-z]+", post)
+
+print("Dates    :", dates)
+print("Hashtags :", hashtags)
+print("Cap words:", caps)</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_fa2">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;"><span class="output-status" id="outputStatus_fa2"></span>
+                        <button class="clear-btn" onclick="clearOutput('fa2')">✕</button></div>
+                    </div>
+                    <div class="output-body" id="outputBody_fa2"></div>
+                    <div class="exec-time" id="execTime_fa2"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- 5. SUB -->
+            <h1>5. re.sub() — Replace Karna</h1>
+
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> Text clean karna</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left"><div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_sub1">In [1]:</span></div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('sub1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('sub1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_sub1" onclick="runCell('sub1')"><div class="run-icon" id="runIcon_sub1"></div>Run</button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_sub1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_sub1" spellcheck="false" oninput="onCodeInput(this,'sub1')" onkeydown="handleKeydown(event,'sub1')">import re
+
+text = "Mera   phone   number   hai   9876543210."
+
+# Multiple spaces → ek space
+cleaned = re.sub(r"\s+", " ", text)
+print("Cleaned:", cleaned)
+
+# Phone number chhupao
+masked = re.sub(r"\d{10}", "XXXXXXXXXX", text)
+print("Masked :", masked)
+
+# Sab digits hatao
+no_nums = re.sub(r"\d+", "", "Price: 599 aur discount: 100 rupees")
+print("No nums:", no_nums)</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_sub1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;"><span class="output-status" id="outputStatus_sub1"></span>
+                        <button class="clear-btn" onclick="clearOutput('sub1')">✕</button></div>
+                    </div>
+                    <div class="output-body" id="outputBody_sub1"></div>
+                    <div class="exec-time" id="execTime_sub1"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- 6. SPLIT -->
+            <h1>6. re.split() — Pattern Pe Split Karna</h1>
+
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> Multiple separators pe split</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left"><div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_sp1">In [1]:</span></div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('sp1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('sp1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_sp1" onclick="runCell('sp1')"><div class="run-icon" id="runIcon_sp1"></div>Run</button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_sp1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_sp1" spellcheck="false" oninput="onCodeInput(this,'sp1')" onkeydown="handleKeydown(event,'sp1')">import re
+
+text = "Apple,Mango;Banana|Grapes,Kiwi"
+fruits = re.split(r"[,;|]", text)
+print("Fruits:", fruits)
+
+sentence = "Python3is4awesome5really"
+words = re.split(r"\d", sentence)
+print("Words:", words)
+
+data = "Rahul   Priya\tArjun\nNeha"
+names = re.split(r"\s+", data)
+print("Names:", names)</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_sp1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;"><span class="output-status" id="outputStatus_sp1"></span>
+                        <button class="clear-btn" onclick="clearOutput('sp1')">✕</button></div>
+                    </div>
+                    <div class="output-body" id="outputBody_sp1"></div>
+                    <div class="exec-time" id="execTime_sp1"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- 7. GROUPS & PRACTICAL -->
+            <h1>7. Groups aur Practical Examples</h1>
+
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> Groups — date ke parts alag nikalna</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left"><div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_gp1">In [1]:</span></div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('gp1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('gp1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_gp1" onclick="runCell('gp1')"><div class="run-icon" id="runIcon_gp1"></div>Run</button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_gp1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_gp1" spellcheck="false" oninput="onCodeInput(this,'gp1')" onkeydown="handleKeydown(event,'gp1')">import re
+
+date_text = "Aaj ki date hai 15-08-2024"
+
+pattern = r"(\d{2})-(\d{2})-(\d{4})"
+match = re.search(pattern, date_text)
+
+if match:
+    print("Full match:", match.group(0))
+    print("Day       :", match.group(1))
+    print("Month     :", match.group(2))
+    print("Year      :", match.group(3))</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_gp1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;"><span class="output-status" id="outputStatus_gp1"></span>
+                        <button class="clear-btn" onclick="clearOutput('gp1')">✕</button></div>
+                    </div>
+                    <div class="output-body" id="outputBody_gp1"></div>
+                    <div class="exec-time" id="execTime_gp1"></div>
+                </div>
+            </div></div>
+
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> Email validation</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left"><div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_gp2">In [1]:</span></div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('gp2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('gp2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_gp2" onclick="runCell('gp2')"><div class="run-icon" id="runIcon_gp2"></div>Run</button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_gp2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_gp2" spellcheck="false" oninput="onCodeInput(this,'gp2')" onkeydown="handleKeydown(event,'gp2')">import re
+
+def validate_email(email):
+    pattern = r"^[\w.-]+@[\w-]+\.[a-zA-Z]{2,}$"
+    if re.match(pattern, email):
+        return f"Valid   : {email}"
+    else:
+        return f"Invalid : {email}"
+
+emails = ["rahul@gmail.com", "priya@yahoo.co.in", "badmail@", "no_at_sign.com", "user@domain.org"]
+
+for e in emails:
+    print(validate_email(e))</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_gp2">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;"><span class="output-status" id="outputStatus_gp2"></span>
+                        <button class="clear-btn" onclick="clearOutput('gp2')">✕</button></div>
+                    </div>
+                    <div class="output-body" id="outputBody_gp2"></div>
+                    <div class="exec-time" id="execTime_gp2"></div>
+                </div>
+            </div></div>
+
+            <p style="font-size:18px; margin-top:20px;"><b>Example 3:</b> Password strength check</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left"><div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_gp3">In [1]:</span></div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('gp3')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('gp3')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_gp3" onclick="runCell('gp3')"><div class="run-icon" id="runIcon_gp3"></div>Run</button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_gp3">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_gp3" spellcheck="false" oninput="onCodeInput(this,'gp3')" onkeydown="handleKeydown(event,'gp3')">import re
+
+def check_password(pwd):
+    errors = []
+    if len(pwd) < 8:
+        errors.append("8+ characters chahiye")
+    if not re.search(r"[A-Z]", pwd):
+        errors.append("Ek uppercase letter chahiye")
+    if not re.search(r"[a-z]", pwd):
+        errors.append("Ek lowercase letter chahiye")
+    if not re.search(r"\d", pwd):
+        errors.append("Ek digit chahiye")
+    if not re.search(r"[!@#$%^&*]", pwd):
+        errors.append("Ek special character chahiye")
+    if not errors:
+        return "Strong password!"
+    return "Weak: " + ", ".join(errors)
+
+passwords = ["abc", "Password1", "Pass@1", "MyPass@123"]
+for p in passwords:
+    print(f"'{p}': {check_password(p)}")</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_gp3">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;"><span class="output-status" id="outputStatus_gp3"></span>
+                        <button class="clear-btn" onclick="clearOutput('gp3')">✕</button></div>
+                    </div>
+                    <div class="output-body" id="outputBody_gp3"></div>
+                    <div class="exec-time" id="execTime_gp3"></div>
+                </div>
+            </div></div>
+
+            <br><hr><br>
+
+            <!-- Quick Summary -->
+            <h4>Quick Summary — RegEx ek nazar me</h4>
+            <div style="overflow-x:auto; margin: 20px 0;">
+                <table class="table table-bordered table-striped" style="font-size:17px;">
+                    <thead class="table-dark">
+                        <tr><th>Function / Symbol</th><th>Kaam</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>re.search(pat, s)</td><td>Kahi bhi dhundho</td></tr>
+                        <tr><td>re.match(pat, s)</td><td>Sirf shuru me dhundho</td></tr>
+                        <tr><td>re.findall(pat, s)</td><td>Saare matches ki list</td></tr>
+                        <tr><td>re.sub(pat, r, s)</td><td>Replace karo</td></tr>
+                        <tr><td>re.split(pat, s)</td><td>Split karo</td></tr>
+                        <tr><td>\d, \w, \s</td><td>Digit, Word, Whitespace</td></tr>
+                        <tr><td>+, *, ?</td><td>1+, 0+, optional</td></tr>
+                        <tr><td>^, $</td><td>Start, End</td></tr>
+                        <tr><td>[], ()</td><td>Character set, Group</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <br>
+
+            <div class="cta-row">
+                <a href="/py_components/py_exception_handling.html" class="outline-btn">Previous</a>
+            </div>
+
+            <br><br>
+
+            <!-- ======================================= -->
+            <!-- FUN ENDING NOTE                         -->
+            <!-- ======================================= -->
+            <div style="
+                background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+                border-radius: 16px;
+                padding: 40px 36px;
+                margin: 40px 0 20px;
+                color: #fff;
+                position: relative;
+                overflow: hidden;
+                box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+            ">
+                <div style="position:absolute;top:-30px;right:-30px;width:120px;height:120px;border-radius:50%;background:rgba(255,255,255,0.04);"></div>
+                <div style="position:absolute;bottom:-20px;left:-20px;width:80px;height:80px;border-radius:50%;background:rgba(255,255,255,0.06);"></div>
+
+                <div style="font-size:46px; margin-bottom:16px; line-height:1;">🎉🐍🎊</div>
+
+                <h2 style="font-size:26px; font-weight:700; margin-bottom:14px; color:#f0c040;">
+                    Aap sabne ye notes padha — isliye aapne muje shukriya kehena chahiye! 🤣🤣🤣🤣
+                </h2>
+
+                <p style="font-size:18px; line-height:1.9; margin-bottom:16px; color:#cdd9f5;">
+                    Agar aapne yahan tak padd liya toh samjho <b style="color:#f0c040;">basics to clear hai</b> —
+                    lekin ek baat yaad rakhna —
+                </p>
+
+                <div style="
+                    background: rgba(255,255,255,0.08);
+                    border-left: 4px solid #f0c040;
+                    border-radius: 8px;
+                    padding: 18px 22px;
+                    margin: 20px 0;
+                    font-size: 21px;
+                    font-weight: 700;
+                    color: #fff;
+                ">
+                    😜😜 <span style="color:#f0c040;">Job lene ke liye itna kaafi nahi hai — toh padte raho!</span> 😜😜
+                </div>
+
+                <p style="font-size:17px; line-height:1.9; color:#b8c8e8; margin-bottom:20px;">
+                    Ab aage kya seekhein? 👇
+                </p>
+
+                <div style="display:flex; flex-wrap:wrap; gap:10px; margin-bottom:28px;">
+                    <span style="background:rgba(240,192,64,0.15);border:1px solid #f0c040;color:#f0c040;padding:7px 16px;border-radius:20px;font-size:15px;">📦 NumPy &amp; Pandas</span>
+                    <span style="background:rgba(240,192,64,0.15);border:1px solid #f0c040;color:#f0c040;padding:7px 16px;border-radius:20px;font-size:15px;">🌐 Flask / Django</span>
+                    <span style="background:rgba(240,192,64,0.15);border:1px solid #f0c040;color:#f0c040;padding:7px 16px;border-radius:20px;font-size:15px;">🤖 Machine Learning</span>
+                    <span style="background:rgba(240,192,64,0.15);border:1px solid #f0c040;color:#f0c040;padding:7px 16px;border-radius:20px;font-size:15px;">🗄️ SQL / Databases</span>
+                    <span style="background:rgba(240,192,64,0.15);border:1px solid #f0c040;color:#f0c040;padding:7px 16px;border-radius:20px;font-size:15px;">🧪 DSA</span>
+                    <span style="background:rgba(240,192,64,0.15);border:1px solid #f0c040;color:#f0c040;padding:7px 16px;border-radius:20px;font-size:15px;">🔧 Projects banana</span>
+                    <span style="background:rgba(240,192,64,0.15);border:1px solid #f0c040;color:#f0c040;padding:7px 16px;border-radius:20px;font-size:15px;">☁️ APIs &amp; Cloud</span>
+                </div>
+
+                <hr style="border-color:rgba(255,255,255,0.1); margin: 20px 0;">
+
+                <p style="font-size:16px; color:#8899bb; font-style:italic; margin:0;">
+                    — Codepth Team &nbsp;|&nbsp; © 2026 Codepth &nbsp;|&nbsp; Padte raho, badhte raho! 🚀
+                </p>
+            </div>
+
+        </main>
+    </div>
+
+    <footer class="bg-dark py-4 mt-5">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-12">
+                    <h6 style="color: #adb5bd; margin-bottom: 0;">© 2026 Codepth . All Rights Reserved.</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const execCounts = {};
+        function getExecCount(id) { if(!execCounts[id]) execCounts[id]=1; return execCounts[id]; }
+        function syncLines(ta,id) {
+            const lines=ta.value.split('\n').length;
+            document.getElementById('lineNums_'+id).textContent=Array.from({length:lines},(_,i)=>i+1).join('\n');
+        }
+        function autoResize(ta){ta.style.height='auto';ta.style.height=ta.scrollHeight+'px';}
+        function onCodeInput(ta,id){autoResize(ta);syncLines(ta,id);}
+        function handleKeydown(e,id){
+            if((e.ctrlKey||e.metaKey)&&e.key==='Enter'){e.preventDefault();runCell(id);}
+            if(e.key==='Tab'){e.preventDefault();const ta=e.target,s=ta.selectionStart,end=ta.selectionEnd;ta.value=ta.value.substring(0,s)+'    '+ta.value.substring(end);ta.selectionStart=ta.selectionEnd=s+4;syncLines(ta,id);}
+        }
+        function copyCode(id){navigator.clipboard.writeText(document.getElementById('codeInput_'+id).value).catch(()=>{});}
+        function clearOutput(id){document.getElementById('outputSection_'+id).classList.remove('show');}
+
+        const fakeRe={
+            search:(pat,s)=>{try{const m=new RegExp(pat).exec(String(s));if(!m)return null;return{group:(n=0)=>n===0?m[0]:(m[n]||''),start:()=>m.index,end:()=>m.index+m[0].length};}catch(e){return null;}},
+            match:(pat,s)=>{try{const m=new RegExp('^'+pat).exec(String(s));if(!m)return null;return{group:(n=0)=>n===0?m[0]:(m[n]||''),start:()=>m.index,end:()=>m.index+m[0].length};}catch(e){return null;}},
+            findall:(pat,s)=>{try{const res=[],re=new RegExp(pat,'g');let m;while((m=re.exec(String(s)))!==null){res.push(m.length>1?(m.length===2?m[1]:m.slice(1)):m[0]);}return res;}catch(e){return[];}},
+            sub:(pat,repl,s)=>{try{return String(s).replace(new RegExp(pat,'g'),repl);}catch(e){return s;}},
+            split:(pat,s)=>{try{return String(s).split(new RegExp(pat));}catch(e){return[s];}},
+            compile:(pat)=>({search:(s)=>fakeRe.search(pat,s),match:(s)=>fakeRe.match(pat,s),findall:(s)=>fakeRe.findall(pat,s),sub:(r,s)=>fakeRe.sub(pat,r,s),split:(s)=>fakeRe.split(pat,s)}),
+        };
+
+        function runCell(id){
+            const code=document.getElementById('codeInput_'+id).value;
+            const btn=document.getElementById('runBtn_'+id);
+            const icon=document.getElementById('runIcon_'+id);
+            btn.classList.add('running'); icon.className='run-icon spin'; btn.disabled=true;
+            setTimeout(()=>{
+                const t0=performance.now();
+                const printLines=[];
+                const fakePrint=(...args)=>{printLines.push(args.map(a=>String(a)).join(' '));};
+                let isError=false,errMsg='';
+                try{
+                    let js=code;
+                    js=js.replace(/f"((?:[^"\\]|\\.)*)"/g,(_,i)=>'`'+i.replace(/\{([^}]+)\}/g,'${$1}')+'`');
+                    js=js.replace(/f'((?:[^'\\]|\\.)*)'/g,(_,i)=>'`'+i.replace(/\{([^}]+)\}/g,'${$1}')+'`');
+                    js=js.replace(/r"([^"]*)"/g,'"$1"');
+                    js=js.replace(/r'([^']*)'/g,"'$1'");
+                    js=js.replace(/\bprint\s*\(/g,'__p__(');
+                    js=js.replace(/\bimport\s+re\b/g,'const re=__re__;');
+                    js=js.replace(/\bNone\b/g,'null').replace(/\bTrue\b/g,'true').replace(/\bFalse\b/g,'false');
+                    js=js.replace(/\belif\b/g,'else if');
+                    js=js.replace(/\band\b/g,'&&').replace(/\bor\b/g,'||');
+                    js=js.replace(/\bnot\s+\(/g,'!(').replace(/\bnot\s+(\w)/g,'!$1');
+                    js=js.replace(/\blen\s*\(([^)]+)\)/g,'($1).length');
+                    js=js.replace(/def\s+(\w+)\s*\(([^)]*)\)\s*:/g,'function $1($2) {');
+                    js=js.replace(/^(\s*)for\s+(\w+)\s+in\s+(.+)\s*:\s*$/gm,'$1for (const $2 of $3) {');
+                    js=js.replace(/^(\s*)if\s+(.+)\s*:\s*$/gm,(_,ind,c)=>`${ind}if (${c}) {`);
+                    js=js.replace(/^(\s*)else if\s+(.+)\s*:\s*$/gm,(_,ind,c)=>`${ind}else if (${c}) {`);
+                    js=js.replace(/^(\s*)else\s*:\s*$/gm,'$1else {');
+                    js=js.replace(/^\s*pass\s*$/gm,'');
+                    const rawL=js.split('\n'),outL=[],stack=[0];
+                    for(const line of rawL){
+                        const tr=line.trimStart(),ind=line.length-tr.length;
+                        if(!tr){outL.push('');continue;}
+                        while(stack.length>1&&ind<stack[stack.length-1]){stack.pop();outL.push(' '.repeat(stack[stack.length-1])+'}');}
+                        outL.push(line);
+                        if(tr.endsWith('{'))stack.push(ind+4);
+                    }
+                    while(stack.length>1){stack.pop();outL.push(' '.repeat(stack[stack.length-1])+'}');}
+                    const fn=new Function('__p__','__re__',outL.join('\n'));
+                    fn(fakePrint,fakeRe);
+                }catch(e){isError=true;errMsg=e.toString();}
+                const elapsed=(performance.now()-t0).toFixed(1);
+                const count=getExecCount(id);
+                const sec=document.getElementById('outputSection_'+id);
+                const body=document.getElementById('outputBody_'+id);
+                const status=document.getElementById('outputStatus_'+id);
+                const timeEl=document.getElementById('execTime_'+id);
+                if(isError){body.textContent=errMsg;body.className='output-body error';status.textContent='✗ Error';status.className='output-status err';}
+                else{const out=printLines.join('\n')||'(no output)';body.textContent=out;body.className='output-body';status.textContent='✓ OK';status.className='output-status ok';}
+                timeEl.textContent=`Executed in ${elapsed}ms  ·  In [${count}]`;
+                document.getElementById('cellNum_'+id).textContent=`In [${count}]:`;
+                execCounts[id]=count+1;
+                sec.classList.add('show');btn.classList.remove('running');icon.className='run-icon';btn.disabled=false;
+            },120);
+        }
+
+        window.addEventListener('load',()=>{
+            document.querySelectorAll('.code-input').forEach(ta=>{
+                autoResize(ta);
+                const id=ta.id.replace('codeInput_','');
+                syncLines(ta,id);
+            });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+</html>

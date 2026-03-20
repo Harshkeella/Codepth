@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Tutorial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="py_download.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-5 col-md-6">
+                    <img src="/img/codepth_logo_2.png" class="img-fluid" height="70" width="170" alt="Codepth Logo">
+                </div>
+                <div class="col-7 col-md-6">
+                    <div class="input-group">
+                        <input class="form-control" type="text" placeholder="Search....">
+                        <button class="btn btn-success" type="button">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- TOP NAVBAR -->
+    <nav class="navbar navbar-expand-lg top-navbar">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="/home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/Python.html">Python</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/mysql.html">MySQL</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/dsa.html">DSA</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/ml.html">Machine Learning</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/dl.html">Deep Learning</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE BODY -->
+    <div class="page-wrapper">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <span class="sidebar-title">Python Tutorial</span>
+            <ul>
+                <li class="active"><a href="/py_components/Py_downloads.html">Python Download</a></li>
+                <li><a href="/py_components/py_intro.html">Python Intro <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_keywords.html">Python Keywords <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_variables.html">Python Variables <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_operators.html">Python Operators <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_datatypes.html">Python Data types <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_if_else.html">Python If-else...<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_while.html">Python While Loops <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_for.html">Python For Loops<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_string.html">Python Strings<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_list.html">Python List <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_tuple.html">Python Tuples <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_sets.html">Python Sets <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_dict.html">Python Dictionaries <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_function.html">Python Functions <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_recursion.html">Python Recursion <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_lamda.html">Python Lamda Function <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_OOP.html">Python OOP<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_file_handling.html">Python File Handling<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_exception_handling.html">Python Exception Handling<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_REGEXP.html">Python REGEXP<span class="arrow">▼</span></a></li>
+            </ul>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <h1>Python me List kya hoti hai?</h1>
+            <hr>
+
+            <p style="font-size: 19px;">List Python ka ek <b>ordered collection</b> hai jisme hum
+            <b>multiple values ek saath store</b> kar sakte hain. List me <b>kisi bhi data type</b>
+            ke values ho sakte hain — numbers, strings, booleans, ya dusri lists bhi!</p>
+
+            <p style="font-size: 19px;">List ki <b>4 main khasiyatein</b> hain :-</p>
+            <ul style="font-size: 18px; margin-left: 40px; line-height: 2.2;">
+                <li><b>Ordered</b> — items ek fixed order me rehte hain</li>
+                <li><b>Mutable</b> — items baad me change, add ya remove ho sakte hain</li>
+                <li><b>Indexed</b> — har item ka ek index hota hai (0 se shuru)</li>
+                <li><b>Duplicates allowed</b> — same value kai baar aa sakti hai</li>
+            </ul>
+
+            <p style="font-size: 19px;">Is page me yeh sab sikhenge :-</p>
+            <ul style="font-size: 18px; margin-left: 40px; line-height: 2.2;">
+                <li>1. <b>List banana aur access karna</b></li>
+                <li>2. <b>Indexing aur Slicing</b></li>
+                <li>3. <b>Items add karna</b> — append, insert, extend</li>
+                <li>4. <b>Items remove karna</b> — remove, pop, del, clear</li>
+                <li>5. <b>List Methods</b> — sort, reverse, copy, count, index</li>
+                <li>6. <b>List Comprehension</b></li>
+                <li>7. <b>Nested List</b></li>
+            </ul>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 1. LIST BANANA & ACCESS       -->
+            <!-- ============================= -->
+            <h1>1. List Banana aur Access Karna</h1>
+            <p style="font-size: 19px;">List ko <b>square brackets [ ]</b> me likha jaata hai aur items ko
+            <b>comma ( , )</b> se alag kiya jaata hai.</p>
+
+            <!-- Cell 1 -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> List banana — different types ke items</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_l1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('l1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('l1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_l1" onclick="runCell('l1')">
+                            <div class="run-icon" id="runIcon_l1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_l1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_l1" spellcheck="false"
+                            oninput="onCodeInput(this,'l1')" onkeydown="handleKeydown(event,'l1')">fruits  = ["apple", "banana", "mango"]
+numbers = [10, 20, 30, 40, 50]
+mixed   = [1, "hello", True, 3.14]   # mixed types bhi allowed!
+empty   = []                           # empty list
+
+print(fruits)
+print(numbers)
+print(mixed)
+print("Length:", len(fruits))
+print("Type:", type(fruits))</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_l1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_l1"></span>
+                            <button class="clear-btn" onclick="clearOutput('l1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_l1"></div>
+                    <div class="exec-time" id="execTime_l1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> List access karna — indexing</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_l2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('l2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('l2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_l2" onclick="runCell('l2')">
+                            <div class="run-icon" id="runIcon_l2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_l2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_l2" spellcheck="false"
+                            oninput="onCodeInput(this,'l2')" onkeydown="handleKeydown(event,'l2')">cities = ["Delhi", "Mumbai", "Kolkata", "Chennai", "Bangalore"]
+
+print("First  :", cities[0])    # Delhi
+print("Third  :", cities[2])    # Kolkata
+print("Last   :", cities[-1])   # Bangalore  (negative index)
+print("Second last:", cities[-2])  # Chennai</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_l2">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_l2"></span>
+                            <button class="clear-btn" onclick="clearOutput('l2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_l2"></div>
+                    <div class="exec-time" id="execTime_l2"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 2. INDEXING & SLICING         -->
+            <!-- ============================= -->
+            <h1>2. Indexing aur Slicing</h1>
+            <p style="font-size: 19px;">List ki slicing bilkul string slicing jaisi hoti hai —
+            <b>[start : stop : step]</b> syntax use hota hai.</p>
+
+            <!-- Cell 1 -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> Slicing — list ka ek hissa nikalna</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_sl1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('sl1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('sl1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_sl1" onclick="runCell('sl1')">
+                            <div class="run-icon" id="runIcon_sl1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_sl1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_sl1" spellcheck="false"
+                            oninput="onCodeInput(this,'sl1')" onkeydown="handleKeydown(event,'sl1')">nums = [0, 10, 20, 30, 40, 50, 60, 70, 80, 90]
+
+print(nums[2:6])     # [20, 30, 40, 50]
+print(nums[:4])      # [0, 10, 20, 30]   — start se
+print(nums[6:])      # [60, 70, 80, 90]  — end tak
+print(nums[-3:])     # [70, 80, 90]      — last 3
+print(nums[::2])     # har doosra element
+print(nums[::-1])    # poori list ulti</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_sl1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_sl1"></span>
+                            <button class="clear-btn" onclick="clearOutput('sl1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_sl1"></div>
+                    <div class="exec-time" id="execTime_sl1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> List item update karna — index se</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_sl2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('sl2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('sl2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_sl2" onclick="runCell('sl2')">
+                            <div class="run-icon" id="runIcon_sl2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_sl2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_sl2" spellcheck="false"
+                            oninput="onCodeInput(this,'sl2')" onkeydown="handleKeydown(event,'sl2')">cars = ["Maruti", "Honda", "Hyundai"]
+print("Before:", cars)
+
+cars[1] = "Toyota"   # Honda ko Toyota se replace karo
+print("After :", cars)
+
+# Multiple items ek saath update
+cars[0:2] = ["Tata", "Mahindra"]
+print("Bulk update:", cars)</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_sl2">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_sl2"></span>
+                            <button class="clear-btn" onclick="clearOutput('sl2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_sl2"></div>
+                    <div class="exec-time" id="execTime_sl2"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 3. ITEMS ADD KARNA            -->
+            <!-- ============================= -->
+            <h1>3. Items Add Karna — append(), insert(), extend()</h1>
+            <p style="font-size: 19px;">List me nayi values <b>3 tarike se add</b> ki ja sakti hain —
+            end me, kisi bhi position pe, ya doosri list ko jodkar.</p>
+
+            <div style="overflow-x:auto; margin: 20px 0;">
+                <table class="table table-bordered table-striped" style="font-size:17px;">
+                    <thead class="table-dark">
+                        <tr><th>Method</th><th>Kaam</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>append(x)</td><td>List ke <b>end me</b> ek item add karta hai</td></tr>
+                        <tr><td>insert(i, x)</td><td>Index <b>i</b> pe item x add karta hai</td></tr>
+                        <tr><td>extend(list2)</td><td>Doosri list ke <b>saare items</b> add karta hai</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Cell 1 - append -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> append() — end me add karna</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_add1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('add1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('add1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_add1" onclick="runCell('add1')">
+                            <div class="run-icon" id="runIcon_add1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_add1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_add1" spellcheck="false"
+                            oninput="onCodeInput(this,'add1')" onkeydown="handleKeydown(event,'add1')">languages = ["Python", "Java"]
+print("Before:", languages)
+
+languages.append("C++")
+print("After append C++:", languages)
+
+languages.append("JavaScript")
+print("After append JS :", languages)</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_add1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_add1"></span>
+                            <button class="clear-btn" onclick="clearOutput('add1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_add1"></div>
+                    <div class="exec-time" id="execTime_add1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 - insert -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> insert() — kisi bhi jagah add karna</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_add2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('add2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('add2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_add2" onclick="runCell('add2')">
+                            <div class="run-icon" id="runIcon_add2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_add2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_add2" spellcheck="false"
+                            oninput="onCodeInput(this,'add2')" onkeydown="handleKeydown(event,'add2')">nums = [10, 30, 40]
+print("Before:", nums)
+
+nums.insert(1, 20)   # index 1 pe 20 daalo
+print("After insert(1, 20):", nums)
+
+nums.insert(0, 5)    # bilkul shuru me daalo
+print("After insert(0, 5) :", nums)</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_add2">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_add2"></span>
+                            <button class="clear-btn" onclick="clearOutput('add2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_add2"></div>
+                    <div class="exec-time" id="execTime_add2"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 3 - extend -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 3:</b> extend() — do lists ko jodna</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_add3">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('add3')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('add3')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_add3" onclick="runCell('add3')">
+                            <div class="run-icon" id="runIcon_add3"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_add3">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_add3" spellcheck="false"
+                            oninput="onCodeInput(this,'add3')" onkeydown="handleKeydown(event,'add3')">boys  = ["Rahul", "Arjun"]
+girls = ["Priya", "Neha"]
+
+boys.extend(girls)       # girls ke saare items boys me add
+print("Combined:", boys)
+
+# + operator se bhi jod sakte hain
+list1 = [1, 2, 3]
+list2 = [4, 5, 6]
+combined = list1 + list2
+print("Using + :", combined)</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_add3">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_add3"></span>
+                            <button class="clear-btn" onclick="clearOutput('add3')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_add3"></div>
+                    <div class="exec-time" id="execTime_add3"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 4. ITEMS REMOVE KARNA         -->
+            <!-- ============================= -->
+            <h1>4. Items Remove Karna — remove(), pop(), del, clear()</h1>
+            <p style="font-size: 19px;">List se items <b>4 tarike se remove</b> ho sakte hain — value se,
+            index se, ya poori list clear karke.</p>
+
+            <div style="overflow-x:auto; margin: 20px 0;">
+                <table class="table table-bordered table-striped" style="font-size:17px;">
+                    <thead class="table-dark">
+                        <tr><th>Method</th><th>Kaam</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>remove(x)</td><td>Pehla x <b>value</b> dhundh ke remove karta hai</td></tr>
+                        <tr><td>pop(i)</td><td>Index <b>i</b> wala item remove karke <b>return</b> karta hai</td></tr>
+                        <tr><td>del list[i]</td><td>Index <b>i</b> wala item delete karta hai</td></tr>
+                        <tr><td>clear()</td><td>List ke <b>saare items</b> hata deta hai</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Cell 1 - remove -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> remove() — value se item hatana</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_rm1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('rm1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('rm1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_rm1" onclick="runCell('rm1')">
+                            <div class="run-icon" id="runIcon_rm1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_rm1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_rm1" spellcheck="false"
+                            oninput="onCodeInput(this,'rm1')" onkeydown="handleKeydown(event,'rm1')">fruits = ["apple", "banana", "mango", "banana", "grapes"]
+print("Before:", fruits)
+
+fruits.remove("banana")   # pehla "banana" remove hoga
+print("After remove:", fruits)</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_rm1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_rm1"></span>
+                            <button class="clear-btn" onclick="clearOutput('rm1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_rm1"></div>
+                    <div class="exec-time" id="execTime_rm1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 - pop -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> pop() — index se hatana aur value milna</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_rm2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('rm2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('rm2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_rm2" onclick="runCell('rm2')">
+                            <div class="run-icon" id="runIcon_rm2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_rm2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_rm2" spellcheck="false"
+                            oninput="onCodeInput(this,'rm2')" onkeydown="handleKeydown(event,'rm2')">items = ["pen", "book", "eraser", "sharpener"]
+print("Before:", items)
+
+removed = items.pop()     # bina index — last item hata deta hai
+print("Removed:", removed)
+print("After pop():", items)
+
+removed2 = items.pop(0)   # index 0 wala hata deta hai
+print("Removed:", removed2)
+print("After pop(0):", items)</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_rm2">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_rm2"></span>
+                            <button class="clear-btn" onclick="clearOutput('rm2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_rm2"></div>
+                    <div class="exec-time" id="execTime_rm2"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 3 - del and clear -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 3:</b> del aur clear()</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_rm3">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('rm3')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('rm3')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_rm3" onclick="runCell('rm3')">
+                            <div class="run-icon" id="runIcon_rm3"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_rm3">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_rm3" spellcheck="false"
+                            oninput="onCodeInput(this,'rm3')" onkeydown="handleKeydown(event,'rm3')">nums = [10, 20, 30, 40, 50]
+print("Original:", nums)
+
+del nums[2]           # index 2 wala (30) delete karo
+print("After del[2]:", nums)
+
+nums.clear()          # poori list khali kar do
+print("After clear():", nums)</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_rm3">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_rm3"></span>
+                            <button class="clear-btn" onclick="clearOutput('rm3')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_rm3"></div>
+                    <div class="exec-time" id="execTime_rm3"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 5. LIST METHODS               -->
+            <!-- ============================= -->
+            <h1>5. List Methods</h1>
+            <p style="font-size: 19px;">Python list ke saath kai <b>built-in methods</b> aate hain —
+            sorting, searching, copying aur bahut kuch.</p>
+
+            <!-- Cell 1 - sort and reverse -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> sort() aur reverse()</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_mt1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('mt1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('mt1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_mt1" onclick="runCell('mt1')">
+                            <div class="run-icon" id="runIcon_mt1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_mt1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_mt1" spellcheck="false"
+                            oninput="onCodeInput(this,'mt1')" onkeydown="handleKeydown(event,'mt1')">nums = [40, 10, 70, 20, 90, 30]
+print("Original:", nums)
+
+nums.sort()             # ascending order (chhote se bade)
+print("Sorted (asc):", nums)
+
+nums.sort(reverse=True) # descending order (bade se chhote)
+print("Sorted (desc):", nums)
+
+nums.reverse()          # sirf order ulta karta hai
+print("Reversed:", nums)</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_mt1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_mt1"></span>
+                            <button class="clear-btn" onclick="clearOutput('mt1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_mt1"></div>
+                    <div class="exec-time" id="execTime_mt1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 - count, index, copy -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> count(), index() aur copy()</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_mt2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('mt2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('mt2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_mt2" onclick="runCell('mt2')">
+                            <div class="run-icon" id="runIcon_mt2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_mt2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_mt2" spellcheck="false"
+                            oninput="onCodeInput(this,'mt2')" onkeydown="handleKeydown(event,'mt2')">scores = [85, 90, 85, 72, 90, 85, 60]
+
+print("count(85):", scores.count(85))   # 85 kitni baar aaya
+print("index(90):", scores.index(90))   # 90 pehli baar kahan hai
+
+# copy() — ek naya independent copy banana
+original = [1, 2, 3]
+copy_list = original.copy()
+copy_list.append(99)
+
+print("Original:", original)    # unchanged
+print("Copy    :", copy_list)   # 99 add hua</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_mt2">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_mt2"></span>
+                            <button class="clear-btn" onclick="clearOutput('mt2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_mt2"></div>
+                    <div class="exec-time" id="execTime_mt2"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 3 - min max sum -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 3:</b> min(), max() aur sum() — built-in functions</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_mt3">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('mt3')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('mt3')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_mt3" onclick="runCell('mt3')">
+                            <div class="run-icon" id="runIcon_mt3"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_mt3">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_mt3" spellcheck="false"
+                            oninput="onCodeInput(this,'mt3')" onkeydown="handleKeydown(event,'mt3')">marks = [78, 95, 62, 88, 71, 90]
+
+print("Minimum :", min(marks))
+print("Maximum :", max(marks))
+print("Sum     :", sum(marks))
+print("Average :", sum(marks) / len(marks))</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_mt3">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_mt3"></span>
+                            <button class="clear-btn" onclick="clearOutput('mt3')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_mt3"></div>
+                    <div class="exec-time" id="execTime_mt3"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 6. LIST COMPREHENSION         -->
+            <!-- ============================= -->
+            <h1>6. List Comprehension</h1>
+            <p style="font-size: 19px;">List Comprehension ek <b>short aur elegant tarika</b> hai nai list banane ka —
+            ek hi line me loop aur condition likh sakte hain. Yeh Python ka ek <b>powerful feature</b> hai.</p>
+
+            <div style="overflow-x:auto; margin: 20px 0;">
+                <table class="table table-bordered" style="font-size:17px;">
+                    <thead class="table-dark"><tr><th>Syntax</th></tr></thead>
+                    <tbody><tr><td>
+                        <pre style="margin:0; background:transparent; border:none;">new_list = [expression for item in iterable if condition]</pre>
+                    </td></tr></tbody>
+                </table>
+            </div>
+
+            <!-- Cell 1 -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> Squares list banana — normal vs comprehension</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_lc1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('lc1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('lc1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_lc1" onclick="runCell('lc1')">
+                            <div class="run-icon" id="runIcon_lc1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_lc1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_lc1" spellcheck="false"
+                            oninput="onCodeInput(this,'lc1')" onkeydown="handleKeydown(event,'lc1')"># Normal tarika — 4 lines
+squares_normal = []
+for i in range(1, 6):
+    squares_normal.append(i ** 2)
+print("Normal    :", squares_normal)
+
+# List Comprehension — 1 line!
+squares_comp = [i ** 2 for i in range(1, 6)]
+print("Comprehension:", squares_comp)</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_lc1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_lc1"></span>
+                            <button class="clear-btn" onclick="clearOutput('lc1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_lc1"></div>
+                    <div class="exec-time" id="execTime_lc1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> Condition ke saath comprehension</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_lc2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('lc2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('lc2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_lc2" onclick="runCell('lc2')">
+                            <div class="run-icon" id="runIcon_lc2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_lc2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_lc2" spellcheck="false"
+                            oninput="onCodeInput(this,'lc2')" onkeydown="handleKeydown(event,'lc2')">nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+# Sirf even numbers
+evens = [n for n in nums if n % 2 == 0]
+print("Even numbers:", evens)
+
+# Sirf 50 se zyada marks wale students
+marks = [45, 72, 38, 88, 61, 29, 95]
+passed = [m for m in marks if m >= 50]
+print("Passed marks:", passed)
+
+# Strings uppercase karna
+fruits = ["apple", "mango", "banana"]
+upper_fruits = [f.upper() for f in fruits]
+print("Upper fruits:", upper_fruits)</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_lc2">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_lc2"></span>
+                            <button class="clear-btn" onclick="clearOutput('lc2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_lc2"></div>
+                    <div class="exec-time" id="execTime_lc2"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 7. NESTED LIST                -->
+            <!-- ============================= -->
+            <h1>7. Nested List</h1>
+            <p style="font-size: 19px;">List ke andar doosri list — isse <b>Nested List</b> kehte hain.
+            Iska use <b>2D data</b> represent karne ke liye hota hai — jaise matrix ya table.</p>
+
+            <!-- Cell 1 -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> Nested list banana aur access karna</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_nl1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('nl1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('nl1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_nl1" onclick="runCell('nl1')">
+                            <div class="run-icon" id="runIcon_nl1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_nl1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_nl1" spellcheck="false"
+                            oninput="onCodeInput(this,'nl1')" onkeydown="handleKeydown(event,'nl1')">students = [
+    ["Rahul", 85, "Delhi"],
+    ["Priya", 92, "Mumbai"],
+    ["Arjun", 78, "Pune"]
+]
+
+print(students[0])          # pehla student
+print(students[1][0])       # doosre student ka naam
+print(students[2][1])       # teesre student ke marks
+
+# Saare students print karna
+for s in students:
+    print(f"Name: {s[0]}, Marks: {s[1]}, City: {s[2]}")</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_nl1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_nl1"></span>
+                            <button class="clear-btn" onclick="clearOutput('nl1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_nl1"></div>
+                    <div class="exec-time" id="execTime_nl1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> 3x3 Matrix — nested list se</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_nl2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('nl2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('nl2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_nl2" onclick="runCell('nl2')">
+                            <div class="run-icon" id="runIcon_nl2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_nl2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_nl2" spellcheck="false"
+                            oninput="onCodeInput(this,'nl2')" onkeydown="handleKeydown(event,'nl2')">matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+print("Matrix:")
+for row in matrix:
+    for val in row:
+        print(val, end="\t")
+    print()
+
+print("\nCenter element:", matrix[1][1])   # 5</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_nl2">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_nl2"></span>
+                            <button class="clear-btn" onclick="clearOutput('nl2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_nl2"></div>
+                    <div class="exec-time" id="execTime_nl2"></div>
+                </div>
+            </div></div>
+
+            <br><hr><br>
+
+            <!-- Quick Summary -->
+            <h4>Quick Summary — List Methods ek nazar me</h4>
+            <div style="overflow-x:auto; margin: 20px 0;">
+                <table class="table table-bordered table-striped" style="font-size:17px;">
+                    <thead class="table-dark">
+                        <tr><th>Method</th><th>Kaam</th><th>Example</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>append(x)</td><td>End me add karo</td><td>lst.append(5)</td></tr>
+                        <tr><td>insert(i, x)</td><td>Index i pe add karo</td><td>lst.insert(1, 99)</td></tr>
+                        <tr><td>extend(lst2)</td><td>Doosri list jodo</td><td>lst.extend([4,5])</td></tr>
+                        <tr><td>remove(x)</td><td>Value se hatao</td><td>lst.remove("a")</td></tr>
+                        <tr><td>pop(i)</td><td>Index se hatao + return</td><td>lst.pop(0)</td></tr>
+                        <tr><td>clear()</td><td>Sab hatao</td><td>lst.clear()</td></tr>
+                        <tr><td>sort()</td><td>Sort karo</td><td>lst.sort()</td></tr>
+                        <tr><td>reverse()</td><td>Ulta karo</td><td>lst.reverse()</td></tr>
+                        <tr><td>count(x)</td><td>Kitni baar aaya</td><td>lst.count(5)</td></tr>
+                        <tr><td>index(x)</td><td>Kahan hai</td><td>lst.index(5)</td></tr>
+                        <tr><td>copy()</td><td>Nayi copy banao</td><td>lst2 = lst.copy()</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <br>
+
+            <!-- CTA Row -->
+            <div class="cta-row">
+                <a href="/py_components/py_string.html" class="outline-btn">Previous</a>
+                <a href="/py_components/py_tuple.html" class="start-btn">
+                    Next
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
+                    </svg>
+                </a>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark py-4 mt-5">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-12">
+                    <h6 style="color: #adb5bd; margin-bottom: 0;">© 2026 Codepth . All Rights Reserved.</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SHARED CELL SCRIPT -->
+    <script>
+        const execCounts = {};
+
+        function getExecCount(id) {
+            if (!execCounts[id]) execCounts[id] = 1;
+            return execCounts[id];
+        }
+
+        function syncLines(ta, id) {
+            const lines = ta.value.split('\n').length;
+            const nums = Array.from({ length: lines }, (_, i) => i + 1).join('\n');
+            document.getElementById('lineNums_' + id).textContent = nums;
+        }
+
+        function autoResize(ta) {
+            ta.style.height = 'auto';
+            ta.style.height = ta.scrollHeight + 'px';
+        }
+
+        function onCodeInput(ta, id) {
+            autoResize(ta);
+            syncLines(ta, id);
+        }
+
+        function handleKeydown(e, id) {
+            if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+                e.preventDefault();
+                runCell(id);
+            }
+            if (e.key === 'Tab') {
+                e.preventDefault();
+                const ta = e.target;
+                const s = ta.selectionStart, end = ta.selectionEnd;
+                ta.value = ta.value.substring(0, s) + '    ' + ta.value.substring(end);
+                ta.selectionStart = ta.selectionEnd = s + 4;
+                syncLines(ta, id);
+            }
+        }
+
+        function copyCode(id) {
+            const code = document.getElementById('codeInput_' + id).value;
+            navigator.clipboard.writeText(code).catch(() => {});
+        }
+
+        function clearOutput(id) {
+            document.getElementById('outputSection_' + id).classList.remove('show');
+        }
+
+        function runCell(id) {
+            const code = document.getElementById('codeInput_' + id).value;
+            const btn  = document.getElementById('runBtn_' + id);
+            const icon = document.getElementById('runIcon_' + id);
+
+            btn.classList.add('running');
+            icon.className = 'run-icon spin';
+            btn.disabled = true;
+
+            setTimeout(() => {
+                const t0 = performance.now();
+                const printLines = [];
+                const fakePrint = (...args) => { printLines.push(args.map(String).join(' ')); };
+
+                let result;
+                let isError = false;
+                let errMsg = '';
+
+                try {
+                    const wrapped = code.replace(/\bprint\s*\(/g, '__print__(');
+                    const fn = new Function('__print__', wrapped);
+                    result = fn(fakePrint);
+                } catch (e) {
+                    isError = true;
+                    errMsg = e.toString();
+                }
+
+                const elapsed = (performance.now() - t0).toFixed(1);
+                const count = getExecCount(id);
+
+                const sec    = document.getElementById('outputSection_' + id);
+                const body   = document.getElementById('outputBody_' + id);
+                const status = document.getElementById('outputStatus_' + id);
+                const timeEl = document.getElementById('execTime_' + id);
+
+                if (isError) {
+                    body.textContent   = errMsg;
+                    body.className     = 'output-body error';
+                    status.textContent = '✗ Error';
+                    status.className   = 'output-status err';
+                } else {
+                    let out = printLines.join('\n');
+                    if (!out && result !== undefined) out = String(result);
+                    if (!out) out = '(no output)';
+                    body.textContent   = out;
+                    body.className     = 'output-body';
+                    status.textContent = '✓ OK';
+                    status.className   = 'output-status ok';
+                }
+
+                timeEl.textContent = `Executed in ${elapsed}ms  ·  In [${count}]`;
+                document.getElementById('cellNum_' + id).textContent = `In [${count}]:`;
+                execCounts[id] = count + 1;
+
+                sec.classList.add('show');
+                btn.classList.remove('running');
+                icon.className = 'run-icon';
+                btn.disabled   = false;
+            }, 120);
+        }
+
+        window.addEventListener('load', () => {
+            document.querySelectorAll('.code-input').forEach(ta => {
+                autoResize(ta);
+                const id = ta.id.replace('codeInput_', '');
+                syncLines(ta, id);
+            });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+</html>

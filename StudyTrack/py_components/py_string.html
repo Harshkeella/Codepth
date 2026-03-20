@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Tutorial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="py_download.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-5 col-md-6">
+                    <img src="/img/codepth_logo_2.png" class="img-fluid" height="70" width="170" alt="Codepth Logo">
+                </div>
+                <div class="col-7 col-md-6">
+                    <div class="input-group">
+                        <input class="form-control" type="text" placeholder="Search....">
+                        <button class="btn btn-success" type="button">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- TOP NAVBAR -->
+    <nav class="navbar navbar-expand-lg top-navbar">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="/home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/Python.html">Python</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/mysql.html">MySQL</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/dsa.html">DSA</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/ml.html">Machine Learning</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/dl.html">Deep Learning</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE BODY -->
+    <div class="page-wrapper">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <span class="sidebar-title">Python Tutorial</span>
+            <ul>
+                <li class="active"><a href="/py_components/Py_downloads.html">Python Download</a></li>
+                <li><a href="/py_components/py_intro.html">Python Intro <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_keywords.html">Python Keywords <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_variables.html">Python Variables <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_operators.html">Python Operators <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_datatypes.html">Python Data types <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_if_else.html">Python If-else...<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_while.html">Python While Loops <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_for.html">Python For Loops<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_string.html">Python Strings<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_list.html">Python List <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_tuple.html">Python Tuples <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_sets.html">Python Sets <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_dict.html">Python Dictionaries <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_function.html">Python Functions <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_recursion.html">Python Recursion <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_lamda.html">Python Lamda Function <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_OOP.html">Python OOP<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_file_handling.html">Python File Handling<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_exception_handling.html">Python Exception Handling<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_REGEXP.html">Python REGEXP<span class="arrow">▼</span></a></li>
+            </ul>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <h1>Python me Strings kya hoti hain?</h1>
+            <hr>
+
+            <p style="font-size: 19px;">String ek <b>text data type</b> hai jisme hum <b>letters, words, sentences,
+            numbers ya koi bhi characters</b> store kar sakte hain. Python me string ko
+            <b>single quotes (' ')</b>, <b>double quotes (" ")</b> ya <b>triple quotes (''' ''' ya """ """)</b>
+            me likha jaata hai.</p>
+
+            <p style="font-size: 19px;">Is page me yeh sab sikhenge :-</p>
+            <ul style="font-size: 18px; margin-left: 40px; line-height: 2.2;">
+                <li>1. <b>String banana — different ways</b></li>
+                <li>2. <b>Indexing aur Slicing</b></li>
+                <li>3. <b>String Concatenation aur Repetition</b></li>
+                <li>4. <b>f-String aur format()</b></li>
+                <li>5. <b>Escape Characters</b></li>
+                <li>6. <b>String Methods</b> — upper, lower, strip, replace, split, find, aur bahut kuch</li>
+            </ul>
+
+            <p style="font-size: 19px; margin-top: 10px;">
+                <b>Note :-</b> Python me String <b>immutable</b> hoti hai — matlab ek baar banne ke baad
+                string ke andar ka koi character directly change nahi ho sakta.
+                Har string method <b>naya string return karta hai</b>, original change nahi hota.
+            </p>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 1. STRING BANANA              -->
+            <!-- ============================= -->
+            <h1>1. String Banana — Different Ways</h1>
+            <p style="font-size: 19px;">Python me string banane ke <b>4 tarike</b> hain. Teeno quotes me se
+            koi bhi use kar sakte hain, lekin <b>triple quotes multi-line strings</b> ke liye use hote hain.</p>
+
+            <!-- Cell 1 -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> Single, double aur triple quotes</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_st1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('st1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('st1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_st1" onclick="runCell('st1')">
+                            <div class="run-icon" id="runIcon_st1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_st1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_st1" spellcheck="false"
+                            oninput="onCodeInput(this,'st1')" onkeydown="handleKeydown(event,'st1')">s1 = 'Single quotes me string'
+s2 = "Double quotes me string"
+s3 = '''Triple quotes me
+multi-line
+string'''
+
+print(s1)
+print(s2)
+print(s3)
+print(type(s1))</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_st1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_st1"></span>
+                            <button class="clear-btn" onclick="clearOutput('st1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_st1"></div>
+                    <div class="exec-time" id="execTime_st1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> String me quotes ke andar quotes likhna</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_st2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('st2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('st2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_st2" onclick="runCell('st2')">
+                            <div class="run-icon" id="runIcon_st2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_st2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_st2" spellcheck="false"
+                            oninput="onCodeInput(this,'st2')" onkeydown="handleKeydown(event,'st2')"># Single ke andar double ya double ke andar single use karo
+msg1 = "He said, 'Python is awesome!'"
+msg2 = 'She replied, "I agree!"'
+
+print(msg1)
+print(msg2)</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_st2">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_st2"></span>
+                            <button class="clear-btn" onclick="clearOutput('st2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_st2"></div>
+                    <div class="exec-time" id="execTime_st2"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 2. INDEXING & SLICING         -->
+            <!-- ============================= -->
+            <h1>2. Indexing aur Slicing</h1>
+            <p style="font-size: 19px;">String ke har character ka ek <b>index (number)</b> hota hai.
+            Python me indexing <b>0 se shuru</b> hoti hai. Negative index <b>end se shuru</b> hota hai.</p>
+
+            <div style="overflow-x:auto; margin: 20px 0;">
+                <table class="table table-bordered table-striped" style="font-size:17px;">
+                    <thead class="table-dark">
+                        <tr><th>String</th><th>P</th><th>y</th><th>t</th><th>h</th><th>o</th><th>n</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td><b>Positive Index</b></td><td>0</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+                        <tr><td><b>Negative Index</b></td><td>-6</td><td>-5</td><td>-4</td><td>-3</td><td>-2</td><td>-1</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Cell 1 - indexing -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> Indexing — kisi bhi ek character access karna</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_idx1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('idx1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('idx1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_idx1" onclick="runCell('idx1')">
+                            <div class="run-icon" id="runIcon_idx1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_idx1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_idx1" spellcheck="false"
+                            oninput="onCodeInput(this,'idx1')" onkeydown="handleKeydown(event,'idx1')">s = "Python"
+
+print("First char  :", s[0])    # P
+print("Third char  :", s[2])    # t
+print("Last char   :", s[-1])   # n  (negative index)
+print("Second last :", s[-2])   # o
+print("Length      :", len(s))  # 6</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_idx1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_idx1"></span>
+                            <button class="clear-btn" onclick="clearOutput('idx1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_idx1"></div>
+                    <div class="exec-time" id="execTime_idx1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 - slicing -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> Slicing — string ka ek hissa nikalna [start:stop:step]</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_idx2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('idx2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('idx2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_idx2" onclick="runCell('idx2')">
+                            <div class="run-icon" id="runIcon_idx2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_idx2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_idx2" spellcheck="false"
+                            oninput="onCodeInput(this,'idx2')" onkeydown="handleKeydown(event,'idx2')">s = "Hello World"
+
+print(s[0:5])     # Hello  — 0 se 4 tak
+print(s[6:])      # World  — 6 se end tak
+print(s[:5])      # Hello  — start se 4 tak
+print(s[-5:])     # World  — last 5 characters
+print(s[::2])     # Hlo ol — ek ek skip karke
+print(s[::-1])    # dlroW olleH — poori string ulti</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_idx2">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_idx2"></span>
+                            <button class="clear-btn" onclick="clearOutput('idx2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_idx2"></div>
+                    <div class="exec-time" id="execTime_idx2"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 3 - palindrome -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 3:</b> Slicing se Palindrome check karna</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_idx3">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('idx3')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('idx3')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_idx3" onclick="runCell('idx3')">
+                            <div class="run-icon" id="runIcon_idx3"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_idx3">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_idx3" spellcheck="false"
+                            oninput="onCodeInput(this,'idx3')" onkeydown="handleKeydown(event,'idx3')">word = "madam"
+
+if word == word[::-1]:
+    print(word, "palindrome hai!")
+else:
+    print(word, "palindrome nahi hai.")</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_idx3">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_idx3"></span>
+                            <button class="clear-btn" onclick="clearOutput('idx3')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_idx3"></div>
+                    <div class="exec-time" id="execTime_idx3"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 3. CONCATENATION & REPETITION -->
+            <!-- ============================= -->
+            <h1>3. String Concatenation aur Repetition</h1>
+            <p style="font-size: 19px;"><b>Concatenation</b> ka matlab hai <b>do ya zyada strings ko jodna</b> — <b>+</b>
+            operator se. <b>Repetition</b> ka matlab hai string ko <b>baar baar repeat karna</b> — <b>*</b> operator se.</p>
+
+            <!-- Cell 1 -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> Concatenation — strings jodhna</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_cc1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('cc1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('cc1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_cc1" onclick="runCell('cc1')">
+                            <div class="run-icon" id="runIcon_cc1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_cc1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_cc1" spellcheck="false"
+                            oninput="onCodeInput(this,'cc1')" onkeydown="handleKeydown(event,'cc1')">first = "Jai"
+last  = "Hind"
+
+full = first + " " + last
+print(full)
+
+greeting = "Namaste" + " " + "Duniya" + "!"
+print(greeting)</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_cc1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_cc1"></span>
+                            <button class="clear-btn" onclick="clearOutput('cc1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_cc1"></div>
+                    <div class="exec-time" id="execTime_cc1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> Repetition — string ko repeat karna</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_cc2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('cc2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('cc2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_cc2" onclick="runCell('cc2')">
+                            <div class="run-icon" id="runIcon_cc2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_cc2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_cc2" spellcheck="false"
+                            oninput="onCodeInput(this,'cc2')" onkeydown="handleKeydown(event,'cc2')">word = "Python! "
+print(word * 3)        # 3 baar repeat
+
+line = "-" * 30
+print(line)            # separator banana
+
+print("Ha" * 5)        # HaHaHaHaHa</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_cc2">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_cc2"></span>
+                            <button class="clear-btn" onclick="clearOutput('cc2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_cc2"></div>
+                    <div class="exec-time" id="execTime_cc2"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 4. F-STRING & FORMAT          -->
+            <!-- ============================= -->
+            <h1>4. f-String aur format()</h1>
+            <p style="font-size: 19px;">String ke andar <b>variables ki values seedha daal ne ke liye</b>
+            f-string ya format() use karte hain. f-string <b>modern aur easy</b> tarika hai.</p>
+
+            <!-- Cell 1 - f-string -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> f-String — curly braces me variable daalo</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_fs1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('fs1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('fs1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_fs1" onclick="runCell('fs1')">
+                            <div class="run-icon" id="runIcon_fs1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_fs1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_fs1" spellcheck="false"
+                            oninput="onCodeInput(this,'fs1')" onkeydown="handleKeydown(event,'fs1')">name  = "Ananya"
+age   = 21
+city  = "Pune"
+
+# f-string — f se shuru, {} me variable
+print(f"Mera naam {name} hai.")
+print(f"Main {age} saal ki hoon aur {city} me rehti hoon.")
+print(f"5 saal baad meri age {age + 5} hogi.")</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_fs1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_fs1"></span>
+                            <button class="clear-btn" onclick="clearOutput('fs1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_fs1"></div>
+                    <div class="exec-time" id="execTime_fs1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 - format() -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> format() method — purana tarika</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_fs2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('fs2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('fs2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_fs2" onclick="runCell('fs2')">
+                            <div class="run-icon" id="runIcon_fs2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_fs2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_fs2" spellcheck="false"
+                            oninput="onCodeInput(this,'fs2')" onkeydown="handleKeydown(event,'fs2')">item  = "Laptop"
+price = 55000
+
+# format() — {} placeholder hota hai
+msg = "Item: {} ka price Rs.{} hai.".format(item, price)
+print(msg)
+
+# Decimal format karna
+pi = 3.14159
+print("Pi ki value: {:.2f}".format(pi))   # sirf 2 decimal places</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_fs2">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_fs2"></span>
+                            <button class="clear-btn" onclick="clearOutput('fs2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_fs2"></div>
+                    <div class="exec-time" id="execTime_fs2"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 5. ESCAPE CHARACTERS          -->
+            <!-- ============================= -->
+            <h1>5. Escape Characters</h1>
+            <p style="font-size: 19px;">Kuch <b>special characters</b> string me directly nahi likh sakte — jaise
+            newline, tab ya quotes. Inke liye <b>backslash (\) se shuru hone wale escape characters</b> use hote hain.</p>
+
+            <div style="overflow-x:auto; margin: 20px 0;">
+                <table class="table table-bordered table-striped" style="font-size:17px;">
+                    <thead class="table-dark">
+                        <tr><th>Escape Char</th><th>Matlab</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>\n</td><td>New line (naya line)</td></tr>
+                        <tr><td>\t</td><td>Tab (space)</td></tr>
+                        <tr><td>\\</td><td>Backslash (\)</td></tr>
+                        <tr><td>\'</td><td>Single quote</td></tr>
+                        <tr><td>\"</td><td>Double quote</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Cell 1 -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> \n aur \t ka use</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_esc1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('esc1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('esc1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_esc1" onclick="runCell('esc1')">
+                            <div class="run-icon" id="runIcon_esc1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_esc1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_esc1" spellcheck="false"
+                            oninput="onCodeInput(this,'esc1')" onkeydown="handleKeydown(event,'esc1')">print("Line 1\nLine 2\nLine 3")   # \n = naya line
+
+print("\tYeh tab se start hua")    # \t = tab space
+
+print("Name:\tRahul\nAge:\t20")    # dono saath</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_esc1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_esc1"></span>
+                            <button class="clear-btn" onclick="clearOutput('esc1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_esc1"></div>
+                    <div class="exec-time" id="execTime_esc1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> Quotes aur backslash escape</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_esc2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('esc2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('esc2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_esc2" onclick="runCell('esc2')">
+                            <div class="run-icon" id="runIcon_esc2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_esc2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_esc2" spellcheck="false"
+                            oninput="onCodeInput(this,'esc2')" onkeydown="handleKeydown(event,'esc2')">print("He said, \"Python is the best!\"")  # \" quote print karta hai
+print('It\'s a great language.')           # \' single quote
+
+path = "C:\\Users\\Rahul\\Documents"       # \\ backslash print karta hai
+print(path)</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_esc2">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_esc2"></span>
+                            <button class="clear-btn" onclick="clearOutput('esc2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_esc2"></div>
+                    <div class="exec-time" id="execTime_esc2"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 6. STRING METHODS             -->
+            <!-- ============================= -->
+            <h1>6. String Methods</h1>
+            <p style="font-size: 19px;">Python me strings ke saath bahut saare <b>built-in methods</b> aate hain jo
+            string pe kaam karte hain. Ye methods <b>original string change nahi karte</b> —
+            <b>naya string return karte hain</b>.</p>
+
+            <!-- Cell 1 - case methods -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> Case methods — upper, lower, title, capitalize, swapcase</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_m1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('m1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('m1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_m1" onclick="runCell('m1')">
+                            <div class="run-icon" id="runIcon_m1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_m1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_m1" spellcheck="false"
+                            oninput="onCodeInput(this,'m1')" onkeydown="handleKeydown(event,'m1')">s = "hello world"
+
+print(s.upper())       # HELLO WORLD
+print(s.lower())       # hello world
+print(s.title())       # Hello World — har word ka pehla letter capital
+print(s.capitalize())  # Hello world — sirf pehla letter capital
+print(s.swapcase())    # HELLO WORLD -> hello world ya ulta</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_m1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_m1"></span>
+                            <button class="clear-btn" onclick="clearOutput('m1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_m1"></div>
+                    <div class="exec-time" id="execTime_m1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 - strip methods -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> strip() — extra spaces hatana</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_m2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('m2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('m2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_m2" onclick="runCell('m2')">
+                            <div class="run-icon" id="runIcon_m2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_m2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_m2" spellcheck="false"
+                            oninput="onCodeInput(this,'m2')" onkeydown="handleKeydown(event,'m2')">s = "   Hello Python!   "
+
+print(repr(s.strip()))    # dono taraf ke spaces hataata hai
+print(repr(s.lstrip()))   # sirf left side se spaces hataata hai
+print(repr(s.rstrip()))   # sirf right side se spaces hataata hai</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_m2">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_m2"></span>
+                            <button class="clear-btn" onclick="clearOutput('m2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_m2"></div>
+                    <div class="exec-time" id="execTime_m2"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 3 - find, count, replace -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 3:</b> find(), count() aur replace()</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_m3">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('m3')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('m3')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_m3" onclick="runCell('m3')">
+                            <div class="run-icon" id="runIcon_m3"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_m3">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_m3" spellcheck="false"
+                            oninput="onCodeInput(this,'m3')" onkeydown="handleKeydown(event,'m3')">s = "I love Python. Python is amazing."
+
+print(s.find("Python"))      # pehli baar kahan mila (index)
+print(s.count("Python"))     # kitni baar aaya
+
+new_s = s.replace("Python", "Coding")
+print(new_s)                 # original change nahi hua — naya string mila</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_m3">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_m3"></span>
+                            <button class="clear-btn" onclick="clearOutput('m3')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_m3"></div>
+                    <div class="exec-time" id="execTime_m3"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 4 - split and join -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 4:</b> split() aur join()</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_m4">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('m4')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('m4')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_m4" onclick="runCell('m4')">
+                            <div class="run-icon" id="runIcon_m4"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_m4">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_m4" spellcheck="false"
+                            oninput="onCodeInput(this,'m4')" onkeydown="handleKeydown(event,'m4')">sentence = "Python is easy to learn"
+
+# split() — string ko list me todna
+words = sentence.split(" ")   # space pe split
+print(words)
+print("Total words:", len(words))
+
+# join() — list ko wapas string me jodna
+joined = " | ".join(words)
+print(joined)</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_m4">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_m4"></span>
+                            <button class="clear-btn" onclick="clearOutput('m4')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_m4"></div>
+                    <div class="exec-time" id="execTime_m4"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 5 - startswith, endswith, in, isdigit, isalpha -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 5:</b> Check karne wale methods — startswith, endswith, isdigit, isalpha</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_m5">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('m5')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('m5')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_m5" onclick="runCell('m5')">
+                            <div class="run-icon" id="runIcon_m5"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_m5">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_m5" spellcheck="false"
+                            oninput="onCodeInput(this,'m5')" onkeydown="handleKeydown(event,'m5')">s = "Hello World"
+
+print(s.startswith("Hello"))   # True — "Hello" se shuru hota hai?
+print(s.endswith("World"))     # True — "World" pe khatam hota hai?
+print("World" in s)            # True — "World" string me hai?
+
+print("12345".isdigit())       # True — sirf digits hain?
+print("Hello".isalpha())       # True — sirf letters hain?
+print("Hello123".isalnum())    # True — letters ya digits hain?
+print("  ".isspace())          # True — sirf spaces hain?</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_m5">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_m5"></span>
+                            <button class="clear-btn" onclick="clearOutput('m5')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_m5"></div>
+                    <div class="exec-time" id="execTime_m5"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 6 - zfill, center, ljust, rjust -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 6:</b> Alignment methods — center, ljust, rjust, zfill</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_m6">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('m6')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('m6')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_m6" onclick="runCell('m6')">
+                            <div class="run-icon" id="runIcon_m6"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_m6">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_m6" spellcheck="false"
+                            oninput="onCodeInput(this,'m6')" onkeydown="handleKeydown(event,'m6')">s = "Python"
+
+print(s.center(20, "-"))   # -------Python-------
+print(s.ljust(20, "."))    # Python..............
+print(s.rjust(20, "."))    # ..............Python
+
+# zfill — left me zeros pad karta hai (numbers ke liye useful)
+print("42".zfill(6))       # 000042</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_m6">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_m6"></span>
+                            <button class="clear-btn" onclick="clearOutput('m6')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_m6"></div>
+                    <div class="exec-time" id="execTime_m6"></div>
+                </div>
+            </div></div>
+
+            <br><hr><br>
+
+            <!-- Quick Summary Table -->
+            <h4>Quick Summary — Important String Methods ek nazar me</h4>
+            <div style="overflow-x:auto; margin: 20px 0;">
+                <table class="table table-bordered table-striped" style="font-size:17px;">
+                    <thead class="table-dark">
+                        <tr><th>Method</th><th>Kaam</th><th>Example</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>upper()</td><td>Sab capitals</td><td>"hi".upper() → "HI"</td></tr>
+                        <tr><td>lower()</td><td>Sab small</td><td>"HI".lower() → "hi"</td></tr>
+                        <tr><td>title()</td><td>Har word capital</td><td>"hi world".title() → "Hi World"</td></tr>
+                        <tr><td>strip()</td><td>Spaces hatao</td><td>"  hi  ".strip() → "hi"</td></tr>
+                        <tr><td>replace()</td><td>Text badlo</td><td>"hi".replace("h","b") → "bi"</td></tr>
+                        <tr><td>split()</td><td>List me todo</td><td>"a b".split() → ["a","b"]</td></tr>
+                        <tr><td>join()</td><td>List se jodo</td><td>"-".join(["a","b"]) → "a-b"</td></tr>
+                        <tr><td>find()</td><td>Index dhundo</td><td>"hi".find("i") → 1</td></tr>
+                        <tr><td>count()</td><td>Kitni baar aaya</td><td>"aaa".count("a") → 3</td></tr>
+                        <tr><td>startswith()</td><td>Kya isse shuru hota hai</td><td>"hi".startswith("h") → True</td></tr>
+                        <tr><td>endswith()</td><td>Kya isme khatam hota hai</td><td>"hi".endswith("i") → True</td></tr>
+                        <tr><td>isdigit()</td><td>Sirf numbers hain?</td><td>"123".isdigit() → True</td></tr>
+                        <tr><td>isalpha()</td><td>Sirf letters hain?</td><td>"abc".isalpha() → True</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <br>
+
+            <!-- CTA Row -->
+            <div class="cta-row">
+                <a href="/py_components/py_for.html" class="outline-btn">Previous</a>
+                <a href="/py_components/py_list.html" class="start-btn">
+                    Next
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
+                    </svg>
+                </a>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark py-4 mt-5">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-12">
+                    <h6 style="color: #adb5bd; margin-bottom: 0;">© 2026 Codepth . All Rights Reserved.</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SHARED CELL SCRIPT -->
+    <script>
+        const execCounts = {};
+
+        function getExecCount(id) {
+            if (!execCounts[id]) execCounts[id] = 1;
+            return execCounts[id];
+        }
+
+        function syncLines(ta, id) {
+            const lines = ta.value.split('\n').length;
+            const nums = Array.from({ length: lines }, (_, i) => i + 1).join('\n');
+            document.getElementById('lineNums_' + id).textContent = nums;
+        }
+
+        function autoResize(ta) {
+            ta.style.height = 'auto';
+            ta.style.height = ta.scrollHeight + 'px';
+        }
+
+        function onCodeInput(ta, id) {
+            autoResize(ta);
+            syncLines(ta, id);
+        }
+
+        function handleKeydown(e, id) {
+            if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+                e.preventDefault();
+                runCell(id);
+            }
+            if (e.key === 'Tab') {
+                e.preventDefault();
+                const ta = e.target;
+                const s = ta.selectionStart, end = ta.selectionEnd;
+                ta.value = ta.value.substring(0, s) + '    ' + ta.value.substring(end);
+                ta.selectionStart = ta.selectionEnd = s + 4;
+                syncLines(ta, id);
+            }
+        }
+
+        function copyCode(id) {
+            const code = document.getElementById('codeInput_' + id).value;
+            navigator.clipboard.writeText(code).catch(() => {});
+        }
+
+        function clearOutput(id) {
+            document.getElementById('outputSection_' + id).classList.remove('show');
+        }
+
+        function runCell(id) {
+            const code = document.getElementById('codeInput_' + id).value;
+            const btn  = document.getElementById('runBtn_' + id);
+            const icon = document.getElementById('runIcon_' + id);
+
+            btn.classList.add('running');
+            icon.className = 'run-icon spin';
+            btn.disabled = true;
+
+            setTimeout(() => {
+                const t0 = performance.now();
+                const printLines = [];
+                const fakePrint = (...args) => { printLines.push(args.map(String).join(' ')); };
+
+                let result;
+                let isError = false;
+                let errMsg = '';
+
+                try {
+                    const wrapped = code.replace(/\bprint\s*\(/g, '__print__(');
+                    const fn = new Function('__print__', wrapped);
+                    result = fn(fakePrint);
+                } catch (e) {
+                    isError = true;
+                    errMsg = e.toString();
+                }
+
+                const elapsed = (performance.now() - t0).toFixed(1);
+                const count = getExecCount(id);
+
+                const sec    = document.getElementById('outputSection_' + id);
+                const body   = document.getElementById('outputBody_' + id);
+                const status = document.getElementById('outputStatus_' + id);
+                const timeEl = document.getElementById('execTime_' + id);
+
+                if (isError) {
+                    body.textContent   = errMsg;
+                    body.className     = 'output-body error';
+                    status.textContent = '✗ Error';
+                    status.className   = 'output-status err';
+                } else {
+                    let out = printLines.join('\n');
+                    if (!out && result !== undefined) out = String(result);
+                    if (!out) out = '(no output)';
+                    body.textContent   = out;
+                    body.className     = 'output-body';
+                    status.textContent = '✓ OK';
+                    status.className   = 'output-status ok';
+                }
+
+                timeEl.textContent = `Executed in ${elapsed}ms  ·  In [${count}]`;
+                document.getElementById('cellNum_' + id).textContent = `In [${count}]:`;
+                execCounts[id] = count + 1;
+
+                sec.classList.add('show');
+                btn.classList.remove('running');
+                icon.className = 'run-icon';
+                btn.disabled   = false;
+            }, 120);
+        }
+
+        window.addEventListener('load', () => {
+            document.querySelectorAll('.code-input').forEach(ta => {
+                autoResize(ta);
+                const id = ta.id.replace('codeInput_', '');
+                syncLines(ta, id);
+            });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+</html>

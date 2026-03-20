@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Tutorial</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="py_download.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-5 col-md-6">
+                    <img src="/img/codepth_logo_2.png" class="img-fluid" height="70" width="170" alt="Codepth Logo">
+                </div>
+                <div class="col-7 col-md-6">
+                    <div class="input-group">
+                        <input class="form-control" type="text" placeholder="Search....">
+                        <button class="btn btn-success" type="button">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- TOP NAVBAR -->
+    <nav class="navbar navbar-expand-lg top-navbar">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="/home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/Python.html">Python</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/mysql.html">MySQL</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/dsa.html">DSA</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/ml.html">Machine Learning</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/dl.html">Deep Learning</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE BODY -->
+    <div class="page-wrapper">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <span class="sidebar-title">Python Tutorial</span>
+            <ul>
+                <li class="active"><a href="/py_components/Py_downloads.html">Python Download</a></li>
+                <li><a href="/py_components/py_intro.html">Python Intro <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_keywords.html">Python Keywords <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_variables.html">Python Variables <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_operators.html">Python Operators <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_datatypes.html">Python Data types <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_if_else.html">Python If-else...<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_while.html">Python While Loops <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_for.html">Python For Loops<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_string.html">Python Strings<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_list.html">Python List <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_tuple.html">Python Tuples <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_sets.html">Python Sets <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_dict.html">Python Dictionaries <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_function.html">Python Functions <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_recursion.html">Python Recursion <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_lamda.html">Python Lamda Function <span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_OOP.html">Python OOP<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_file_handling.html">Python File Handling<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_exception_handling.html">Python Exception Handling<span class="arrow">▼</span></a></li>
+                <li><a href="/py_components/py_REGEXP.html">Python REGEXP<span class="arrow">▼</span></a></li>
+            </ul>
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <h1>Python me Functions kya hote hain?</h1>
+            <hr>
+
+            <p style="font-size: 19px;">Function ek <b>reusable block of code</b> hai jo ek specific kaam karta hai.
+            Ek baar function define karo, aur jab chahein <b>baar baar call</b> karo — code dobara likhne
+            ki zarurat nahi. Jaise ek machine jo ek specific kaam karna jaanti hai —
+            button dabao aur kaam ho jaata hai.</p>
+
+            <p style="font-size: 19px;">Functions <b>kyun use karte hain :-</b></p>
+            <ul style="font-size: 18px; margin-left: 40px; line-height: 2.2;">
+                <li><b>Reusability</b> — ek baar likho, baar baar use karo</li>
+                <li><b>Readability</b> — code clean aur samajhne mein aasaan hota hai</li>
+                <li><b>Modularity</b> — bade program ko chhote parts me todna</li>
+                <li><b>Less Errors</b> — ek jagah change karo, sabko faayda</li>
+            </ul>
+
+            <p style="font-size: 19px;">Is page me yeh sab sikhenge :-</p>
+            <ul style="font-size: 18px; margin-left: 40px; line-height: 2.2;">
+                <li>1. <b>Function define aur call karna</b></li>
+                <li>2. <b>Parameters aur Arguments</b></li>
+                <li>3. <b>Default Parameters</b></li>
+                <li>4. <b>Keyword Arguments</b></li>
+                <li>5. <b>*args aur **kwargs</b></li>
+                <li>6. <b>return Statement</b></li>
+                <li>7. <b>Multiple Return Values</b></li>
+                <li>8. <b>Variable Scope</b> — Local aur Global</li>
+            </ul>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 1. DEFINE & CALL              -->
+            <!-- ============================= -->
+            <h1>1. Function Define aur Call Karna</h1>
+            <p style="font-size: 19px;">Python me function <b>def</b> keyword se define hota hai.
+            Function ka naam likhne ke baad <b>parentheses ()</b> aur <b>colon (:)</b> lagate hain.
+            Function ka body <b>indented</b> hoti hai.</p>
+
+            <div style="overflow-x:auto; margin: 20px 0;">
+                <table class="table table-bordered" style="font-size:17px;">
+                    <thead class="table-dark"><tr><th>Syntax</th></tr></thead>
+                    <tbody><tr><td>
+                        <pre style="margin:0; background:transparent; border:none;">def function_name():
+    # function ka kaam
+    # yahan code likhte hain
+
+function_name()   # function call karna</pre>
+                    </td></tr></tbody>
+                </table>
+            </div>
+
+            <!-- Cell 1 -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> Simple function — bina parameters ke</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_f1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('f1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('f1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_f1" onclick="runCell('f1')">
+                            <div class="run-icon" id="runIcon_f1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_f1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_f1" spellcheck="false"
+                            oninput="onCodeInput(this,'f1')" onkeydown="handleKeydown(event,'f1')">def greet():
+    print("Namaste! Python me aapka swagat hai.")
+    print("Aaj ka din accha ho!")
+
+# Function call karo
+greet()
+greet()   # baar baar call kar sakte hain
+greet()</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_f1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_f1"></span>
+                            <button class="clear-btn" onclick="clearOutput('f1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_f1"></div>
+                    <div class="exec-time" id="execTime_f1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> Function se code reuse karna</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_f2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('f2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('f2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_f2" onclick="runCell('f2')">
+                            <div class="run-icon" id="runIcon_f2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_f2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_f2" spellcheck="false"
+                            oninput="onCodeInput(this,'f2')" onkeydown="handleKeydown(event,'f2')">def print_line():
+    print("-" * 40)
+
+def show_menu():
+    print_line()
+    print("1. Naya Game")
+    print("2. Load Game")
+    print("3. Settings")
+    print("4. Exit")
+    print_line()
+
+show_menu()</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_f2">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_f2"></span>
+                            <button class="clear-btn" onclick="clearOutput('f2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_f2"></div>
+                    <div class="exec-time" id="execTime_f2"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 2. PARAMETERS & ARGUMENTS     -->
+            <!-- ============================= -->
+            <h1>2. Parameters aur Arguments</h1>
+            <p style="font-size: 19px;"><b>Parameter</b> woh variable hai jo function define karte waqt likhte hain.
+            <b>Argument</b> woh actual value hai jo function call karte waqt dete hain.</p>
+
+            <!-- Cell 1 -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> Ek parameter wala function</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_p1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('p1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('p1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_p1" onclick="runCell('p1')">
+                            <div class="run-icon" id="runIcon_p1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_p1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_p1" spellcheck="false"
+                            oninput="onCodeInput(this,'p1')" onkeydown="handleKeydown(event,'p1')">def greet_user(name):      # name = parameter
+    print(f"Namaste, {name}!")
+
+greet_user("Rahul")        # "Rahul" = argument
+greet_user("Priya")
+greet_user("Arjun")</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_p1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_p1"></span>
+                            <button class="clear-btn" onclick="clearOutput('p1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_p1"></div>
+                    <div class="exec-time" id="execTime_p1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> Multiple parameters</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_p2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('p2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('p2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_p2" onclick="runCell('p2')">
+                            <div class="run-icon" id="runIcon_p2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_p2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_p2" spellcheck="false"
+                            oninput="onCodeInput(this,'p2')" onkeydown="handleKeydown(event,'p2')">def add(a, b):
+    result = a + b
+    print(f"{a} + {b} = {result}")
+
+def student_info(name, age, city):
+    print(f"Name: {name}, Age: {age}, City: {city}")
+
+add(10, 20)
+add(55, 45)
+student_info("Neha", 21, "Mumbai")</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_p2">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_p2"></span>
+                            <button class="clear-btn" onclick="clearOutput('p2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_p2"></div>
+                    <div class="exec-time" id="execTime_p2"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 3. DEFAULT PARAMETERS         -->
+            <!-- ============================= -->
+            <h1>3. Default Parameters</h1>
+            <p style="font-size: 19px;">Kisi parameter ki <b>default value</b> set kar sakte hain.
+            Agar function call karte waqt woh argument nahi diya jaata, toh <b>default value use hoti hai</b>.</p>
+
+            <!-- Cell 1 -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> Default parameter ke saath function</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_dp1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('dp1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('dp1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_dp1" onclick="runCell('dp1')">
+                            <div class="run-icon" id="runIcon_dp1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_dp1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_dp1" spellcheck="false"
+                            oninput="onCodeInput(this,'dp1')" onkeydown="handleKeydown(event,'dp1')">def greet(name, msg="Aapka din accha ho!"):
+    print(f"Namaste {name}! {msg}")
+
+greet("Rahul")                        # default msg use hoga
+greet("Priya", "Happy Birthday!")     # custom msg diya
+greet("Arjun", "All the best!")</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_dp1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_dp1"></span>
+                            <button class="clear-btn" onclick="clearOutput('dp1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_dp1"></div>
+                    <div class="exec-time" id="execTime_dp1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> Power function — default exponent 2</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_dp2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('dp2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('dp2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_dp2" onclick="runCell('dp2')">
+                            <div class="run-icon" id="runIcon_dp2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_dp2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_dp2" spellcheck="false"
+                            oninput="onCodeInput(this,'dp2')" onkeydown="handleKeydown(event,'dp2')">def power(base, exp=2):
+    return base ** exp
+
+print(power(5))        # 5^2 = 25   (default exp=2)
+print(power(3))        # 3^2 = 9
+print(power(2, 10))    # 2^10 = 1024
+print(power(7, 3))     # 7^3 = 343</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_dp2">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_dp2"></span>
+                            <button class="clear-btn" onclick="clearOutput('dp2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_dp2"></div>
+                    <div class="exec-time" id="execTime_dp2"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 4. KEYWORD ARGUMENTS          -->
+            <!-- ============================= -->
+            <h1>4. Keyword Arguments</h1>
+            <p style="font-size: 19px;">Normally arguments <b>order ke hisaab se</b> dene padte hain.
+            Lekin <b>keyword arguments</b> me aap <b>parameter ka naam likhke</b> argument de sakte hain —
+            order matter nahi karta.</p>
+
+            <!-- Cell 1 -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> Keyword arguments — order matter nahi karta</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_ka1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('ka1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('ka1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_ka1" onclick="runCell('ka1')">
+                            <div class="run-icon" id="runIcon_ka1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_ka1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_ka1" spellcheck="false"
+                            oninput="onCodeInput(this,'ka1')" onkeydown="handleKeydown(event,'ka1')">def order_pizza(size, crust, topping):
+    print(f"Pizza: {size} size, {crust} crust, {topping} topping")
+
+# Positional — order matter karta hai
+order_pizza("Large", "Thin", "Paneer")
+
+# Keyword — kisi bhi order me de sakte hain
+order_pizza(topping="Mushroom", size="Medium", crust="Thick")
+order_pizza(crust="Stuffed", topping="Corn", size="Small")</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_ka1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_ka1"></span>
+                            <button class="clear-btn" onclick="clearOutput('ka1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_ka1"></div>
+                    <div class="exec-time" id="execTime_ka1"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 5. *ARGS AND **KWARGS         -->
+            <!-- ============================= -->
+            <h1>5. *args aur **kwargs</h1>
+            <p style="font-size: 19px;">Jab pata nahi kitne arguments milenge, tab <b>*args</b> aur
+            <b>**kwargs</b> use karte hain.</p>
+
+            <div style="overflow-x:auto; margin: 20px 0;">
+                <table class="table table-bordered table-striped" style="font-size:17px;">
+                    <thead class="table-dark">
+                        <tr><th>Type</th><th>Syntax</th><th>Kaam</th><th>Data milta hai</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>*args</td><td>def f(*args)</td><td>Multiple positional arguments</td><td>Tuple me</td></tr>
+                        <tr><td>**kwargs</td><td>def f(**kwargs)</td><td>Multiple keyword arguments</td><td>Dictionary me</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Cell 1 - *args -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> *args — kitne bhi positional arguments</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_ak1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('ak1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('ak1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_ak1" onclick="runCell('ak1')">
+                            <div class="run-icon" id="runIcon_ak1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_ak1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_ak1" spellcheck="false"
+                            oninput="onCodeInput(this,'ak1')" onkeydown="handleKeydown(event,'ak1')">def total(*args):
+    print("Arguments:", args)   # tuple milta hai
+    return sum(args)
+
+print(total(10, 20))
+print(total(5, 10, 15, 20))
+print(total(1, 2, 3, 4, 5, 6, 7, 8, 9, 10))</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_ak1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_ak1"></span>
+                            <button class="clear-btn" onclick="clearOutput('ak1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_ak1"></div>
+                    <div class="exec-time" id="execTime_ak1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 - **kwargs -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> **kwargs — kitne bhi keyword arguments</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_ak2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('ak2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('ak2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_ak2" onclick="runCell('ak2')">
+                            <div class="run-icon" id="runIcon_ak2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_ak2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_ak2" spellcheck="false"
+                            oninput="onCodeInput(this,'ak2')" onkeydown="handleKeydown(event,'ak2')">def show_profile(**kwargs):
+    print("--- Profile ---")
+    for key, value in kwargs.items():
+        print(f"  {key}: {value}")
+
+show_profile(name="Rahul", age=22, city="Delhi")
+print()
+show_profile(name="Priya", age=21, city="Mumbai", job="Engineer", hobby="Painting")</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_ak2">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_ak2"></span>
+                            <button class="clear-btn" onclick="clearOutput('ak2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_ak2"></div>
+                    <div class="exec-time" id="execTime_ak2"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 3 - both together -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 3:</b> *args aur **kwargs dono saath</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_ak3">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('ak3')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('ak3')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_ak3" onclick="runCell('ak3')">
+                            <div class="run-icon" id="runIcon_ak3"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_ak3">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_ak3" spellcheck="false"
+                            oninput="onCodeInput(this,'ak3')" onkeydown="handleKeydown(event,'ak3')">def my_function(name, *hobbies, **details):
+    print(f"Name: {name}")
+    print("Hobbies:", hobbies)
+    print("Details:", details)
+
+my_function("Arjun",
+            "Cricket", "Coding", "Reading",
+            age=23, city="Pune", job="Developer")</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_ak3">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_ak3"></span>
+                            <button class="clear-btn" onclick="clearOutput('ak3')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_ak3"></div>
+                    <div class="exec-time" id="execTime_ak3"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 6. RETURN STATEMENT           -->
+            <!-- ============================= -->
+            <h1>6. return Statement</h1>
+            <p style="font-size: 19px;"><b>return</b> se function ek value <b>wapas bhejta hai</b> —
+            jise hum variable me store kar sakte hain ya seedha use kar sakte hain.
+            return milte hi function band ho jaata hai.</p>
+
+            <!-- Cell 1 -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> return se value wapas lena</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_r1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('r1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('r1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_r1" onclick="runCell('r1')">
+                            <div class="run-icon" id="runIcon_r1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_r1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_r1" spellcheck="false"
+                            oninput="onCodeInput(this,'r1')" onkeydown="handleKeydown(event,'r1')">def square(n):
+    return n ** 2
+
+def is_even(n):
+    return n % 2 == 0
+
+# Return value variable me store karo
+result = square(7)
+print("7 ka square:", result)
+
+# Ya seedha use karo
+print("25 ka square:", square(25))
+print("10 even hai?:", is_even(10))
+print("7 even hai? :", is_even(7))</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_r1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_r1"></span>
+                            <button class="clear-btn" onclick="clearOutput('r1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_r1"></div>
+                    <div class="exec-time" id="execTime_r1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> return se function jaldi band ho jaata hai</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_r2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('r2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('r2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_r2" onclick="runCell('r2')">
+                            <div class="run-icon" id="runIcon_r2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_r2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_r2" spellcheck="false"
+                            oninput="onCodeInput(this,'r2')" onkeydown="handleKeydown(event,'r2')">def divide(a, b):
+    if b == 0:
+        return "Error: Zero se divide nahi kar sakte!"
+    return a / b   # yeh sirf tab chalega jab b != 0
+
+print(divide(10, 2))
+print(divide(15, 3))
+print(divide(5, 0))   # early return se error handle ho gaya</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_r2">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_r2"></span>
+                            <button class="clear-btn" onclick="clearOutput('r2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_r2"></div>
+                    <div class="exec-time" id="execTime_r2"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 7. MULTIPLE RETURN VALUES     -->
+            <!-- ============================= -->
+            <h1>7. Multiple Return Values</h1>
+            <p style="font-size: 19px;">Python me function <b>ek se zyada values return</b> kar sakta hai —
+            values <b>tuple</b> me wapas aati hain aur inhe <b>unpacking</b> se alag variables me le sakte hain.</p>
+
+            <!-- Cell 1 -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> Do values return karna</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_mv1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('mv1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('mv1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_mv1" onclick="runCell('mv1')">
+                            <div class="run-icon" id="runIcon_mv1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_mv1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_mv1" spellcheck="false"
+                            oninput="onCodeInput(this,'mv1')" onkeydown="handleKeydown(event,'mv1')">def min_max(numbers):
+    return min(numbers), max(numbers)   # tuple return hota hai
+
+nums = [34, 12, 78, 5, 90, 23, 67]
+
+# Ek sath dono values lo
+result = min_max(nums)
+print("Tuple:", result)
+
+# Ya unpack karo
+smallest, largest = min_max(nums)
+print("Minimum:", smallest)
+print("Maximum:", largest)</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_mv1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_mv1"></span>
+                            <button class="clear-btn" onclick="clearOutput('mv1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_mv1"></div>
+                    <div class="exec-time" id="execTime_mv1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> Student result — multiple values return karna</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_mv2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('mv2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('mv2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_mv2" onclick="runCell('mv2')">
+                            <div class="run-icon" id="runIcon_mv2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_mv2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_mv2" spellcheck="false"
+                            oninput="onCodeInput(this,'mv2')" onkeydown="handleKeydown(event,'mv2')">def analyze_marks(marks_list):
+    total   = sum(marks_list)
+    average = total / len(marks_list)
+    highest = max(marks_list)
+    lowest  = min(marks_list)
+    grade   = "A" if average >= 85 else "B" if average >= 70 else "C"
+    return total, average, highest, lowest, grade
+
+marks = [88, 92, 76, 85, 90]
+total, avg, high, low, grade = analyze_marks(marks)
+
+print(f"Total  : {total}")
+print(f"Average: {avg:.1f}")
+print(f"Highest: {high}")
+print(f"Lowest : {low}")
+print(f"Grade  : {grade}")</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_mv2">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_mv2"></span>
+                            <button class="clear-btn" onclick="clearOutput('mv2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_mv2"></div>
+                    <div class="exec-time" id="execTime_mv2"></div>
+                </div>
+            </div></div>
+
+            <hr><br>
+
+            <!-- ============================= -->
+            <!-- 8. VARIABLE SCOPE             -->
+            <!-- ============================= -->
+            <h1>8. Variable Scope — Local aur Global</h1>
+            <p style="font-size: 19px;"><b>Local variable</b> — function ke andar banaya, sirf wahan accessible.<br>
+            <b>Global variable</b> — function ke bahar banaya, poore program me accessible.</p>
+
+            <!-- Cell 1 -->
+            <p style="font-size:18px; margin-top:10px;"><b>Example 1:</b> Local vs Global scope</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_sc1">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('sc1')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('sc1')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_sc1" onclick="runCell('sc1')">
+                            <div class="run-icon" id="runIcon_sc1"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_sc1">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_sc1" spellcheck="false"
+                            oninput="onCodeInput(this,'sc1')" onkeydown="handleKeydown(event,'sc1')">city = "Delhi"   # Global variable
+
+def show_city():
+    country = "India"   # Local variable — sirf yahan accessible
+    print("City   :", city)     # global variable access ho sakta hai
+    print("Country:", country)
+
+show_city()
+print("City (outside):", city)
+
+# Local variable bahar access nahi hoga
+try:
+    print(country)
+except NameError as e:
+    print("Error:", e)</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_sc1">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_sc1"></span>
+                            <button class="clear-btn" onclick="clearOutput('sc1')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_sc1"></div>
+                    <div class="exec-time" id="execTime_sc1"></div>
+                </div>
+            </div></div>
+
+            <!-- Cell 2 -->
+            <p style="font-size:18px; margin-top:20px;"><b>Example 2:</b> global keyword — function ke andar global variable change karna</p>
+            <div class="nb-shell"><div class="cell">
+                <div class="cell-header">
+                    <div class="cell-left">
+                        <div class="lang-badge"><div class="lang-dot"></div>Python</div>
+                        <span class="cell-meta" id="cellNum_sc2">In [1]:</span>
+                    </div>
+                    <div class="cell-actions">
+                        <button class="action-btn" onclick="clearOutput('sc2')">✕ Clear</button>
+                        <button class="action-btn" onclick="copyCode('sc2')">⎘ Copy</button>
+                        <button class="run-btn" id="runBtn_sc2" onclick="runCell('sc2')">
+                            <div class="run-icon" id="runIcon_sc2"></div>Run
+                        </button>
+                    </div>
+                </div>
+                <div class="gutter">
+                    <div class="line-nums" id="lineNums_sc2">1</div>
+                    <div class="code-area-wrap">
+                        <textarea class="code-input" id="codeInput_sc2" spellcheck="false"
+                            oninput="onCodeInput(this,'sc2')" onkeydown="handleKeydown(event,'sc2')">count = 0   # global variable
+
+def increment():
+    global count   # global keyword se global variable access
+    count += 1
+    print("Count inside function:", count)
+
+increment()
+increment()
+increment()
+print("Count outside:", count)</textarea>
+                    </div>
+                </div>
+                <div class="output-section" id="outputSection_sc2">
+                    <div class="output-header"><span class="output-label">Output</span>
+                        <div style="display:flex;align-items:center;gap:10px;">
+                            <span class="output-status" id="outputStatus_sc2"></span>
+                            <button class="clear-btn" onclick="clearOutput('sc2')">✕</button>
+                        </div>
+                    </div>
+                    <div class="output-body" id="outputBody_sc2"></div>
+                    <div class="exec-time" id="execTime_sc2"></div>
+                </div>
+            </div></div>
+
+            <br><hr><br>
+
+            <!-- Quick Summary -->
+            <h4>Quick Summary — Functions ek nazar me</h4>
+            <div style="overflow-x:auto; margin: 20px 0;">
+                <table class="table table-bordered table-striped" style="font-size:17px;">
+                    <thead class="table-dark">
+                        <tr><th>Concept</th><th>Kaam</th><th>Example</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>def</td><td>Function define karo</td><td>def greet():</td></tr>
+                        <tr><td>Call</td><td>Function chalao</td><td>greet()</td></tr>
+                        <tr><td>Parameters</td><td>Input variables</td><td>def f(a, b):</td></tr>
+                        <tr><td>Arguments</td><td>Actual values</td><td>f(10, 20)</td></tr>
+                        <tr><td>Default param</td><td>Fallback value</td><td>def f(n=5):</td></tr>
+                        <tr><td>Keyword args</td><td>Name se argument do</td><td>f(b=2, a=1)</td></tr>
+                        <tr><td>*args</td><td>Multiple positional</td><td>def f(*args):</td></tr>
+                        <tr><td>**kwargs</td><td>Multiple keyword</td><td>def f(**kwargs):</td></tr>
+                        <tr><td>return</td><td>Value wapas bhejo</td><td>return result</td></tr>
+                        <tr><td>Multiple return</td><td>Kai values return</td><td>return a, b, c</td></tr>
+                        <tr><td>Local scope</td><td>Function ke andar</td><td>sirf function me</td></tr>
+                        <tr><td>Global scope</td><td>Poore program me</td><td>global x</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <br>
+
+            <!-- CTA Row -->
+            <div class="cta-row">
+                <a href="/py_components/py_dict.html" class="outline-btn">Previous</a>
+                <a href="/py_components/py_recursion.html" class="start-btn">
+                    Next
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14" />
+                        <path d="m12 5 7 7-7 7" />
+                    </svg>
+                </a>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark py-4 mt-5">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-12">
+                    <h6 style="color: #adb5bd; margin-bottom: 0;">© 2026 Codepth . All Rights Reserved.</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SHARED CELL SCRIPT -->
+    <script>
+        const execCounts = {};
+
+        function getExecCount(id) {
+            if (!execCounts[id]) execCounts[id] = 1;
+            return execCounts[id];
+        }
+
+        function syncLines(ta, id) {
+            const lines = ta.value.split('\n').length;
+            const nums = Array.from({ length: lines }, (_, i) => i + 1).join('\n');
+            document.getElementById('lineNums_' + id).textContent = nums;
+        }
+
+        function autoResize(ta) {
+            ta.style.height = 'auto';
+            ta.style.height = ta.scrollHeight + 'px';
+        }
+
+        function onCodeInput(ta, id) {
+            autoResize(ta);
+            syncLines(ta, id);
+        }
+
+        function handleKeydown(e, id) {
+            if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+                e.preventDefault();
+                runCell(id);
+            }
+            if (e.key === 'Tab') {
+                e.preventDefault();
+                const ta = e.target;
+                const s = ta.selectionStart, end = ta.selectionEnd;
+                ta.value = ta.value.substring(0, s) + '    ' + ta.value.substring(end);
+                ta.selectionStart = ta.selectionEnd = s + 4;
+                syncLines(ta, id);
+            }
+        }
+
+        function copyCode(id) {
+            const code = document.getElementById('codeInput_' + id).value;
+            navigator.clipboard.writeText(code).catch(() => {});
+        }
+
+        function clearOutput(id) {
+            document.getElementById('outputSection_' + id).classList.remove('show');
+        }
+
+        function runCell(id) {
+            const code = document.getElementById('codeInput_' + id).value;
+            const btn  = document.getElementById('runBtn_' + id);
+            const icon = document.getElementById('runIcon_' + id);
+
+            btn.classList.add('running');
+            icon.className = 'run-icon spin';
+            btn.disabled = true;
+
+            setTimeout(() => {
+                const t0 = performance.now();
+                const printLines = [];
+                const fakePrint = (...args) => { printLines.push(args.map(String).join(' ')); };
+
+                let result;
+                let isError = false;
+                let errMsg = '';
+
+                try {
+                    const wrapped = code.replace(/\bprint\s*\(/g, '__print__(');
+                    const fn = new Function('__print__', wrapped);
+                    result = fn(fakePrint);
+                } catch (e) {
+                    isError = true;
+                    errMsg = e.toString();
+                }
+
+                const elapsed = (performance.now() - t0).toFixed(1);
+                const count = getExecCount(id);
+
+                const sec    = document.getElementById('outputSection_' + id);
+                const body   = document.getElementById('outputBody_' + id);
+                const status = document.getElementById('outputStatus_' + id);
+                const timeEl = document.getElementById('execTime_' + id);
+
+                if (isError) {
+                    body.textContent   = errMsg;
+                    body.className     = 'output-body error';
+                    status.textContent = '✗ Error';
+                    status.className   = 'output-status err';
+                } else {
+                    let out = printLines.join('\n');
+                    if (!out && result !== undefined) out = String(result);
+                    if (!out) out = '(no output)';
+                    body.textContent   = out;
+                    body.className     = 'output-body';
+                    status.textContent = '✓ OK';
+                    status.className   = 'output-status ok';
+                }
+
+                timeEl.textContent = `Executed in ${elapsed}ms  ·  In [${count}]`;
+                document.getElementById('cellNum_' + id).textContent = `In [${count}]:`;
+                execCounts[id] = count + 1;
+
+                sec.classList.add('show');
+                btn.classList.remove('running');
+                icon.className = 'run-icon';
+                btn.disabled   = false;
+            }, 120);
+        }
+
+        window.addEventListener('load', () => {
+            document.querySelectorAll('.code-input').forEach(ta => {
+                autoResize(ta);
+                const id = ta.id.replace('codeInput_', '');
+                syncLines(ta, id);
+            });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+</html>
